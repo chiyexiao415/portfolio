@@ -11,12 +11,11 @@ const DATA = {
           <div class="resume-facts">
             <div><span>学校</span><b>广东工业大学</b></div>
             <div><span>专业</span><b>金融工程</b></div>
-            <div><span>电话</span><b>19066712893</b></div>
             <div><span>邮箱</span><b>2825641638@qq.com</b></div>
             <div><span>毕业</span><b>2028.06</b></div>
           </div>
           <div class="resume-strength">核心优势：内容营销、活动策划、数据运营、AIGC 创作</div>
-          <a class="resume-link" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">查看完整简历 PDF →</a>
+          <a class="resume-link" href="mailto:2825641638@qq.com">邮件索取完整简历 →</a>
         </aside>
 
         <div class="resume-main">
@@ -46,10 +45,7 @@ const DATA = {
 
           <section class="resume-sec">
             <header class="resume-sec-head"><h3>简历</h3><em>RESUME</em></header>
-            <a class="resume-figure" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="assets/resume.png" alt="陈宇萱简历" loading="lazy" />
-            </a>
-            <p class="resume-caption">点击图片可查看原始 PDF</p>
+            <p class="resume-note">完整简历里有联系方式，需要的话发邮件到 <a href="mailto:2825641638@qq.com">2825641638@qq.com</a>，我单独发。</p>
           </section>
         </div>
       </div>
@@ -563,7 +559,6 @@ const DATA = {
     en: "CONTACT",
     title: "组队邀请",
     html: `
-      <div class="contact-row"><span>PHONE</span><span>19066712893</span></div>
       <div class="contact-row"><span>EMAIL</span><span>2825641638@qq.com</span></div>
       <div class="contact-row"><span>LOCATION</span><span>广州</span></div>
       <div class="tags" style="margin-top:24px;">
@@ -747,9 +742,9 @@ const PET_LINES = {
     "六个入口，先看哪个都行。",
   ],
   profile: [
-    "这页是学历和简历，简历图点开能看 PDF。",
+    "左边是个人信息，右边是教育背景和自我介绍。",
     "广东工业大学 · 金融工程，2024 级。",
-    "主修课和工具都写在上面了。",
+    "完整简历可以发邮件索取。",
   ],
   games: [
     "游戏经历分七个品类，从 ARPG 开始往下滑。",
