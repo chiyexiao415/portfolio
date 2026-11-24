@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search).get("theme");
+      var saved = localStorage.getItem("portfolio-theme");
+      var t = q === "light" || q === "dark" ? q : saved;
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<title>陈宇萱 · PLAYER FILE</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- 启动画面 -->
+<div id="boot">
+  <div class="boot-inner">
+    <div class="boot-title">CHEN YUXUAN</div>
+    <div class="boot-sub">GAME MARKETING / CONTENT</div>
+    <div class="boot-bar"><span id="bootFill"></span></div>
+    <div class="boot-pct"><span id="bootPct">0</span>%</div>
+  </div>
+</div>
+
+<!-- 主界面 -->
+<main id="app">
+  <header class="hud">
+    <div class="hud-left">
+      <span class="dot"></span>
+      <span class="hud-name">PLAYER FILE</span>
+    </div>
+    <div class="hud-right">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="切换主题">◐ 亮色</button>
+      <span class="hud-status">● ONLINE</span>
+    </div>
+  </header>
+
+  <section class="stage">
+    <div class="hero">
+      <div class="hero-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <p class="hero-eyebrow">PLAYER PROFILE <span> / </span> GAME & CONTENT</p>
+      <h1>陈宇萱</h1>
+      <div class="hero-tags"><span>内容营销</span><span>游戏运营</span><span>AIGC 创作</span></div>
+      <div class="hero-rule" aria-hidden="true"></div>
+      <div class="hero-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+    <div class="menu">
+      <div class="menu-label">EXPLORE <span> / 选择一个入口</span></div>
+      <ul id="menuList">
+        <li data-view="profile" class="menu-item">
+          <span class="num">01</span>
+          <span class="name">角色档案</span>
+          <span class="en">CHARACTER</span>
+        </li>
+        <li data-view="games" class="menu-item">
+          <span class="num">02</span>
+          <span class="name">游戏经历</span>
+          <span class="en">GAMES</span>
+        </li>
+        <li data-view="quest" class="menu-item">
+          <span class="num">03</span>
+          <span class="name">经历</span>
+          <span class="en">EXPERIENCE</span>
+        </li>
+        <li data-view="works" class="menu-item">
+          <span class="num">04</span>
+          <span class="name">作品</span>
+          <span class="en">WORKS</span>
+        </li>
+        <li data-view="skill" class="menu-item">
+          <span class="num">05</span>
+          <span class="name">技能树</span>
+          <span class="en">SKILLS</span>
+        </li>
+        <li data-view="contact" class="menu-item">
+          <span class="num">06</span>
+          <span class="name">组队邀请</span>
+          <span class="en">CONTACT</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="hint">↑↓ 选择 · ENTER 进入 · ESC 返回</footer>
+</main>
+
+<!-- 内容页面 -->
+<div id="view" class="view" role="dialog" aria-modal="true">
+  <div class="view-topbar">
+    <button id="viewClose" aria-label="返回主界面">← 返回主界面</button>
+    <span class="view-crumb">PLAYER FILE <span>/</span> <b id="viewEn"></b></span>
+  </div>
+
+  <div class="view-scroll">
+    <div class="view-inner">
+      <header class="view-head">
+        <h2 id="viewTitle"></h2>
+        <span class="view-idx" id="viewIdx"></span>
+      </header>
+      <div class="view-body" id="viewBody"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 桌宠向导 -->
+<div id="pet" class="pet">
+  <div class="pet-bubble" id="petBubble"><span id="petText"></span></div>
+  <button class="pet-body" id="petBody" type="button" aria-label="小向导">
+    <svg viewBox="0 0 48 48" aria-hidden="true">
+      <ellipse class="pet-shadow" cx="24" cy="45" rx="11" ry="2.6" />
+      <path class="pet-blob" d="M24 4c10 0 17 8.4 17 19 0 10.2-7.6 18-17 18S7 33.2 7 23 14 4 24 4z" />
+      <g class="pet-eyes">
+        <circle class="pet-eye" cx="17.5" cy="23" r="4.6" />
+        <circle class="pet-eye" cx="30.5" cy="23" r="4.6" />
+        <circle class="pet-pupil" cx="18.6" cy="24" r="2.1" />
+        <circle class="pet-pupil" cx="31.6" cy="24" r="2.1" />
+      </g>
+      <path class="pet-mouth" d="M21 31.5q3 2.6 6 0" />
+      <circle class="pet-blush" cx="12.5" cy="29" r="2.2" />
+      <circle class="pet-blush" cx="35.5" cy="29" r="2.2" />
+    </svg>
+  </button>
+</div>
+
+<!-- 图片大图 -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="关闭">✕</button>
+  <img id="lightboxImg" alt="" />
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
