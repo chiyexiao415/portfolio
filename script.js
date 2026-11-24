@@ -15,7 +15,7 @@ const DATA = {
             <div><span>毕业</span><b>2028.06</b></div>
           </div>
           <div class="resume-strength">核心优势：内容营销、活动策划、数据运营、AIGC 创作</div>
-          <a class="resume-link" href="mailto:2825641638@qq.com">邮件索取完整简历 →</a>
+          <a class="resume-link" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">查看完整简历 PDF →</a>
         </aside>
 
         <div class="resume-main">
@@ -44,8 +44,26 @@ const DATA = {
           </section>
 
           <section class="resume-sec">
+            <header class="resume-sec-head"><h3>个人技能</h3><em>SKILLS</em></header>
+            <div class="resume-item">
+              <div class="resume-date">能力</div>
+              <div>
+                <ul class="resume-list">
+                  <li><b>内容营销：</b>选题、预热稿、商品图与 KV，官网、公众号、网易大神、抖音多平台发布。</li>
+                  <li><b>达人合作：</b>游戏直播博主、coser 建联，参与 KOC 活动框架和激励机制调整。</li>
+                  <li><b>数据运营：</b>多源数据清洗、判定口径沉淀成 SOP，会用 Excel 模板和脚本处理重复工作。</li>
+                  <li><b>工具：</b>Claude、豆包、即梦、剪映、Python、MATLAB、Excel。</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="resume-sec">
             <header class="resume-sec-head"><h3>简历</h3><em>RESUME</em></header>
-            <p class="resume-note">完整简历里有联系方式，需要的话发邮件到 <a href="mailto:2825641638@qq.com">2825641638@qq.com</a>，我单独发。</p>
+            <a class="resume-figure" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="assets/resume.png" alt="陈宇萱简历" loading="lazy" />
+            </a>
+            <p class="resume-caption">点击图片可查看原始 PDF</p>
           </section>
         </div>
       </div>
@@ -417,6 +435,12 @@ const DATA = {
               <li><b>5v5 赛事传播：</b>跟进线下预选赛、淘汰赛到总决赛，负责赛制落地、选手对接、赛程排期和现场预案，产出赛事规则图解和专题页预热。直播累计观看 100w+，增长 10%。</li>
               <li><b>达人对接与 KOC：</b>对接游戏直播博主、coser 等创作者，参与 KOC 活动框架与激励机制调整，跟进直播排期和礼包码结算。抖音总曝光 2000w+，参与量提升 15%，曝光提升 25%。</li>
             </ul>
+            <div class="resume-stats">
+              <span><b>50+</b>商品图</span>
+              <span><b>20+</b>套 KV</span>
+              <span><b>100w+</b>直播观看</span>
+              <span><b>2000w+</b>抖音曝光</span>
+            </div>
           </div>
         </div>
 
@@ -428,6 +452,12 @@ const DATA = {
               <li><b>多源数据清洗：</b>处理商业选址咨询的地理、人口、消费三类原始数据，负责去重、缺失值分级、异常值校验、字段标准化和抽样复核，并把判定口径整理成 SOP 和四类模板，供同组复用。累计处理 6.8 万余条，有效保留率 95%。</li>
               <li><b>效率与复核：</b>把批量转换、去重、单位换算固化成脚本和 Excel 模板，按 12% 比例抽样复核，差错率超标的字段全量重检。单批次处理时长 7h → 4.9h，差错率控制在 0.8% 以内，新人上手周期缩短 30%。</li>
             </ul>
+            <div class="resume-stats">
+              <span><b>6.8w</b>条数据</span>
+              <span><b>95%</b>有效保留率</span>
+              <span><b>7h→4.9h</b>单批时长</span>
+              <span><b>0.8%</b>差错率</span>
+            </div>
           </div>
         </div>
       </section>
