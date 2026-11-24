@@ -52,7 +52,7 @@ const DATA = {
                   <li><b>内容营销：</b>选题、预热稿、商品图与 KV，官网、公众号、网易大神、抖音多平台发布。</li>
                   <li><b>达人合作：</b>游戏直播博主、coser 建联，参与 KOC 活动框架和激励机制调整。</li>
                   <li><b>数据运营：</b>多源数据清洗、判定口径沉淀成 SOP，会用 Excel 模板和脚本处理重复工作。</li>
-                  <li><b>工具：</b>Claude、豆包、即梦、剪映、Python、MATLAB、Excel。</li>
+                  <li><b>工具：</b>Claude、ChatGPT、Kimi、Codex、豆包、即梦、剪映、Python、MATLAB、Excel。</li>
                 </ul>
               </div>
             </div>
@@ -571,9 +571,12 @@ const DATA = {
 
       <section class="resume-sec">
         <header class="resume-sec-head"><h3>工具</h3><em>TOOLS</em></header>
-        <p class="skill-text">AI / AIGC：Claude、Codex、豆包、即梦（生图 / 生视频）<br />数据 / 剪辑：MATLAB、Python、Excel、剪映<br />证书：CET-6（524）、计算机二级</p>
+        <p class="skill-text">AI / AIGC：Claude、ChatGPT、Kimi、Codex、豆包、即梦（生图 / 生视频）<br />数据 / 剪辑：MATLAB、Python、Excel、剪映<br />证书：CET-6（524）、计算机二级</p>
         <div class="tags">
           <span class="tag">Claude</span>
+          <span class="tag">ChatGPT</span>
+          <span class="tag">Kimi</span>
+          <span class="tag">Codex</span>
           <span class="tag">豆包</span>
           <span class="tag">即梦</span>
           <span class="tag">剪映</span>
