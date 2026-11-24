@@ -11,6 +11,7 @@ const DATA = {
           <div class="resume-facts">
             <div><span>学校</span><b>广东工业大学</b></div>
             <div><span>专业</span><b>金融工程</b></div>
+            <div><span>电话</span><b>19066712893</b></div>
             <div><span>邮箱</span><b>2825641638@qq.com</b></div>
             <div><span>毕业</span><b>2028.06</b></div>
           </div>
@@ -592,6 +593,8 @@ const DATA = {
     en: "CONTACT",
     title: "组队邀请",
     html: `
+      <div class="contact-row"><span>PHONE</span><span>19066712893</span></div>
+      <div class="contact-row"><span>WECHAT</span><span>cybxyz415</span></div>
       <div class="contact-row"><span>EMAIL</span><span>2825641638@qq.com</span></div>
       <div class="contact-row"><span>LOCATION</span><span>广州</span></div>
       <div class="tags" style="margin-top:24px;">
