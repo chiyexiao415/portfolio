@@ -64,7 +64,7 @@ const DATA = {
             <a class="resume-figure" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
               <img src="assets/resume.png" alt="陈宇萱简历" loading="lazy" />
             </a>
-            <p class="resume-caption">点击图片可查看原始 PDF</p>
+            <p class="resume-caption">点击图片可查看原始 PDF，也可以 <a href="assets/resume.pdf" download="陈宇萱-简历.pdf">下载简历</a></p>
           </section>
         </div>
       </div>
@@ -594,7 +594,6 @@ const DATA = {
     title: "组队邀请",
     html: `
       <div class="contact-row"><span>PHONE</span><span>19066712893</span></div>
-      <div class="contact-row"><span>WECHAT</span><span>cybxyz415</span></div>
       <div class="contact-row"><span>EMAIL</span><span>2825641638@qq.com</span></div>
       <div class="contact-row"><span>LOCATION</span><span>广州</span></div>
       <div class="tags" style="margin-top:24px;">

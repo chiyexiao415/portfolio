@@ -1085,6 +1085,11 @@ html[data-theme="light"] .view-head h2 { letter-spacing: .1em; }
   letter-spacing: .06em;
   color: var(--dim);
 }
+.resume-caption a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(110, 240, 201, .35);
+}
 
 /* ---------- 游戏经历 ---------- */
 .games-section { --game-line: rgba(120, 200, 220, .16); }
