@@ -474,9 +474,9 @@ const DATA = {
       <section class="work-block">
         <div class="work-block-head"><h3><em>01</em>版本与赛事内容整合</h3><span>VERSION &amp; EVENT</span></div>
         <p class="work-block-desc">一个版本从首曝到线下总决赛：先写内容框架，再出长图、新闻稿、赛程视频和现场视觉，按节点发出去。</p>
-        <div class="case-grid">
-          <article class="case-card case-featured">
-            <a class="case-cover" href="#caseContent" data-goto="caseContent"><img src="assets/case/thumb.jpg" alt="大唐无双万国霸业资料片主视觉" loading="lazy" /></a>
+        <div class="case-grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); grid-auto-rows: 1fr;">
+          <article class="case-card" style="display: flex; flex-direction: column;">
+            <a class="case-cover" href="#caseContent" data-goto="caseContent" style="flex: none;"><img src="assets/case/thumb.jpg" alt="大唐无双万国霸业资料片主视觉" loading="lazy" /></a>
             <span class="case-tag">CASE 01 · 大唐无双</span>
             <h3>《万国霸业》版本内容与潜龙争霸赛</h3>
             <p>资料片 11.13 上线，赛事 10.20 开赛、11.22 线下总决赛。内容框架、版本长图、新闻稿、赛程视频、线下物料全套产出。</p>
@@ -490,11 +490,11 @@ const DATA = {
               <span class="tag">赛事内容</span>
               <span class="tag">线下执行</span>
             </div>
-            <a class="case-link" href="#caseContent" data-goto="caseContent">查看案例 →</a>
+            <a class="case-link" href="#caseContent" data-goto="caseContent" style="align-self: flex-start; margin-top: auto; padding-top: 16px;">查看案例 →</a>
           </article>
 
-          <article class="case-card">
-            <a class="case-cover" href="#caseDouble11" data-goto="caseDouble11"><img src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" loading="lazy" /></a>
+          <article class="case-card" style="display: flex; flex-direction: column;">
+            <a class="case-cover" href="#caseDouble11" data-goto="caseDouble11" style="flex: none;"><img src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" loading="lazy" /></a>
             <span class="case-tag">CASE 02 · 大唐无双</span>
             <h3>双十一官方直播</h3>
             <p>独立撰写手游预热新闻稿，跟进端手游商品、上架测试和预告发布，再跟到直播现场与播后寄送、数据复盘。</p>
@@ -502,10 +502,13 @@ const DATA = {
               <span><b>100+</b>端手游商品</span>
               <span><b>50万+</b>直播观看</span>
             </div>
-            <a class="case-link" href="#caseDouble11" data-goto="caseDouble11">查看案例 →</a>
+            <a class="case-link" href="#caseDouble11" data-goto="caseDouble11" style="align-self: flex-start; margin-top: auto; padding-top: 16px;">查看案例 →</a>
           </article>
 
-          <article class="case-card">
+          <article class="case-card" style="display: flex; flex-direction: column;">
+            <div class="case-cover" style="display: grid; place-items: center; flex: none; background: var(--panel); border-bottom: 1px solid var(--line);" aria-hidden="true">
+              <span class="case-tag" style="font-size: 22px;">H5 · 制作中</span>
+            </div>
             <span class="case-tag">CASE · 在建</span>
             <h3>手游年末资料片 + H5</h3>
             <p>正在做的年末资料片，配套一版 H5 互动，上线后补物料和复盘。</p>
@@ -864,13 +867,13 @@ const DATA = {
           <figure class="case-shot is-scroll">
             <div class="shot-box">
               <div class="shot-frame">
-                <img src="assets/case/double11-qa-sop.jpg" alt="手游直播测试 SOP，包含测试节点、通过标准和卡点处理，姓名已打码" width="850" height="2245" loading="lazy" />
+                <img src="assets/case/double11-qa-sop.jpg?v=author" alt="手游直播测试 SOP，署名陈宇萱，其他人员的姓名已打码" width="850" height="2245" loading="lazy" />
               </div>
               <span class="shot-hint">悬停滚动查看</span>
             </div>
             <figcaption>
-              <b>直播测试 SOP</b><span>姓名已打码</span>
-              <a class="shot-open" href="assets/case/double11-qa-sop.jpg" target="_blank" rel="noopener">查看长图 ↗</a>
+              <b>直播测试 SOP</b><span>署名陈宇萱，其他姓名已打码</span>
+              <a class="shot-open" href="assets/case/double11-qa-sop.jpg?v=author" target="_blank" rel="noopener">查看长图 ↗</a>
             </figcaption>
           </figure>
         </div>
