@@ -469,80 +469,149 @@ const DATA = {
     en: "WORKS",
     title: "作品",
     html: `
-      <p class="works-intro">用 AI 生成的视觉、写过的文案、剪过的视频。</p>
+      <p class="works-intro">项目产出和私人作品分开放。图片还在整理，先把每个项目做了什么、结果多少写清楚。</p>
 
       <section class="work-block">
-        <div class="work-block-head"><h3>AI 视觉</h3><span>即梦 / 豆包</span></div>
-        <div class="work-grid">
-          <figure class="work-item">
-            <div class="work-thumb" style="background-image:url(assets/ai-01.jpg)"><span class="thumb-idx">01</span></div>
-            <figcaption>作品标题<em>一句话说明</em></figcaption>
-          </figure>
-          <figure class="work-item">
-            <div class="work-thumb" style="background-image:url(assets/ai-02.jpg)"><span class="thumb-idx">02</span></div>
-            <figcaption>作品标题<em>一句话说明</em></figcaption>
-          </figure>
-          <figure class="work-item">
-            <div class="work-thumb" style="background-image:url(assets/ai-03.jpg)"><span class="thumb-idx">03</span></div>
-            <figcaption>作品标题<em>一句话说明</em></figcaption>
-          </figure>
-          <figure class="work-item">
-            <div class="work-thumb" style="background-image:url(assets/ai-04.jpg)"><span class="thumb-idx">04</span></div>
-            <figcaption>作品标题<em>一句话说明</em></figcaption>
-          </figure>
-        </div>
-      </section>
+        <div class="work-block-head"><h3>实习成果</h3><span>网易互娱 / 赢商网</span></div>
 
-      <section class="work-block">
-        <div class="work-block-head"><h3>文案</h3><span>预热稿 / 活动文案 / 赛事图解</span></div>
-        <div class="copy-list">
-          <article class="copy-card">
-            <span class="copy-tag">标题</span>
-            <p class="copy-text">在这里放你写过的标题或一句话文案。</p>
-            <span class="copy-note">替换成你的作品，注明投放场景</span>
+        <article class="case-card case-featured">
+          <span class="case-tag">CASE 01 · 官方社媒运营</span>
+          <h3>《大唐无双》万国霸业 · 潜龙争霸赛</h3>
+          <p>资料片和线下赛事并行推进，按首曝、资料片上线、线下总决赛三个节点配内容：版本长图、公众号公告、直播预告、赛程视频、线下主视觉。</p>
+          <div class="case-stats">
+            <span><b>3</b>个内容节点</span>
+            <span><b>100w+</b>直播观看</span>
+            <span><b>5v5</b>线下总决赛</span>
+          </div>
+          <div class="case-tags">
+            <span class="tag">官方社媒</span>
+            <span class="tag">赛事内容</span>
+            <span class="tag">视觉物料</span>
+          </div>
+          <a class="case-link" href="#caseSocial" data-goto="caseSocial">查看案例 →</a>
+        </article>
+
+        <div class="case-grid">
+          <article class="case-card">
+            <span class="case-tag">CASE 02 · 直播预热</span>
+            <h3>双十一官方直播预热</h3>
+            <p>预热稿、商品图、KV 和主视觉，走官网、公众号、网易大神三个渠道，跟到提审和发布。</p>
+            <div class="case-stats">
+              <span><b>50+</b>商品图</span>
+              <span><b>20+</b>套 KV</span>
+              <span><b>3</b>个渠道</span>
+            </div>
           </article>
-          <article class="copy-card">
-            <span class="copy-tag">正文</span>
-            <p class="copy-text">在这里放你写的预热稿正文节选。</p>
-            <span class="copy-note">替换成你的作品，注明渠道与效果</span>
+          <article class="case-card">
+            <span class="case-tag">CASE 03 · 达人合作</span>
+            <h3>达人对接与 KOC 活动</h3>
+            <p>建联游戏直播博主和 coser，跟进直播排期、礼包码结算，参与活动框架和激励调整。</p>
+            <div class="case-stats">
+              <span><b>2000w+</b>抖音曝光</span>
+              <span><b>+15%</b>参与量</span>
+              <span><b>+25%</b>曝光</span>
+            </div>
+          </article>
+          <article class="case-card">
+            <span class="case-tag">CASE 04 · 数据运营</span>
+            <h3>商业选址多源数据清洗</h3>
+            <p>地理、人口、消费三类数据的去重、缺失值分级、异常值校验，判定口径整理成 SOP 和模板。</p>
+            <div class="case-stats">
+              <span><b>6.8w</b>条数据</span>
+              <span><b>95%</b>保留率</span>
+              <span><b>7h→4.9h</b>单批时长</span>
+            </div>
           </article>
         </div>
       </section>
 
       <section class="work-block">
-        <div class="work-block-head"><h3>视频</h3><span>剪辑 / AI 生成</span></div>
-        <div class="work-grid">
-          <figure class="work-item">
-            <div class="work-thumb is-video" style="background-image:url(assets/video-01.jpg)"><span class="thumb-idx">▶</span></div>
-            <figcaption>视频标题<em>时长 / 平台 / 播放量</em></figcaption>
-          </figure>
-          <figure class="work-item">
-            <div class="work-thumb is-video" style="background-image:url(assets/video-02.jpg)"><span class="thumb-idx">▶</span></div>
-            <figcaption>视频标题<em>时长 / 平台 / 播放量</em></figcaption>
-          </figure>
+        <div class="work-block-head"><h3>个人作品</h3><span>抖音 / AI / 剪辑</span></div>
+        <div class="case-grid">
+          <article class="case-card">
+            <span class="case-tag">个人项目 · 抖音</span>
+            <h3>cos 账号运营</h3>
+            <p>选题、脚本、拍摄、剪辑都自己来，做泛二次元内容，持续更新。</p>
+            <div class="case-stats">
+              <span><b>5w+</b>累计曝光</span>
+              <span><b>5k+</b>点赞收藏</span>
+            </div>
+          </article>
+          <article class="case-card">
+            <span class="case-tag">个人项目 · AI</span>
+            <h3>AI 视觉与素材</h3>
+            <p>用即梦、豆包做角色和场景图，也生成过短视频素材。</p>
+            <div class="case-tags">
+              <span class="tag">即梦</span>
+              <span class="tag">豆包</span>
+              <span class="tag">AIGC</span>
+            </div>
+          </article>
+          <article class="case-card">
+            <span class="case-tag">个人项目 · 文案</span>
+            <h3>活动文案与赛事图解</h3>
+            <p>写过预热稿、活动文案和赛事规则图解，偏信息清楚、节奏快。</p>
+          </article>
+          <article class="case-card">
+            <span class="case-tag">个人项目 · 视频</span>
+            <h3>剪辑与内容包装</h3>
+            <p>剪映为主，做过游戏内容和日常向的剪辑、封面、字幕。</p>
+          </article>
         </div>
       </section>
+    `,
+  },
+  caseSocial: {
+    en: "CASE 01 · SOCIAL",
+    title: "大唐无双 · 官方社媒",
+    html: `
+      <a class="case-back" href="#" data-goto="works">← 返回作品</a>
 
-      <section class="work-block">
-        <div class="work-block-head"><h3>个人账号</h3><span>抖音 · cosplay / 泛二次元</span></div>
-        <div class="work-grid work-grid-sm">
-          <figure class="work-item">
-            <div class="work-thumb" style="background-image:url(assets/account-01.jpg)"><span class="thumb-idx">01</span></div>
-            <figcaption>内容封面<em>选题与数据</em></figcaption>
-          </figure>
-          <figure class="work-item">
-            <div class="work-thumb" style="background-image:url(assets/account-02.jpg)"><span class="thumb-idx">02</span></div>
-            <figcaption>内容封面<em>选题与数据</em></figcaption>
-          </figure>
-          <figure class="work-item">
-            <div class="work-thumb" style="background-image:url(assets/account-03.jpg)"><span class="thumb-idx">03</span></div>
-            <figcaption>内容封面<em>选题与数据</em></figcaption>
-          </figure>
-        </div>
-        <p class="works-note">账号累计曝光 5w+、点赞收藏 5k+，选题、脚本、拍摄、剪辑均为独立完成。</p>
-      </section>
+      <p class="case-detail-kicker">网易互娱《大唐无双》2026 年末版本</p>
+      <h3 class="case-detail-title">一个版本，一套内容节奏</h3>
+      <p class="case-detail-lead">资料片「万国霸业」11.13 上线，潜龙争霸赛 11.21 落地线下总决赛。从首曝到赛事收口，每个节点配一套内容。</p>
 
-      <p class="works-hint">把图片放进 <code>assets/</code> 文件夹，文件名和页面里写的一致就会自动显示。</p>
+      <div class="case-meta">
+        <div><span>项目</span><b>万国霸业资料片 / 潜龙争霸赛</b></div>
+        <div><span>角色</span><b>内容策划 / 物料 / 发布</b></div>
+        <div><span>渠道</span><b>官网 / 公众号 / 抖音</b></div>
+        <div><span>周期</span><b>2026.10 — 2026.11</b></div>
+      </div>
+
+      <ol class="case-timeline">
+        <li>
+          <b>11.02 首曝</b>
+          <p>版本内容长图配新闻稿，先把改动讲清楚：国战体系重做、赛季玩法升级、风云录与江湖天梯。</p>
+        </li>
+        <li>
+          <b>11.13 资料片上线</b>
+          <p>开战预告把上线时间钉死，同步黄金战服新区「森罗万象」和福利信息；公众号发更新公告和封面。</p>
+        </li>
+        <li>
+          <b>11.21 线下总决赛</b>
+          <p>潜龙争霸赛 5V5 落地广州网易园区。赛程视频、线下主视觉和现场物料统一语言，把线上热度接到线下。</p>
+        </li>
+      </ol>
+
+      <div class="case-stats">
+        <span><b>3</b>个内容节点</span>
+        <span><b>3</b>支赛程视频</span>
+        <span><b>1</b>套线下主视觉</span>
+        <span><b>100w+</b>直播观看</span>
+      </div>
+
+      <h4 class="case-subhead">我做了什么</h4>
+      <ul class="resume-list">
+        <li><b>对接产品：</b>确认版本节点、赛程、对阵、时间和场地，先把日期、赛制、队伍这些硬信息定下来。</li>
+        <li><b>拆内容节奏：</b>首曝讲版本，开战预告定上线时间，赛事内容承接线下，三个阶段不重复说同一件事。</li>
+        <li><b>出片和物料：</b>脚本、剪辑、封面、文案一起做；竖版给社媒，横版给现场和长视频。</li>
+        <li><b>发布与复盘：</b>按节点发，记录哪条内容引发讨论、哪个封面点击更好，后面复用。</li>
+      </ul>
+
+      <h4 class="case-subhead">复盘</h4>
+      <p class="case-detail-text">一个版本不能靠一条片子讲完。用户每个阶段关心的东西不一样：首曝看信息，上线看福利，决赛看结果和现场。按节点拆，比堆一条大而全的视频有效。</p>
+
+      <a class="case-back" href="#" data-goto="works">← 返回作品</a>
     `,
   },
 
@@ -676,7 +745,9 @@ function openView(key, index) {
   }
   viewEn.textContent = d.en;
   viewTitle.textContent = d.title;
-  viewIdx.textContent = String(index + 1).padStart(2, "0") + " / " + String(items.length).padStart(2, "0");
+  viewIdx.textContent = index >= 0
+    ? String(index + 1).padStart(2, "0") + " / " + String(items.length).padStart(2, "0")
+    : "CASE";
   viewBody.innerHTML = d.html;
   view.classList.add("open");
   view.classList.toggle("wide", key === "profile");
@@ -712,6 +783,12 @@ function closeLightbox() {
 lightbox.addEventListener("click", closeLightbox);
 lightboxImg.addEventListener("click", (e) => e.stopPropagation());
 viewBody.addEventListener("click", (e) => {
+  const go = e.target.closest("[data-goto]");
+  if (go) {
+    e.preventDefault();
+    openView(go.dataset.goto);
+    return;
+  }
   const link = e.target.closest("a[data-shot]");
   if (!link) return;
   e.preventDefault();
@@ -793,8 +870,14 @@ const PET_LINES = {
     "网易那段做直播预热和赛事传播，结果都写在卡片里。",
   ],
   works: [
-    "作品页还在填，图放进 assets/ 文件夹就会显示。",
+    "实习成果和个人作品分两栏，大唐无双可以点进详情。",
+    "图片还在整理，先把项目和数据列出来了。",
     "AI 视觉、文案、视频，都在这页。",
+  ],
+  caseSocial: [
+    "这是大唐无双的官方社媒案例，按版本节点拆的。",
+    "首曝、上线、线下决赛，三个阶段各有一套内容。",
+    "看完可以从下面返回作品页。",
   ],
   skill: [
     "技能树：内容营销、数据、达人、赛事，还有工具。",
