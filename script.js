@@ -652,6 +652,46 @@ const DATA = {
         </div>
       </section>
 
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">社媒</span>
+          <div>
+            <h4>新玩法图解</h4>
+            <p>版本长图先讲改了什么。这组图发到社媒：用一张总览交代赛季变化，再分开讲国战怎么参加、冰原战场怎么得分、武经套装怎么组成。点图可以放大。</p>
+          </div>
+        </header>
+        <div class="case-media is-narrow" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));">
+          <div class="case-media is-pair" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+            <figure class="case-shot">
+              <a class="shot-frame" href="assets/case/play-season.jpg" data-shot>
+                <img src="assets/case/play-season.jpg" alt="新赛季三大重点：任务链、战阶、赛事" width="1200" height="2133" loading="lazy" />
+              </a>
+              <figcaption><b>新赛季总览</b><span>任务链、战阶奖励、1V1 / 5V5 每周轮换</span></figcaption>
+            </figure>
+            <figure class="case-shot">
+              <a class="shot-frame" href="assets/case/play-nation-war.jpg" data-shot>
+                <img src="assets/case/play-nation-war.jpg" alt="万国霸业国战玩法与报名安排" width="1200" height="2133" loading="lazy" />
+              </a>
+              <figcaption><b>万国霸业 · 国战</b><span>一国三帮，每周报名、周五开战</span></figcaption>
+            </figure>
+          </div>
+          <div class="case-media is-pair" style="grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 0;">
+            <figure class="case-shot">
+              <a class="shot-frame" href="assets/case/play-icefield.jpg" data-shot>
+                <img src="assets/case/play-icefield.jpg" alt="冰原战场四塔争夺、中央夺旗和获胜条件" width="1200" height="2133" loading="lazy" />
+              </a>
+              <figcaption><b>冰原战场</b><span>15V15：占塔持续得分，夺旗回塔加分</span></figcaption>
+            </figure>
+            <figure class="case-shot">
+              <a class="shot-frame" href="assets/case/play-wujing.jpg" data-shot>
+                <img src="assets/case/play-wujing.jpg" alt="武经赛季套装：一经统御，六略成套" width="1200" height="2133" loading="lazy" />
+              </a>
+              <figcaption><b>武经套装</b><span>1 经统御、6 略成套</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <h4 class="case-subhead">赛事与线下</h4>
 
       <section class="case-node">
@@ -659,7 +699,7 @@ const DATA = {
           <span class="case-node-date">10.20</span>
           <div>
             <h4>赛程与视频</h4>
-            <p>规则图把参赛资格、报名时间和晋级路径放在一起；赛程视频按轮次更新，告诉玩家接下来打哪轮、哪些队交手。</p>
+            <p>规则总图把参赛资格、报名时间和晋级路径放在一起。淘汰赛另用一张图解释种子保护：种子队不会在指定轮次提前相遇，但每轮都得打赢才能晋级。赛程视频再按轮次更新。</p>
           </div>
         </header>
         <div class="case-media is-narrow">
@@ -669,6 +709,10 @@ const DATA = {
             </a>
             <figcaption><b>赛程规则图</b><span>报名、预选、淘汰、双败、总决赛五个阶段，参赛资格和晋级路径一张讲完</span></figcaption>
           </figure>
+          <a class="case-doc" href="assets/case/event-seed-protection.jpg" data-shot style="justify-self: start;">
+            <img src="assets/case/event-seed-protection.jpg" alt="潜龙争霸赛淘汰赛种子保护图解：从 64 强到 8 强的对阵规则" width="1152" height="2048" loading="lazy" style="width: 76px; height: auto; flex: none;" />
+            <span><b>淘汰赛 · 种子保护图解</b><em>10.31 · 谁是种子队，哪些队不会提前碰上</em></span>
+          </a>
         </div>
         <div class="case-media is-pair">
           <figure class="case-shot">
