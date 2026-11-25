@@ -567,26 +567,26 @@ const DATA = {
       <a class="case-back" href="#" data-goto="works">← 返回作品</a>
 
       <p class="case-detail-kicker">网易互娱《大唐无双》2026 年末版本</p>
-      <h3 class="case-detail-title">一个版本，一套内容节奏</h3>
-      <p class="case-detail-lead">资料片 11.13 上线，潜龙争霸赛 10.20 开赛、11.22 落地线下总决赛。版本内容和赛事物料按节点一起排，从首曝一路接到现场。</p>
+      <h3 class="case-detail-title">从版本首曝到线下总决赛</h3>
+      <p class="case-detail-lead">《万国霸业》资料片和「潜龙争霸赛」同期推进。版本内容要讲清玩法改动和新区信息，赛事内容要让玩家知道怎么参赛、下一轮什么时候打。</p>
+
+      <section class="case-meta" aria-label="项目节点">
+        <div><span><time datetime="2026-10-20">10.20</time></span><b>赛事开赛</b></div>
+        <div><span><time datetime="2026-11-02">11.02</time></span><b>版本首曝</b></div>
+        <div><span><time datetime="2026-11-13">11.13</time></span><b>资料片上线</b></div>
+        <div><span><time datetime="2026-11-22">11.22</time></span><b>线下总决赛</b></div>
+      </section>
+
+      <h4 class="case-subhead">我的分工</h4>
+      <ul class="resume-list">
+        <li><b>对接产品与赛事：</b>确认版本节点、玩法改动、赛制、赛程和线下安排。</li>
+        <li><b>写版本文案、跟进发布：</b>拆图文框架，写长图、新闻稿和招募文案，按节点跟进发布。</li>
+        <li><b>写赛程视频文案、配合视觉交付：</b>按轮次梳理视频要讲的信息，和视觉同事一起交付活动封面、场馆主视觉、对阵大屏和冠军 KV。</li>
+      </ul>
 
       <figure class="case-hero">
         <img src="assets/case/hero.jpg" alt="大唐无双「万国霸业」资料片主视觉" loading="lazy" />
       </figure>
-
-      <div class="case-meta">
-        <div><span>项目</span><b>万国霸业资料片 / 潜龙争霸赛</b></div>
-        <div><span>角色</span><b>内容策划 / 物料 / 发布</b></div>
-        <div><span>渠道</span><b>官网 / 公众号 / 抖音 / 现场</b></div>
-        <div><span>周期</span><b>2026.10 — 2026.11</b></div>
-      </div>
-
-      <div class="case-stats">
-        <span><b>3</b>个内容节点</span>
-        <span><b>3</b>支赛程视频</span>
-        <span><b>1</b>套线下主视觉</span>
-        <span><b>100w+</b>直播观看</span>
-      </div>
 
       <h4 class="case-subhead">版本内容</h4>
 
@@ -594,24 +594,11 @@ const DATA = {
         <header class="case-node-head">
           <span class="case-node-date">11.02</span>
           <div>
-            <h4>首曝</h4>
-            <p>版本内容长图配新闻稿，先把改动讲清楚：国战体系重做、赛季玩法升级、风云录与江湖天梯。</p>
+            <h4>从图文框架到首曝长图</h4>
+            <p>先把经典服、黄金服和赛事分开写：玩家先找到自己所在服的改动，想打比赛的再看赛事安排。首曝用长图和新闻稿讲清国战、赛季玩法等改动。</p>
           </div>
         </header>
         <div class="case-media is-pair">
-          <figure class="case-shot is-scroll">
-            <div class="shot-box">
-              <div class="shot-frame">
-                <img src="assets/case/keyvisual.jpg" alt="大唐无双万国霸业资料片更新内容长图" loading="lazy" />
-              </div>
-              <span class="shot-hint">悬停滚动查看</span>
-            </div>
-            <figcaption>
-              <b>版本内容长图</b>
-              <span>国战、赛季玩法、风云录、冰原战场、赛事安排</span>
-              <a class="shot-open" href="assets/case/keyvisual.jpg" target="_blank" rel="noopener">原图 ↗</a>
-            </figcaption>
-          </figure>
           <figure class="case-shot is-scroll">
             <div class="shot-box">
               <div class="shot-frame">
@@ -620,17 +607,24 @@ const DATA = {
               <span class="shot-hint">悬停滚动查看</span>
             </div>
             <figcaption>
-              <b>图文框架文档</b>
-              <span>经典服、黄金服、赛事三块，逐条写改了什么</span>
+              <b>图文框架</b>
+              <span>按经典服、黄金服、赛事拆分要讲的信息</span>
               <a class="shot-open" href="assets/case/framework.jpg" target="_blank" rel="noopener">原图 ↗</a>
             </figcaption>
           </figure>
-        </div>
-        <div class="case-docs">
-          <a class="case-doc" href="assets/case/news-1102.png" data-shot>
-            <img src="assets/case/news-1102.png" alt="万国霸业更新首曝新闻稿" loading="lazy" />
-            <span><b>首曝新闻稿</b><em>2026.11.02 · 官网</em></span>
-          </a>
+          <figure class="case-shot is-scroll">
+            <div class="shot-box">
+              <div class="shot-frame">
+                <img src="assets/case/keyvisual.jpg" alt="大唐无双万国霸业资料片更新内容长图" loading="lazy" />
+              </div>
+              <span class="shot-hint">悬停滚动查看</span>
+            </div>
+            <figcaption>
+              <b>成品 · 版本内容长图</b>
+              <span>玩家可以按服查国战、赛季玩法等改动，再单独看赛事安排</span>
+              <a class="shot-open" href="assets/case/keyvisual.jpg" target="_blank" rel="noopener">原图 ↗</a>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -638,23 +632,23 @@ const DATA = {
         <header class="case-node-head">
           <span class="case-node-date">11.13</span>
           <div>
-            <h4>资料片上线</h4>
-            <p>开战预告把上线时间钉死，同步黄金战服新区「森罗万象」和福利信息；公众号发更新公告和封面。</p>
+            <h4>官网新闻与招募封面</h4>
+            <p>首曝回答「版本改了什么」，开战预告回答「什么时候开、去哪个新区、有什么福利」。公众号同步发更新公告和封面。</p>
           </div>
         </header>
-        <div class="case-media is-pair">
-          <figure class="case-shot">
-            <a class="shot-frame" href="assets/case/news-1112.png" data-shot>
-              <img src="assets/case/news-1112.png" alt="万国霸业今日开战新闻稿" loading="lazy" />
-            </a>
-            <figcaption><b>开战预告</b><span>2026.11.12 发布，11.13 上线 + 新区「森罗万象」</span></figcaption>
-          </figure>
-          <figure class="case-shot">
-            <a class="shot-frame" href="assets/case/cover-commander.png" data-shot>
-              <img src="assets/case/cover-commander.png" alt="最强指挥招募封面与文案" loading="lazy" />
-            </a>
-            <figcaption><b>「最强指挥」招募</b><span>标题、文案、封面一套出</span></figcaption>
-          </figure>
+        <div class="case-docs">
+          <a class="case-doc" href="assets/case/news-1102.png" data-shot>
+            <img src="assets/case/news-1102.png" alt="万国霸业更新首曝新闻稿" loading="lazy" />
+            <span><b>首曝新闻稿</b><em>11.02 · 版本改动</em></span>
+          </a>
+          <a class="case-doc" href="assets/case/news-1112.png" data-shot>
+            <img src="assets/case/news-1112.png" alt="万国霸业今日开战新闻稿" loading="lazy" />
+            <span><b>开战预告</b><em>11.12 · 上线时间与新区「森罗万象」</em></span>
+          </a>
+          <a class="case-doc" href="assets/case/cover-commander.png" data-shot>
+            <img src="assets/case/cover-commander.png" alt="最强指挥招募封面与文案" loading="lazy" />
+            <span><b>「最强指挥」招募</b><em>标题、文案与封面</em></span>
+          </a>
         </div>
       </section>
 
@@ -665,7 +659,7 @@ const DATA = {
           <span class="case-node-date">10.20</span>
           <div>
             <h4>赛程与视频</h4>
-            <p>报名和预选在 10.20—10.30，10.31 淘汰赛，11.07 双败赛。先出赛程规则图，再按轮次各出一支视频。</p>
+            <p>规则图把参赛资格、报名时间和晋级路径放在一起；赛程视频按轮次更新，告诉玩家接下来打哪轮、哪些队交手。</p>
           </div>
         </header>
         <div class="case-media is-narrow">
@@ -681,13 +675,13 @@ const DATA = {
             <a class="shot-frame" href="assets/case/video-5v5.png" data-shot>
               <img src="assets/case/video-5v5.png" alt="潜龙争霸赛 5V5 赛程视频文案" loading="lazy" />
             </a>
-            <figcaption><b>5V5 赛程视频</b><span>报名 10.20、预选 10.21–10.30、淘汰 10.31、双败 11.07、总决赛 11.22</span></figcaption>
+            <figcaption><b>5V5 赛程视频 · 文案</b><span>先交代怎么报名，再给出各轮日期，方便玩家跟赛程</span></figcaption>
           </figure>
           <figure class="case-shot">
             <a class="shot-frame" href="assets/case/video-dual.png" data-shot>
               <img src="assets/case/video-dual.png" alt="双败赛开战视频文案" loading="lazy" />
             </a>
-            <figcaption><b>双败赛开战视频</b><span>四强对阵，五局三胜，两败出局</span></figcaption>
+            <figcaption><b>双败赛开战视频 · 文案</b><span>讲清四强怎么对阵、五局三胜怎么打、输几次出局</span></figcaption>
           </figure>
         </div>
       </section>
@@ -697,7 +691,7 @@ const DATA = {
           <span class="case-node-date">11.22</span>
           <div>
             <h4>线下总决赛</h4>
-            <p>5V5 总决赛落地广州网易园区。场馆主视觉、对阵大屏、冠军和胜利 KV，一套物料从线上接到现场。</p>
+            <p>5V5 总决赛落地广州网易园区。场馆沿用赛事主视觉，对阵大屏让观众认清交手队伍，胜利和冠军 KV 用来展示赛果。</p>
           </div>
         </header>
         <div class="case-media is-narrow">
@@ -717,18 +711,15 @@ const DATA = {
         </div>
       </section>
 
-      <h4 class="case-subhead">我做了什么</h4>
-      <ul class="resume-list">
-        <li><b>对接产品与赛事：</b>确认版本节点、赛制、赛程、对阵、时间和场地，先把日期、队伍这些硬信息定死。</li>
-        <li><b>拆内容框架：</b>经典服、黄金服、赛事三块分开，逐条写改了什么、玩家能得到什么。</li>
-        <li><b>出图和稿：</b>长图文案、新闻稿、招募文案和封面，跟视觉一起交付。</li>
-        <li><b>出赛程视频：</b>每轮一支，文案把报名、预选、淘汰、双败、决赛讲成一条线。</li>
-        <li><b>线下物料：</b>场馆主视觉、对阵大屏、冠军和胜利 KV，跟视觉一起落地。</li>
-        <li><b>发布与复盘：</b>按节点发，记录哪条内容引发讨论、哪个封面点击更好，后面复用。</li>
-      </ul>
+      <h4 class="case-subhead">项目产出与赛事结果</h4>
+      <div class="case-stats">
+        <span><b>3</b>支赛程视频</span>
+        <span><b>1</b>套线下主视觉</span>
+        <span><b>100w+</b>赛事直播累计观看</span>
+      </div>
 
       <h4 class="case-subhead">复盘</h4>
-      <p class="case-detail-text">一个大版本不能靠一条内容讲完。首曝看信息，上线看福利，赛事看轮次，决赛看结果和现场——每个阶段玩家关心的东西不一样，所以按节点拆，比堆一条大而全的内容有效。到线下时，海报和屏幕沿用线上那套说法，现场才不割裂。</p>
+      <p class="case-detail-text">一个大版本不能靠一条内容讲完。首曝先讲玩法改动，上线再说时间和福利；赛事先讲怎么参赛，再跟进每轮对阵。判断一份物料该放什么，先问玩家在这个节点最想知道什么。</p>
 
       <a class="case-back" href="#" data-goto="works">← 返回作品</a>
     `,
