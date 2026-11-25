@@ -679,15 +679,15 @@ const DATA = {
         </header>
         <div class="case-docs">
           <a class="case-doc" href="assets/case/news-1102.png" data-shot>
-            <img src="assets/case/news-1102.png" alt="万国霸业更新首曝新闻稿" loading="lazy" />
+            <img src="assets/case/news-1102.png" alt="万国霸业更新首曝新闻稿" loading="lazy" style="width: 64px; height: 82px; flex: none;" />
             <span><b>首曝新闻稿</b><em>11.02 · 版本改动</em></span>
           </a>
           <a class="case-doc" href="assets/case/news-1112.png" data-shot>
-            <img src="assets/case/news-1112.png" alt="万国霸业今日开战新闻稿" loading="lazy" />
+            <img src="assets/case/news-1112.png" alt="万国霸业今日开战新闻稿" loading="lazy" style="width: 64px; height: 82px; flex: none;" />
             <span><b>开战预告</b><em>11.12 · 上线时间与新区「森罗万象」</em></span>
           </a>
           <a class="case-doc" href="assets/case/cover-commander.png" data-shot>
-            <img src="assets/case/cover-commander.png" alt="最强指挥招募封面与文案" loading="lazy" />
+            <img src="assets/case/cover-commander.png" alt="最强指挥招募封面与文案" loading="lazy" style="width: 64px; height: 82px; flex: none;" />
             <span><b>「最强指挥」招募</b><em>标题、文案与封面</em></span>
           </a>
         </div>
@@ -739,10 +739,10 @@ const DATA = {
             <p>5V5 总决赛落地广州网易园区。场馆沿用赛事主视觉，对阵大屏让观众认清交手队伍，胜利和冠军 KV 用来展示赛果。</p>
           </div>
         </header>
-        <div class="case-media is-narrow">
+        <div class="case-media is-narrow" style="max-width: min(680px, 90%);">
           <figure class="case-shot is-scroll">
             <div class="shot-box">
-              <div class="shot-frame">
+              <div class="shot-frame" style="max-height: clamp(380px, 46vw, 480px);">
                 <img src="assets/case/offline.jpg" alt="潜龙争霸赛线下总决赛场馆与主视觉" loading="lazy" />
               </div>
               <span class="shot-hint">悬停滚动查看</span>
