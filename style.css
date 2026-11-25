@@ -1842,6 +1842,68 @@ html[data-theme="light"] .shot-box::after {
   background: linear-gradient(transparent, rgba(246, 242, 236, .88));
 }
 
+.focus-panel {
+  padding: clamp(18px, 3.5vw, 34px);
+  border: 1px solid var(--focus-line);
+  border-top: 3px solid var(--focus-accent);
+  background: linear-gradient(120deg, var(--focus-base), var(--focus-end));
+  color: #fff7ea;
+}
+.focus-panel.is-games {
+  --focus-base: #152b25;
+  --focus-end: #25483c;
+  --focus-accent: #b2e6c8;
+  --focus-line: #4b7160;
+  --focus-copy: #d8e9dd;
+  margin-bottom: 30px;
+}
+.focus-panel.is-live {
+  --focus-base: #2e1d18;
+  --focus-end: #593124;
+  --focus-accent: #ffc09a;
+  --focus-line: #93634f;
+  --focus-copy: #f0dcd0;
+}
+.focus-kicker,
+.focus-step {
+  color: var(--focus-accent);
+  font: 600 11px ui-monospace, Consolas, monospace;
+  letter-spacing: .14em;
+}
+.focus-panel h3,
+.focus-panel h4 {
+  font-size: clamp(21px, 3vw, 30px);
+  font-weight: 600;
+  letter-spacing: .04em;
+  line-height: 1.35;
+}
+.focus-panel h3 { margin-top: 10px; }
+.focus-copy {
+  max-width: 680px;
+  margin-top: 12px;
+  color: var(--focus-copy);
+  font-size: 15px;
+  line-height: 1.9;
+}
+.focus-copy strong { color: var(--focus-accent); }
+.focus-panel .case-node-head { grid-template-columns: 1fr; gap: 10px; }
+.case-node.focus-panel .case-node-head p { color: var(--focus-copy); }
+.case-node.focus-panel .case-shot {
+  background: rgba(255, 241, 227, .07);
+  border-color: var(--focus-line);
+  border-top: 2px solid var(--focus-accent);
+}
+.case-node.focus-panel .case-shot figcaption {
+  border-top-color: var(--focus-line);
+  color: var(--focus-copy);
+}
+.case-node.focus-panel .case-shot figcaption b { color: #fff7ea; }
+.focus-panel .shot-open { color: var(--focus-accent); border-color: var(--focus-line); }
+.focus-panel .shot-open:hover { border-color: var(--focus-accent); }
+.focus-panel .case-shot.is-scroll .shot-frame:hover {
+  scrollbar-color: var(--focus-accent) transparent;
+}
+
 @media (max-width: 880px) {
   .case-media.is-pair { grid-template-columns: 1fr; }
   .case-node-head { grid-template-columns: 1fr; gap: 6px; }

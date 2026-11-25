@@ -84,6 +84,12 @@ const DATA = {
         </div>
       </div>
 
+      <section class="focus-panel is-games" aria-labelledby="games-focus-title">
+        <p class="focus-kicker">玩家观察 / PLAYER'S NOTE</p>
+        <h3 id="games-focus-title">关于竞技 / 派对</h3>
+        <p class="focus-copy">竞技类最直接的反馈来自胜负和段位，玩家会在一次次对局里把操作、意识和心态磨出来。非对称对抗和 MOBA 的节奏完全不一样：前者靠<strong>信息差和心理博弈</strong>，后者靠<strong>资源分配和团战决策</strong>；派对类则把门槛压下来，用随机性和社交把一局游戏变成一次多人聚会。</p>
+      </section>
+
       <section class="games-section">
         <header class="games-heading">
           <div class="games-title-row">
@@ -180,11 +186,6 @@ const DATA = {
           </div>
         </div>
 
-        <div class="games-reflection">
-          <span class="games-kicker">PLAYER'S NOTE</span>
-          <h4>关于竞技 / 派对</h4>
-          <p>竞技类最直接的反馈来自胜负和段位，玩家会在一次次对局里把操作、意识和心态磨出来。非对称对抗和 MOBA 的节奏完全不一样：前者靠信息差和心理博弈，后者靠资源分配和团战决策；派对类则把门槛压下来，用随机性和社交把一局游戏变成一次多人聚会。</p>
-        </div>
       </section>
 
       <section class="games-section">
@@ -874,11 +875,11 @@ const DATA = {
         </div>
       </section>
 
-      <section class="case-node">
+      <section class="case-node focus-panel is-live" aria-labelledby="live-focus-title">
         <header class="case-node-head">
-          <span class="case-node-date">开播前</span>
+          <span class="focus-kicker">开播前 / LIVE PREP</span>
           <div>
-            <h4>整理商品库存，跟进上架测试</h4>
+            <h4 id="live-focus-title">整理商品库存，跟进上架测试</h4>
             <p>端手游累计整理 100+ 件商品，核对道具、价格、库存和限购。跟进 QA 先跑通一笔下单到道具到账的流程，再逐款核对上架结果。</p>
             <p>把每一步的交付物、通过标准、每日同步内容和卡点处理写进测试 SOP，下次开播前可以照着检查。</p>
           </div>
@@ -892,6 +893,7 @@ const DATA = {
               <span class="shot-hint">悬停滚动查看</span>
             </div>
             <figcaption>
+              <span class="focus-step" aria-hidden="true">01</span>
               <b>端手游商品清单</b><span>节选，省略内部编号和价格列</span>
               <a class="shot-open" href="assets/case/double11-inventory.jpg" target="_blank" rel="noopener">查看长图 ↗</a>
             </figcaption>
@@ -904,6 +906,7 @@ const DATA = {
               <span class="shot-hint">悬停滚动查看</span>
             </div>
             <figcaption>
+              <span class="focus-step" aria-hidden="true">02</span>
               <b>直播测试 SOP</b><span>署名陈宇萱，其他姓名已打码</span>
               <a class="shot-open" href="assets/case/double11-qa-sop.jpg?v=author" target="_blank" rel="noopener">查看长图 ↗</a>
             </figcaption>
