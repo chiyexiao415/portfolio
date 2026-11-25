@@ -134,6 +134,13 @@
   <img id="lightboxImg" alt="" />
 </div>
 
-<script src="script.js"></script>
+<script>
+  (() => {
+    const version = new URLSearchParams(location.search).get("v") || "9a7417c";
+    const siteScript = document.createElement("script");
+    siteScript.src = location.protocol === "file:" ? "script.js" : `script.js?v=${encodeURIComponent(version)}`;
+    document.body.append(siteScript);
+  })();
+</script>
 </body>
 </html>
