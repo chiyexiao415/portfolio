@@ -494,14 +494,15 @@ const DATA = {
           </article>
 
           <article class="case-card">
-            <span class="case-tag">CASE · 直播预热</span>
-            <h3>双十一官方直播预热</h3>
-            <p>预热稿、商品图、KV 和主视觉，走官网、公众号、网易大神三个渠道，跟到提审和发布。</p>
+            <a class="case-cover" href="#caseDouble11" data-goto="caseDouble11"><img src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" loading="lazy" /></a>
+            <span class="case-tag">CASE 02 · 大唐无双</span>
+            <h3>双十一官方直播</h3>
+            <p>独立撰写手游预热新闻稿，跟进端手游商品、上架测试和预告发布，再跟到直播现场与播后寄送、数据复盘。</p>
             <div class="case-stats">
-              <span><b>50+</b>商品图</span>
-              <span><b>20+</b>套 KV</span>
-              <span><b>3</b>个渠道</span>
+              <span><b>100+</b>端手游商品</span>
+              <span><b>50万+</b>直播观看</span>
             </div>
+            <a class="case-link" href="#caseDouble11" data-goto="caseDouble11">查看案例 →</a>
           </article>
 
           <article class="case-card">
@@ -781,6 +782,118 @@ const DATA = {
 
       <h4 class="case-subhead">复盘</h4>
       <p class="case-detail-text">一个大版本不能靠一条内容讲完。首曝先讲玩法改动，上线再说时间和福利；赛事先讲怎么参赛，再跟进每轮对阵。判断一份物料该放什么，先问玩家在这个节点最想知道什么。</p>
+
+      <a class="case-back" href="#" data-goto="works">← 返回作品</a>
+    `,
+  },
+  caseDouble11: {
+    en: "CASE 02 · LIVE CAMPAIGN",
+    title: "双十一 · 官方直播",
+    html: `
+      <a class="case-back" href="#" data-goto="works">← 返回作品</a>
+
+      <p class="case-detail-kicker">网易互娱《大唐无双》· 2026 双十一</p>
+      <h3 class="case-detail-title">从直播预热到播后复盘</h3>
+      <p class="case-detail-lead">我独立撰写手游双十一新闻稿，也跟进端手游的商品与库存整理、上架测试和预告发布。开播时同步跟进现场，结束后继续跟进礼物寄出和数据汇总。</p>
+      <div class="case-stats">
+        <span><b>100+</b>端手游商品</span>
+        <span><b>1</b>份可复用测试 SOP</span>
+        <span><b>50万+</b>直播观看</span>
+      </div>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">预热</span>
+          <div>
+            <h4>写新闻稿、对接出图、发布预告</h4>
+            <p>对接产品确认游戏内玩法和道具规则，再独立写手游新闻稿。稿件先给开播时间和主推商品，再讲折扣、道具用途和游戏内同步活动；同时联系平面出主视觉与商品图，发布端游和手游的预告视频。</p>
+          </div>
+        </header>
+        <div class="case-media is-pair" style="align-items: start;">
+          <figure class="case-shot is-scroll">
+            <div class="shot-box">
+              <div class="shot-frame">
+                <img src="assets/case/double11-article.jpg" alt="独立撰写的手游双十一新闻稿，从开播预告、商品介绍到游戏内福利" width="835" height="6790" loading="lazy" />
+              </div>
+              <span class="shot-hint">悬停滚动查看</span>
+            </div>
+            <figcaption>
+              <b>手游预热新闻稿</b><span>稿件截图拼接</span>
+              <a class="shot-open" href="assets/case/double11-article.jpg" target="_blank" rel="noopener">查看长图 ↗</a>
+            </figcaption>
+          </figure>
+          <div class="case-media">
+            <figure class="case-shot">
+              <a class="shot-frame" href="assets/case/double11-kv.jpg" data-shot>
+                <img src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" width="1440" height="810" loading="lazy" />
+              </a>
+              <figcaption><b>手游直播主视觉</b><span>对接平面出图</span></figcaption>
+            </figure>
+            <figure class="case-shot">
+              <a class="shot-frame" href="assets/case/double11-teasers.jpg" data-shot>
+                <img src="assets/case/double11-teasers.jpg" alt="左为端游、右为手游的预告文案和视频画面" width="840" height="536" loading="lazy" />
+              </a>
+              <figcaption><b>端手游预告</b><span>左：端游 / 右：手游。发布文案与视频画面节选。</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">开播前</span>
+          <div>
+            <h4>整理商品库存，跟进上架测试</h4>
+            <p>端手游累计整理 100+ 件商品，核对道具、价格、库存和限购。跟进 QA 先跑通一笔下单到道具到账的流程，再逐款核对上架结果。</p>
+            <p>把每一步的交付物、通过标准、每日同步内容和卡点处理写进测试 SOP，下次开播前可以照着检查。</p>
+          </div>
+        </header>
+        <div class="case-media is-pair">
+          <figure class="case-shot is-scroll">
+            <div class="shot-box">
+              <div class="shot-frame">
+                <img src="assets/case/double11-inventory.jpg" alt="端游礼包与手游配图商品清单节选，包含商品名、图标、分区和道具说明" width="930" height="1559" loading="lazy" />
+              </div>
+              <span class="shot-hint">悬停滚动查看</span>
+            </div>
+            <figcaption>
+              <b>端手游商品清单</b><span>节选，省略内部编号和价格列</span>
+              <a class="shot-open" href="assets/case/double11-inventory.jpg" target="_blank" rel="noopener">查看长图 ↗</a>
+            </figcaption>
+          </figure>
+          <figure class="case-shot is-scroll">
+            <div class="shot-box">
+              <div class="shot-frame">
+                <img src="assets/case/double11-qa-sop.jpg" alt="手游直播测试 SOP，包含测试节点、通过标准和卡点处理，姓名已打码" width="850" height="2245" loading="lazy" />
+              </div>
+              <span class="shot-hint">悬停滚动查看</span>
+            </div>
+            <figcaption>
+              <b>直播测试 SOP</b><span>姓名已打码</span>
+              <a class="shot-open" href="assets/case/double11-qa-sop.jpg" target="_blank" rel="noopener">查看长图 ↗</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">直播</span>
+          <div><h4>现场跟进与播后收尾</h4></div>
+        </header>
+        <div class="case-media is-pair">
+          <article class="case-card">
+            <span class="case-tag">直播中</span>
+            <h4 class="case-subhead" style="margin: 8px 0;">同步跟进直播现场</h4>
+            <p>开播后同步跟进现场进度。本次直播观看量 50 万+。</p>
+          </article>
+          <article class="case-card">
+            <span class="case-tag">直播后</span>
+            <h4 class="case-subhead" style="margin: 8px 0;">礼物寄出与数据复盘</h4>
+            <p>继续跟进直播礼物寄出，汇总直播数据、核算指标，整理本次直播复盘。</p>
+          </article>
+        </div>
+      </section>
 
       <a class="case-back" href="#" data-goto="works">← 返回作品</a>
     `,
