@@ -1531,35 +1531,6 @@ html[data-theme="light"] .case-card p { color: #4a4136; }
 .case-meta div { display: flex; gap: 14px; font-size: 13.5px; }
 .case-meta span { color: var(--dim); letter-spacing: .1em; min-width: 44px; }
 .case-meta b { font-weight: 500; }
-.case-dates {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 26px 0 0;
-}
-.case-dates li {
-  flex: 0 1 236px;
-  min-width: 150px;
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  padding: 12px 16px;
-  border: 1px solid var(--line);
-  background: rgba(13, 19, 26, .4);
-}
-.case-dates b {
-  font-family: ui-monospace, Consolas, monospace;
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: .04em;
-  color: var(--accent);
-}
-.case-dates span {
-  font-size: 12.5px;
-  letter-spacing: .08em;
-  color: var(--dim);
-}
 .case-subhead {
   margin: 38px 0 14px;
   font-size: 20px;
@@ -1574,7 +1545,6 @@ html[data-theme="light"] .case-card p { color: #4a4136; }
 html[data-theme="light"] .case-detail-lead,
 html[data-theme="light"] .case-node-head p,
 html[data-theme="light"] .case-detail-text { color: #4a4136; }
-html[data-theme="light"] .case-dates li { background: rgba(255, 253, 249, .6); }
 
 /* 案例封面与产出图 */
 .case-hero {
@@ -1782,7 +1752,6 @@ html[data-theme="light"] .shot-box::after {
 @media (max-width: 880px) {
   .case-media.is-pair { grid-template-columns: 1fr; }
   .case-node-head { grid-template-columns: 1fr; gap: 6px; }
-  .case-dates li { flex: 1 1 40%; min-width: 0; }
   .case-shot.is-scroll .shot-frame { max-height: 430px; }
 }
 @media (hover: none) {

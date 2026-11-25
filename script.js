@@ -472,23 +472,23 @@ const DATA = {
       <p class="works-intro">按能力分块，每块下面挂做过的项目。点开案例能看具体物料。</p>
 
       <section class="work-block">
-        <div class="work-block-head"><h3><em>01</em>版本内容整合</h3><span>VERSION CONTENT</span></div>
-        <p class="work-block-desc">把一个版本拆成节点：先写内容框架，再出长图、新闻稿和招募物料，按渠道发出去。</p>
+        <div class="work-block-head"><h3><em>01</em>版本与赛事内容整合</h3><span>VERSION &amp; EVENT</span></div>
+        <p class="work-block-desc">一个版本从首曝到线下总决赛：先写内容框架，再出长图、新闻稿、赛程视频和现场视觉，按节点发出去。</p>
         <div class="case-grid">
           <article class="case-card case-featured">
             <a class="case-cover" href="#caseContent" data-goto="caseContent"><img src="assets/case/thumb.jpg" alt="大唐无双万国霸业资料片主视觉" loading="lazy" /></a>
             <span class="case-tag">CASE 01 · 大唐无双</span>
-            <h3>《万国霸业》版本内容</h3>
-            <p>资料片按首曝、上线、开战三个节点推进，内容框架、版本长图、新闻稿、招募封面全套产出。</p>
+            <h3>《万国霸业》版本内容与潜龙争霸赛</h3>
+            <p>资料片 11.13 上线，赛事 10.20 开赛、11.22 线下总决赛。内容框架、版本长图、新闻稿、赛程视频、线下物料全套产出。</p>
             <div class="case-stats">
               <span><b>3</b>个内容节点</span>
-              <span><b>1</b>套内容框架</span>
-              <span><b>2</b>篇新闻稿</span>
+              <span><b>3</b>支赛程视频</span>
+              <span><b>1</b>套线下主视觉</span>
             </div>
             <div class="case-tags">
               <span class="tag">内容策划</span>
-              <span class="tag">长图</span>
-              <span class="tag">新闻稿</span>
+              <span class="tag">赛事内容</span>
+              <span class="tag">线下执行</span>
             </div>
             <a class="case-link" href="#caseContent" data-goto="caseContent">查看案例 →</a>
           </article>
@@ -517,31 +517,7 @@ const DATA = {
       </section>
 
       <section class="work-block">
-        <div class="work-block-head"><h3><em>02</em>赛事内容与线下落地</h3><span>LIVE EVENT</span></div>
-        <p class="work-block-desc">赛程、对阵、视频到线下的场馆物料，一套语言贴着赛事轮次走。</p>
-        <div class="case-grid">
-          <article class="case-card case-featured">
-            <a class="case-cover" href="#caseEvent" data-goto="caseEvent"><img src="assets/case/event-cover.jpg" alt="潜龙争霸赛线下总决赛场馆" loading="lazy" /></a>
-            <span class="case-tag">CASE 02 · 大唐无双</span>
-            <h3>潜龙争霸赛 · 5V5 与线下总决赛</h3>
-            <p>10.20 开赛，5V5 和帮会赛两条赛道。赛程视频、对阵物料、线下主视觉统一套视觉，把线上热度接到线下。</p>
-            <div class="case-stats">
-              <span><b>3</b>支赛程视频</span>
-              <span><b>1</b>套线下主视觉</span>
-              <span><b>100w+</b>直播观看</span>
-            </div>
-            <div class="case-tags">
-              <span class="tag">赛事内容</span>
-              <span class="tag">线下执行</span>
-              <span class="tag">视频</span>
-            </div>
-            <a class="case-link" href="#caseEvent" data-goto="caseEvent">查看案例 →</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="work-block">
-        <div class="work-block-head"><h3><em>03</em>达人合作与账号运营</h3><span>KOL &amp; SOCIAL</span></div>
+        <div class="work-block-head"><h3><em>02</em>达人合作与账号运营</h3><span>KOL &amp; SOCIAL</span></div>
         <p class="work-block-desc">对外建联达人和 KOC，对内自己运营账号，两边都要看数据和内容反馈。</p>
         <div class="case-grid">
           <article class="case-card">
@@ -567,7 +543,7 @@ const DATA = {
       </section>
 
       <section class="work-block">
-        <div class="work-block-head"><h3><em>04</em>数据整理</h3><span>DATA</span></div>
+        <div class="work-block-head"><h3><em>03</em>数据整理</h3><span>DATA</span></div>
         <p class="work-block-desc">把脏数据洗成能用的，口径写清楚，做成模板给后面的人接着用。</p>
         <div class="case-grid">
           <article class="case-card case-featured">
@@ -585,36 +561,34 @@ const DATA = {
     `,
   },
   caseContent: {
-    en: "CASE 01 · CONTENT",
-    title: "万国霸业 · 版本内容",
+    en: "CASE 01 · CONTENT & EVENT",
+    title: "万国霸业 · 资料片与赛事",
     html: `
       <a class="case-back" href="#" data-goto="works">← 返回作品</a>
 
       <p class="case-detail-kicker">网易互娱《大唐无双》2026 年末版本</p>
-      <h3 class="case-detail-title">先写框架，再出内容</h3>
-      <p class="case-detail-lead">「万国霸业」11.13 上线。首曝到开战两个节点：先把版本拆成内容框架，再做成长图、新闻稿和招募物料。</p>
+      <h3 class="case-detail-title">一个版本，一套内容节奏</h3>
+      <p class="case-detail-lead">资料片 11.13 上线，潜龙争霸赛 10.20 开赛、11.22 落地线下总决赛。版本内容和赛事物料按节点一起排，从首曝一路接到现场。</p>
 
       <figure class="case-hero">
         <img src="assets/case/hero.jpg" alt="大唐无双「万国霸业」资料片主视觉" loading="lazy" />
       </figure>
 
       <div class="case-meta">
-        <div><span>项目</span><b>「万国霸业」资料片</b></div>
-        <div><span>角色</span><b>内容策划 / 文案 / 发布</b></div>
-        <div><span>渠道</span><b>官网 / 公众号 / 抖音</b></div>
+        <div><span>项目</span><b>万国霸业资料片 / 潜龙争霸赛</b></div>
+        <div><span>角色</span><b>内容策划 / 物料 / 发布</b></div>
+        <div><span>渠道</span><b>官网 / 公众号 / 抖音 / 现场</b></div>
         <div><span>周期</span><b>2026.10 — 2026.11</b></div>
       </div>
 
-      <ol class="case-dates">
-        <li><b>11.02</b><span>首曝</span></li>
-        <li><b>11.13</b><span>资料片上线</span></li>
-      </ol>
-
       <div class="case-stats">
-        <span><b>2</b>个内容节点</span>
-        <span><b>1</b>套内容框架</span>
-        <span><b>2</b>篇新闻稿</span>
+        <span><b>3</b>个内容节点</span>
+        <span><b>3</b>支赛程视频</span>
+        <span><b>1</b>套线下主视觉</span>
+        <span><b>100w+</b>直播观看</span>
       </div>
+
+      <h4 class="case-subhead">版本内容</h4>
 
       <section class="case-node">
         <header class="case-node-head">
@@ -684,62 +658,24 @@ const DATA = {
         </div>
       </section>
 
-      <h4 class="case-subhead">我做了什么</h4>
-      <ul class="resume-list">
-        <li><b>对接产品：</b>拿版本改动、开服时间、福利信息，先定这一版要讲哪几件事。</li>
-        <li><b>拆内容框架：</b>经典服、黄金服、赛事三块分开，逐条写改了什么、玩家能得到什么。</li>
-        <li><b>出图出稿：</b>长图文案、新闻稿、招募文案和封面，跟视觉一起交付。</li>
-        <li><b>发布与复盘：</b>按节点发，记录哪条内容引发讨论、哪个封面点击更好，后面复用。</li>
-      </ul>
-
-      <h4 class="case-subhead">复盘</h4>
-      <p class="case-detail-text">一个大版本的信息量很大，长图负责讲全，新闻稿负责讲重点，招募和封面负责把人拉进来。三样东西互相替代不了，所以先有框架，再按渠道拆。</p>
-
-      <a class="case-back" href="#" data-goto="works">← 返回作品</a>
-    `,
-  },
-  caseEvent: {
-    en: "CASE 02 · LIVE EVENT",
-    title: "潜龙争霸赛",
-    html: `
-      <a class="case-back" href="#" data-goto="works">← 返回作品</a>
-
-      <p class="case-detail-kicker">网易互娱《大唐无双》黄金战服赛事</p>
-      <h3 class="case-detail-title">从赛程表到线下场馆</h3>
-      <p class="case-detail-lead">潜龙争霸赛 10.20 开赛，5V5 和帮会赛两条赛道，11.22 在广州网易园区打线下总决赛。赛程视频、对阵物料和现场视觉一套做完。</p>
-
-      <figure class="case-hero">
-        <img src="assets/case/event-cover.jpg" alt="潜龙争霸赛线下总决赛场馆" loading="lazy" />
-      </figure>
-
-      <div class="case-meta">
-        <div><span>项目</span><b>潜龙争霸赛（5V5 / 帮会赛）</b></div>
-        <div><span>角色</span><b>赛程对接 / 视频脚本 / 线下物料</b></div>
-        <div><span>渠道</span><b>官网 / 抖音 / 现场</b></div>
-        <div><span>周期</span><b>2026.10 — 2026.11</b></div>
-      </div>
-
-      <ol class="case-dates">
-        <li><b>10.20</b><span>报名开赛</span></li>
-        <li><b>10.31</b><span>淘汰赛</span></li>
-        <li><b>11.07</b><span>双败赛</span></li>
-        <li><b>11.22</b><span>线下总决赛</span></li>
-      </ol>
-
-      <div class="case-stats">
-        <span><b>3</b>支赛程视频</span>
-        <span><b>1</b>套线下主视觉</span>
-        <span><b>100w+</b>直播观看</span>
-      </div>
+      <h4 class="case-subhead">赛事与线下</h4>
 
       <section class="case-node">
         <header class="case-node-head">
           <span class="case-node-date">10.20</span>
           <div>
             <h4>赛程与视频</h4>
-            <p>报名和预选在 10.20—10.30，10.31 淘汰赛，11.07 双败赛。赛程视频按轮次各出一支，文案直接写清这一轮要做什么。</p>
+            <p>报名和预选在 10.20—10.30，10.31 淘汰赛，11.07 双败赛。先出赛程规则图，再按轮次各出一支视频。</p>
           </div>
         </header>
+        <div class="case-media is-narrow">
+          <figure class="case-shot">
+            <a class="shot-frame" href="assets/case/rule-map.png" data-shot>
+              <img src="assets/case/rule-map.png" alt="潜龙争霸赛赛程规则与晋级路径" loading="lazy" />
+            </a>
+            <figcaption><b>赛程规则图</b><span>报名、预选、淘汰、双败、总决赛五个阶段，参赛资格和晋级路径一张讲完</span></figcaption>
+          </figure>
+        </div>
         <div class="case-media is-pair">
           <figure class="case-shot">
             <a class="shot-frame" href="assets/case/video-5v5.png" data-shot>
@@ -783,19 +719,20 @@ const DATA = {
 
       <h4 class="case-subhead">我做了什么</h4>
       <ul class="resume-list">
-        <li><b>对接赛事：</b>确认赛制、赛程、对阵、时间和场地，先把日期和队伍这些硬信息定死。</li>
+        <li><b>对接产品与赛事：</b>确认版本节点、赛制、赛程、对阵、时间和场地，先把日期、队伍这些硬信息定死。</li>
+        <li><b>拆内容框架：</b>经典服、黄金服、赛事三块分开，逐条写改了什么、玩家能得到什么。</li>
+        <li><b>出图和稿：</b>长图文案、新闻稿、招募文案和封面，跟视觉一起交付。</li>
         <li><b>出赛程视频：</b>每轮一支，文案把报名、预选、淘汰、双败、决赛讲成一条线。</li>
         <li><b>线下物料：</b>场馆主视觉、对阵大屏、冠军和胜利 KV，跟视觉一起落地。</li>
-        <li><b>发布与衔接：</b>按轮次发，决赛前后接直播和现场内容。</li>
+        <li><b>发布与复盘：</b>按节点发，记录哪条内容引发讨论、哪个封面点击更好，后面复用。</li>
       </ul>
 
       <h4 class="case-subhead">复盘</h4>
-      <p class="case-detail-text">赛事内容最怕信息散。报名、淘汰、决赛各说各的，玩家就跟不上。按轮次拆，每篇只讲这一轮要做什么；到线下时，海报和屏幕沿用同一套说法，现场才不割裂。</p>
+      <p class="case-detail-text">一个大版本不能靠一条内容讲完。首曝看信息，上线看福利，赛事看轮次，决赛看结果和现场——每个阶段玩家关心的东西不一样，所以按节点拆，比堆一条大而全的内容有效。到线下时，海报和屏幕沿用线上那套说法，现场才不割裂。</p>
 
       <a class="case-back" href="#" data-goto="works">← 返回作品</a>
     `,
   },
-
   skill: {
     en: "SKILL TREE",
     title: "技能树",
@@ -1054,18 +991,13 @@ const PET_LINES = {
   ],
   works: [
     "这页按能力分块，每块下面是做过的项目。",
-    "内容整合、赛事、达人、数据，点开的案例都能看物料。",
-    "大唐无双拆成内容和赛事两个案例。",
+    "内容整合、达人、数据，点开的案例都能看物料。",
+    "大唐无双从版本内容一直做到线下总决赛。",
   ],
   caseContent: [
-    "这是版本内容的案例，先有框架再出图。",
+    "大唐无双的完整案例，从首曝做到线下总决赛。",
     "左边是长图，右边是框架文档，都能悬停滚动。",
-    "图太小可以点「原图」在新窗口看。",
-  ],
-  caseEvent: [
-    "赛事案例：赛程、视频、线下物料。",
-    "上面的日期是赛程节点，按轮次往下看。",
-    "线下物料那张可以悬停滚动，也能点开原图。",
+    "赛程规则和视频在下面，线下物料在最后。",
   ],
   skill: [
     "技能树：内容营销、数据、达人、赛事，还有工具。",
