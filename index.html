@@ -13,7 +13,7 @@
   })();
 </script>
 <title>陈宇萱 · PLAYER FILE</title>
-<link rel="stylesheet" href="style.css?v=focus-panels" />
+<link rel="stylesheet" href="style.css?v=section-highlights" />
 </head>
 <body>
 
@@ -157,7 +157,7 @@
 
 <script>
   (() => {
-    const version = new URLSearchParams(location.search).get("v") || "focus-panels";
+    const version = new URLSearchParams(location.search).get("v") || "section-highlights";
     const siteScript = document.createElement("script");
     siteScript.src = location.protocol === "file:" ? "script.js" : `script.js?v=${encodeURIComponent(version)}`;
     document.body.append(siteScript);

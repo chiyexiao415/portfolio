@@ -15,7 +15,7 @@ const DATA = {
             <div><span>邮箱</span><b>2825641638@qq.com</b></div>
             <div><span>毕业</span><b>2028.06</b></div>
           </div>
-          <div class="resume-strength">核心优势：内容营销、活动策划、数据运营、AIGC 创作</div>
+          <div class="resume-strength"><b>核心优势</b>内容营销、活动策划、数据运营、AIGC 创作</div>
           <a class="resume-link" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">查看完整简历 PDF →</a>
         </aside>
 
@@ -38,7 +38,7 @@ const DATA = {
               <div class="resume-date">兴趣</div>
               <div>
                 <h4>玩了十年游戏，也一直在做内容</h4>
-                <p>深度游戏爱好者，覆盖 PC / 手游 / 主机，熟悉 MMO、竞技、剧情类游戏。独立运营抖音 cos 账号，全流程自主产出内容，累计曝光 5w+，点赞收藏 5k+。</p>
+                <p>深度游戏爱好者，覆盖 PC / 手游 / 主机，熟悉 MMO、竞技、剧情类游戏。<strong>独立运营抖音 cos 账号</strong>，全流程自主产出内容，<strong>累计曝光 5w+，点赞收藏 5k+</strong>。</p>
                 <p>熟悉 B 站、抖音、小红书平台调性，对内容热点、用户反馈感知敏锐，擅长把爱好转化为落地内容。</p>
               </div>
             </div>
@@ -84,12 +84,6 @@ const DATA = {
         </div>
       </div>
 
-      <section class="focus-panel is-games" aria-labelledby="games-focus-title">
-        <p class="focus-kicker">玩家观察 / PLAYER'S NOTE</p>
-        <h3 id="games-focus-title">关于竞技 / 派对</h3>
-        <p class="focus-copy">竞技类最直接的反馈来自胜负和段位，玩家会在一次次对局里把操作、意识和心态磨出来。非对称对抗和 MOBA 的节奏完全不一样：前者靠<strong>信息差和心理博弈</strong>，后者靠<strong>资源分配和团战决策</strong>；派对类则把门槛压下来，用随机性和社交把一局游戏变成一次多人聚会。</p>
-      </section>
-
       <section class="games-section">
         <header class="games-heading">
           <div class="games-title-row">
@@ -134,11 +128,11 @@ const DATA = {
         <div class="games-reflection">
           <span class="games-kicker">PLAYER'S NOTE</span>
           <h4>关于 ARPG</h4>
-          <p>ARPG 的魅力，根植于战斗反馈与角色养成的内在循环。玩家持续投入的动力，来源于在反复挑战、刷取试错的过程里收获变强的成就感，以及在技能博弈、连招闪避带来利落的即时打击感，同时，装备、天赋、BD 体系也给玩家留出充足的探索空间~</p>
+          <p>ARPG 的魅力，根植于<strong>战斗反馈与角色养成</strong>的内在循环。玩家持续投入的动力，来源于在反复挑战、刷取试错的过程里收获变强的成就感，以及在技能博弈、连招闪避带来利落的即时打击感，同时，装备、天赋、BD 体系也给玩家留出充足的探索空间~</p>
         </div>
       </section>
 
-      <section class="games-section">
+      <section class="games-section tone-ember">
         <header class="games-heading">
           <div class="games-title-row">
             <span class="games-index">02</span>
@@ -186,6 +180,11 @@ const DATA = {
           </div>
         </div>
 
+        <div class="games-reflection">
+          <span class="games-kicker">PLAYER'S NOTE</span>
+          <h4>关于竞技 / 派对</h4>
+          <p>竞技类最直接的反馈来自胜负和段位，玩家会在一次次对局里把操作、意识和心态磨出来。非对称对抗和 MOBA 的节奏完全不一样：前者靠<strong>信息差和心理博弈</strong>，后者靠<strong>资源分配和团战决策</strong>；派对类则把门槛压下来，用随机性和社交把一局游戏变成一次多人聚会。</p>
+        </div>
       </section>
 
       <section class="games-section">
@@ -227,11 +226,11 @@ const DATA = {
         <div class="games-reflection">
           <span class="games-kicker">PLAYER'S NOTE</span>
           <h4>关于 MMO</h4>
-          <p>在我看来，MMO 的核心根基是社交。完整的剧情与充满烟火气的江湖世界观，撑起了玩家的代入感，门派战斗则带来酣畅直接的对抗爽感。副本、帮战、门派角逐这些玩法，不只是数值成长的途径，更是承载玩家协作、博弈与冲突的舞台，让玩家在并肩闯荡、交锋对抗的过程里建立长久羁绊，而不是陷入单调的刷数值循环。</p>
+          <p>在我看来，<strong>MMO 的核心根基是社交</strong>。完整的剧情与充满烟火气的江湖世界观，撑起了玩家的代入感，门派战斗则带来酣畅直接的对抗爽感。副本、帮战、门派角逐这些玩法，不只是数值成长的途径，更是承载玩家协作、博弈与冲突的舞台，让玩家在并肩闯荡、交锋对抗的过程里建立长久羁绊，而不是陷入单调的刷数值循环。</p>
         </div>
       </section>
 
-      <section class="games-section">
+      <section class="games-section tone-ember">
         <header class="games-heading">
           <div class="games-title-row">
             <span class="games-index">04</span>
@@ -268,11 +267,11 @@ const DATA = {
         <div class="games-reflection">
           <span class="games-kicker">PLAYER'S NOTE</span>
           <h4>关于 FPS / 射击</h4>
-          <p>射击游戏吸引我的不只是瞄准和反应，也有搜集信息、判断位置和与队友配合的过程。CS2 和无畏契约里，一次报点、道具使用或站位选择都可能影响整局；在和平精英和三角洲行动里，地形、路线和物资也让每一场对局有不同的节奏。</p>
+          <p>射击游戏吸引我的不只是瞄准和反应，也有<strong>搜集信息、判断位置和与队友配合</strong>的过程。CS2 和无畏契约里，一次报点、道具使用或站位选择都可能影响整局；在和平精英和三角洲行动里，地形、路线和物资也让每一场对局有不同的节奏。</p>
         </div>
       </section>
 
-      <section class="games-section">
+      <section class="games-section tone-violet">
         <header class="games-heading">
           <div class="games-title-row">
             <span class="games-index">05</span>
@@ -314,11 +313,11 @@ const DATA = {
         <div class="games-reflection">
           <span class="games-kicker">PLAYER'S NOTE</span>
           <h4>关于女性向 / 乙女</h4>
-          <p>女性向游戏的核心吸引力，根植于细腻的人物塑造与长线叙事框架。角色人设、剧情走向、分镜文案是它最主要的表达载体，卡牌养成、解谜、战斗等玩法，更多作为叙事的配套循环，承接剧情更新节奏。我更偏向以旁观者视角去品读故事脉络，观察它如何通过角色关系、剧情抉择搭建情绪钩子，研究卡池、活动与叙事联动的留存设计。它的驱动力并不来自操作或者数值碾压，而是依靠持续的故事更新、角色魅力，维系玩家长期的关注与期待。</p>
+          <p>女性向游戏的核心吸引力，根植于细腻的人物塑造与长线叙事框架。角色人设、剧情走向、分镜文案是它最主要的表达载体，卡牌养成、解谜、战斗等玩法，更多作为叙事的配套循环，承接剧情更新节奏。我更偏向以旁观者视角去品读故事脉络，观察它如何通过角色关系、剧情抉择搭建情绪钩子，研究<strong>卡池、活动与叙事联动</strong>的留存设计。它的驱动力并不来自操作或者数值碾压，而是依靠持续的故事更新、角色魅力，维系玩家长期的关注与期待。</p>
         </div>
       </section>
 
-      <section class="games-section">
+      <section class="games-section tone-violet">
         <header class="games-heading">
           <div class="games-title-row">
             <span class="games-index">06</span>
@@ -363,7 +362,7 @@ const DATA = {
         <div class="games-reflection">
           <span class="games-kicker">PLAYER'S NOTE</span>
           <h4>关于剧情向</h4>
-          <p>文字游戏对我来说更像在读一本会动的书，推进节奏自己控制，靠好奇心和想验证某个猜想往下走。我比较在意信息怎么给：线索是直接摊开，还是藏在对话和场景里让玩家自己拼；分支是不是真的会改变结局，而不是走个过场。推理类我会先把所有人的证词过一遍再下判断，多周目也愿意把没走的线补完。</p>
+          <p>文字游戏对我来说更像在读一本会动的书，推进节奏自己控制，靠好奇心和想验证某个猜想往下走。我比较在意<strong>信息怎么给</strong>：线索是直接摊开，还是藏在对话和场景里让玩家自己拼；<strong>分支是不是真的会改变结局</strong>，而不是走个过场。推理类我会先把所有人的证词过一遍再下判断，多周目也愿意把没走的线补完。</p>
         </div>
       </section>
 
@@ -416,7 +415,7 @@ const DATA = {
         <div class="games-reflection">
           <span class="games-kicker">PLAYER'S NOTE</span>
           <h4>关于经营 / 合作</h4>
-          <p>经营和合作类吸引我的是慢慢把东西做起来的过程：星露谷种田、我的世界搭建筑、双人成行两个人配合通关，节奏不快，但很容易一直玩下去。合作类更看配合，谁负责什么、什么时候等对方，比单打独斗有意思。</p>
+          <p>经营和合作类吸引我的是<strong>慢慢把东西做起来</strong>的过程：星露谷种田、我的世界搭建筑、双人成行两个人配合通关，节奏不快，但很容易一直玩下去。合作类更看配合，<strong>谁负责什么、什么时候等对方</strong>，比单打独斗有意思。</p>
         </div>
       </section>
     `,
@@ -432,17 +431,17 @@ const DATA = {
           <div class="resume-date">2026.09 — 2026.12</div>
           <div>
             <h4>网易互娱 · 产品营销实习</h4>
-            <ul class="resume-list">
-              <li><b>双十一直播预热：</b>写预热稿、整理素材、制作商品图和 KV，跟进提审，发布到官网、公众号和网易大神。产出 50+ 张商品图、20+ 套 KV，覆盖 3 个平台。</li>
-              <li><b>5v5 赛事传播：</b>跟进线下预选赛、淘汰赛到总决赛，负责赛制落地、选手对接、赛程排期和现场预案，产出赛事规则图解和专题页预热。直播累计观看 100w+，增长 10%。</li>
-              <li><b>达人对接与 KOC：</b>对接游戏直播博主、coser 等创作者，参与 KOC 活动框架与激励机制调整，跟进直播排期和礼包码结算。抖音总曝光 2000w+，参与量提升 15%，曝光提升 25%。</li>
-            </ul>
-            <div class="resume-stats">
+            <div class="resume-stats tone-ember" role="group" aria-label="网易互娱实习成果">
               <span><b>50+</b>商品图</span>
               <span><b>20+</b>套 KV</span>
               <span><b>100w+</b>直播观看</span>
               <span><b>2000w+</b>抖音曝光</span>
             </div>
+            <ul class="resume-list">
+              <li><b>双十一直播预热：</b>写预热稿、整理素材、制作商品图和 KV，跟进提审，发布到官网、公众号和网易大神。产出 50+ 张商品图、20+ 套 KV，覆盖 3 个平台。</li>
+              <li><b>5v5 赛事传播：</b>跟进线下预选赛、淘汰赛到总决赛，负责赛制落地、选手对接、赛程排期和现场预案，产出赛事规则图解和专题页预热。直播累计观看 100w+，增长 10%。</li>
+              <li><b>达人对接与 KOC：</b>对接游戏直播博主、coser 等创作者，参与 KOC 活动框架与激励机制调整，跟进直播排期和礼包码结算。抖音总曝光 2000w+，参与量提升 15%，曝光提升 25%。</li>
+            </ul>
           </div>
         </div>
 
@@ -450,16 +449,16 @@ const DATA = {
           <div class="resume-date">2026.06 — 2026.09</div>
           <div>
             <h4>广东赢商网 · 数据运营实习</h4>
-            <ul class="resume-list">
-              <li><b>多源数据清洗：</b>处理商业选址咨询的地理、人口、消费三类原始数据，负责去重、缺失值分级、异常值校验、字段标准化和抽样复核，并把判定口径整理成 SOP 和四类模板，供同组复用。累计处理 6.8 万余条，有效保留率 95%。</li>
-              <li><b>效率与复核：</b>把批量转换、去重、单位换算固化成脚本和 Excel 模板，按 12% 比例抽样复核，差错率超标的字段全量重检。单批次处理时长 7h → 4.9h，差错率控制在 0.8% 以内，新人上手周期缩短 30%。</li>
-            </ul>
-            <div class="resume-stats">
+            <div class="resume-stats tone-blue" role="group" aria-label="赢商网实习成果">
               <span><b>6.8w</b>条数据</span>
               <span><b>95%</b>有效保留率</span>
               <span><b>7h→4.9h</b>单批时长</span>
               <span><b>0.8%</b>差错率</span>
             </div>
+            <ul class="resume-list">
+              <li><b>多源数据清洗：</b>处理商业选址咨询的地理、人口、消费三类原始数据，负责去重、缺失值分级、异常值校验、字段标准化和抽样复核，并把判定口径整理成 SOP 和四类模板，供同组复用。累计处理 6.8 万余条，有效保留率 95%。</li>
+              <li><b>效率与复核：</b>把批量转换、去重、单位换算固化成脚本和 Excel 模板，按 12% 比例抽样复核，差错率超标的字段全量重检。单批次处理时长 7h → 4.9h，差错率控制在 0.8% 以内，新人上手周期缩短 30%。</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -472,11 +471,11 @@ const DATA = {
     html: `
       <p class="works-intro">按能力分块，每块下面挂做过的项目。点开案例能看具体物料。</p>
 
-      <section class="work-block">
+      <section class="work-block tone-ember">
         <div class="work-block-head"><h3><em>01</em>版本与赛事内容整合</h3><span>VERSION &amp; EVENT</span></div>
         <p class="work-block-desc">一个版本从首曝到线下总决赛：先写内容框架，再出长图、新闻稿、赛程视频和现场视觉，按节点发出去。</p>
         <div class="case-grid" style="grid-template-columns: minmax(0, 1fr); grid-auto-rows: 1fr;">
-          <article class="case-card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
+          <article class="case-card work-spotlight" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
             <a class="case-cover" href="#caseContent" data-goto="caseContent" style="flex: 1 1 165px; min-width: 0; margin: 0; aspect-ratio: 16 / 9;"><img src="assets/case/thumb.jpg" alt="大唐无双万国霸业资料片主视觉" loading="lazy" /></a>
             <div style="flex: 2 1 250px; min-width: 0;">
               <span class="case-tag">CASE 01 · 大唐无双</span>
@@ -496,15 +495,15 @@ const DATA = {
             </div>
           </article>
 
-          <article class="case-card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
+          <article class="case-card work-spotlight" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
             <a class="case-cover" href="#caseDouble11" data-goto="caseDouble11" style="flex: 1 1 165px; min-width: 0; margin: 0; aspect-ratio: 16 / 9;"><img src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" loading="lazy" /></a>
             <div style="flex: 2 1 250px; min-width: 0;">
               <span class="case-tag">CASE 02 · 大唐无双</span>
               <h3>双十一官方直播</h3>
-              <p>独立撰写手游预热新闻稿，跟进端手游商品、上架测试和预告发布，再跟到直播现场与播后寄送、数据复盘。</p>
+              <p><strong>独立撰写手游预热新闻稿</strong>，跟进端手游商品、上架测试和预告发布，再跟到直播现场与播后寄送、数据复盘。</p>
               <div class="case-stats">
-                <span><b>100+</b>端手游商品</span>
                 <span><b>50万+</b>直播观看</span>
+                <span><b>100+</b>端手游商品</span>
               </div>
               <a class="case-link" href="#caseDouble11" data-goto="caseDouble11">查看案例 →</a>
             </div>
@@ -527,7 +526,7 @@ const DATA = {
         </div>
       </section>
 
-      <section class="work-block">
+      <section class="work-block tone-violet">
         <div class="work-block-head"><h3><em>02</em>达人合作与账号运营</h3><span>KOL &amp; SOCIAL</span></div>
         <p class="work-block-desc">对外建联达人和 KOC，对内自己运营账号，两边都要看数据和内容反馈。</p>
         <div class="case-grid">
@@ -553,7 +552,7 @@ const DATA = {
         </div>
       </section>
 
-      <section class="work-block">
+      <section class="work-block tone-blue">
         <div class="work-block-head"><h3><em>03</em>数据整理</h3><span>DATA</span></div>
         <p class="work-block-desc">把脏数据洗成能用的，口径写清楚，做成模板给后面的人接着用。</p>
         <div class="case-grid">
@@ -633,12 +632,12 @@ const DATA = {
         </header>
       </section>
 
-      <section class="case-node">
+      <section class="case-node focus-panel is-version" aria-labelledby="version-focus-title">
         <header class="case-node-head">
-          <time class="case-node-date" datetime="2026-11-02">11.02</time>
+          <span class="focus-kicker"><time datetime="2026-11-02">11.02</time> / 版本首曝</span>
           <div>
-            <h4>从图文框架到首曝长图</h4>
-            <p>资料片同时有经典服、黄金服的更新，还有单独的赛事安排。我先在框架里把三块拆开，再把每块的重点写进首曝长图。玩家可以先找自己所在服，看这次有哪些改动；只关心比赛的，也能直接看赛事安排。</p>
+            <h4 id="version-focus-title">从图文框架到首曝长图</h4>
+            <p>资料片同时有经典服、黄金服的更新，还有单独的赛事安排。<strong>我先在框架里把三块拆开，再把每块的重点写进首曝长图。</strong>玩家可以先找自己所在服，看这次有哪些改动；只关心比赛的，也能直接看赛事安排。</p>
           </div>
         </header>
         <div class="case-media is-pair">
@@ -650,6 +649,7 @@ const DATA = {
               <span class="shot-hint">悬停滚动查看</span>
             </div>
             <figcaption>
+              <span class="focus-step" aria-hidden="true">01</span>
               <b>图文框架</b>
               <span>按经典服、黄金服、赛事拆分要讲的信息</span>
               <a class="shot-open" href="assets/case/framework.jpg" target="_blank" rel="noopener">原图 ↗</a>
@@ -663,6 +663,7 @@ const DATA = {
               <span class="shot-hint">悬停滚动查看</span>
             </div>
             <figcaption>
+              <span class="focus-step" aria-hidden="true">02</span>
               <b>成品 · 版本内容长图</b>
               <span>玩家可以按服查国战、赛季玩法等改动，再单独看赛事安排</span>
               <a class="shot-open" href="assets/case/keyvisual.jpg" target="_blank" rel="noopener">原图 ↗</a>
@@ -832,17 +833,17 @@ const DATA = {
       <h3 class="case-detail-title">从直播预热到播后复盘</h3>
       <p class="case-detail-lead">我独立撰写手游双十一新闻稿，也跟进端手游的商品与库存整理、上架测试和预告发布。开播时同步跟进现场，结束后继续跟进礼物寄出和数据汇总。</p>
       <div class="case-stats">
-        <span><b>100+</b>端手游商品</span>
-        <span><b>1</b>份可复用测试 SOP</span>
         <span><b>50万+</b>直播观看</span>
+        <span><b>1</b>份可复用测试 SOP</span>
+        <span><b>100+</b>端手游商品</span>
       </div>
 
-      <section class="case-node">
+      <section class="case-node focus-panel is-live" aria-labelledby="live-focus-title">
         <header class="case-node-head">
-          <span class="case-node-date">预热</span>
+          <span class="focus-kicker">预热 / LIVESTREAM PROMO</span>
           <div>
-            <h4>写新闻稿、对接出图、发布预告</h4>
-            <p>对接产品确认游戏内玩法和道具规则，再独立写手游新闻稿。稿件先给开播时间和主推商品，再讲折扣、道具用途和游戏内同步活动；同时联系平面出主视觉与商品图，发布端游和手游的预告视频。</p>
+            <h4 id="live-focus-title">独立撰写手游双十一预热稿</h4>
+            <p>对接产品确认游戏内玩法和道具规则，再<strong>独立写手游新闻稿</strong>。稿件先给开播时间和主推商品，再讲折扣、道具用途和游戏内同步活动；同时联系平面出主视觉与商品图，发布端游和手游的预告视频。</p>
           </div>
         </header>
         <div class="case-media is-pair" style="align-items: start;">
@@ -854,6 +855,7 @@ const DATA = {
               <span class="shot-hint">悬停滚动查看</span>
             </div>
             <figcaption>
+              <span class="focus-step" aria-hidden="true">01</span>
               <b>手游预热新闻稿</b><span>稿件截图拼接</span>
               <a class="shot-open" href="assets/case/double11-article.jpg" target="_blank" rel="noopener">查看长图 ↗</a>
             </figcaption>
@@ -863,23 +865,23 @@ const DATA = {
               <a class="shot-frame" href="assets/case/double11-kv.jpg" data-shot>
                 <img src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" width="1440" height="810" loading="lazy" />
               </a>
-              <figcaption><b>手游直播主视觉</b><span>对接平面出图</span></figcaption>
+              <figcaption><span class="focus-step" aria-hidden="true">02</span><b>手游直播主视觉</b><span>对接平面出图</span></figcaption>
             </figure>
             <figure class="case-shot">
               <a class="shot-frame" href="assets/case/double11-teasers.jpg" data-shot>
                 <img src="assets/case/double11-teasers.jpg" alt="左为端游、右为手游的预告文案和视频画面" width="840" height="536" loading="lazy" />
               </a>
-              <figcaption><b>端手游预告</b><span>左：端游 / 右：手游。发布文案与视频画面节选。</span></figcaption>
+              <figcaption><span class="focus-step" aria-hidden="true">03</span><b>端手游预告</b><span>左：端游 / 右：手游。发布文案与视频画面节选。</span></figcaption>
             </figure>
           </div>
         </div>
       </section>
 
-      <section class="case-node focus-panel is-live" aria-labelledby="live-focus-title">
+      <section class="case-node">
         <header class="case-node-head">
-          <span class="focus-kicker">开播前 / LIVE PREP</span>
+          <span class="case-node-date">开播前</span>
           <div>
-            <h4 id="live-focus-title">整理商品库存，跟进上架测试</h4>
+            <h4>整理商品库存，跟进上架测试</h4>
             <p>端手游累计整理 100+ 件商品，核对道具、价格、库存和限购。跟进 QA 先跑通一笔下单到道具到账的流程，再逐款核对上架结果。</p>
             <p>把每一步的交付物、通过标准、每日同步内容和卡点处理写进测试 SOP，下次开播前可以照着检查。</p>
           </div>
@@ -893,7 +895,6 @@ const DATA = {
               <span class="shot-hint">悬停滚动查看</span>
             </div>
             <figcaption>
-              <span class="focus-step" aria-hidden="true">01</span>
               <b>端手游商品清单</b><span>节选，省略内部编号和价格列</span>
               <a class="shot-open" href="assets/case/double11-inventory.jpg" target="_blank" rel="noopener">查看长图 ↗</a>
             </figcaption>
@@ -906,7 +907,6 @@ const DATA = {
               <span class="shot-hint">悬停滚动查看</span>
             </div>
             <figcaption>
-              <span class="focus-step" aria-hidden="true">02</span>
               <b>直播测试 SOP</b><span>署名陈宇萱，其他姓名已打码</span>
               <a class="shot-open" href="assets/case/double11-qa-sop.jpg?v=author" target="_blank" rel="noopener">查看长图 ↗</a>
             </figcaption>
@@ -960,27 +960,26 @@ const DATA = {
     en: "SKILL TREE",
     title: "技能树",
     html: `
-      <section class="resume-sec">
-        <header class="resume-sec-head"><h3>内容 × AI</h3><em>CONTENT × AI</em></header>
-        <p class="skill-text">B 站、抖音、小红书长期深度用户，熟悉平台内容和热点。能独立完成选题、AIGC 素材生产到多平台发布。</p>
-      </section>
+      <div class="skill-grid">
+        <section class="skill-card skill-lead">
+          <header class="resume-sec-head"><h3>内容 × AI</h3><em>CONTENT × AI</em></header>
+          <p class="skill-text">B 站、抖音、小红书长期深度用户，熟悉平台内容和热点。能独立完成<strong>选题、AIGC 素材生产到多平台发布</strong>。</p>
+        </section>
+        <section class="skill-card skill-lead tone-blue">
+          <header class="resume-sec-head"><h3>营销 × 数据</h3><em>MARKETING × DATA</em></header>
+          <p class="skill-text">做过内容营销和数据运营，习惯<strong>用数据看内容和投放效果</strong>。熟悉预热、达人合作到直播的流程。</p>
+        </section>
+        <section class="skill-card tone-violet">
+          <header class="resume-sec-head"><h3>达人合作</h3><em>KOL &amp; KOC</em></header>
+          <p class="skill-text">对接游戏直播博主、coser 等创作者，参与 <strong>KOC 活动框架和激励机制调整</strong>。</p>
+        </section>
+        <section class="skill-card tone-ember">
+          <header class="resume-sec-head"><h3>赛事执行</h3><em>LIVE EVENT</em></header>
+          <p class="skill-text">跟过 5v5 赛事从预选赛到总决赛，负责<strong>赛制落地、选手对接、赛程排期和现场预案</strong>。</p>
+        </section>
+      </div>
 
-      <section class="resume-sec">
-        <header class="resume-sec-head"><h3>营销 × 数据</h3><em>MARKETING × DATA</em></header>
-        <p class="skill-text">做过内容营销和数据运营，习惯用数据看内容和投放效果。熟悉预热、达人合作到直播的流程。</p>
-      </section>
-
-      <section class="resume-sec">
-        <header class="resume-sec-head"><h3>达人合作</h3><em>KOL &amp; KOC</em></header>
-        <p class="skill-text">对接游戏直播博主、coser 等创作者，参与 KOC 活动框架和激励机制调整。</p>
-      </section>
-
-      <section class="resume-sec">
-        <header class="resume-sec-head"><h3>赛事执行</h3><em>LIVE EVENT</em></header>
-        <p class="skill-text">跟过 5v5 赛事从预选赛到总决赛，负责赛制落地、选手对接、赛程排期和现场预案。</p>
-      </section>
-
-      <section class="resume-sec">
+      <section class="resume-sec skill-tools">
         <header class="resume-sec-head"><h3>工具</h3><em>TOOLS</em></header>
         <p class="skill-text">AI / AIGC：Claude、ChatGPT、Kimi、Codex、豆包、即梦（生图 / 生视频）<br />数据 / 剪辑：MATLAB、Python、Excel、剪映<br />证书：CET-6（524）、计算机二级</p>
         <div class="tags">
@@ -1003,9 +1002,11 @@ const DATA = {
     en: "CONTACT",
     title: "组队邀请",
     html: `
-      <div class="contact-row"><span>PHONE</span><span>19066712893</span></div>
-      <div class="contact-row"><span>EMAIL</span><span>2825641638@qq.com</span></div>
-      <div class="contact-row"><span>LOCATION</span><span>广州</span></div>
+      <div class="contact-panel">
+        <a class="contact-row contact-email" href="mailto:2825641638@qq.com"><span>EMAIL / 邮箱</span><span>2825641638@qq.com</span></a>
+        <a class="contact-row" href="tel:19066712893"><span>PHONE / 电话</span><span>19066712893</span></a>
+      </div>
+      <div class="contact-row"><span>LOCATION / 城市</span><span>广州</span></div>
       <div class="tags" style="margin-top:24px;">
         <span class="tag">抖音 · cosplay</span>
         <span class="tag">B 站</span>
