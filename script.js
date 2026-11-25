@@ -1017,27 +1017,39 @@ const boot = document.getElementById("boot");
 const bootFill = document.getElementById("bootFill");
 const bootPct = document.getElementById("bootPct");
 const app = document.getElementById("app");
+const pageParams = new URLSearchParams(location.search);
+const dockLayout = pageParams.get("layout") !== "classic";
+const initial = location.hash.slice(1);
+const hasInitialView = Object.hasOwn(DATA, initial);
+app.classList.toggle("dock-layout", dockLayout);
 
-let pct = 0;
-const skipBoot = new URLSearchParams(location.search).has("noboot");
-if (skipBoot) {
-  boot.classList.add("done");
-  app.classList.add("show");
-}
-const timer = setInterval(() => {
-  if (skipBoot) { clearInterval(timer); return; }
-  pct += Math.random() * 14 + 4;
-  if (pct >= 100) {
-    pct = 100;
-    clearInterval(timer);
-    setTimeout(() => {
-      boot.classList.add("done");
-      app.classList.add("show");
-    }, 280);
+const skipBoot = pageParams.has("noboot");
+function startBoot() {
+  function revealApp() {
+    boot.classList.add("done");
+    app.classList.add("show");
+    if (!hasInitialView && pet.classList.contains("is-docked")
+        && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      petBody.classList.add("arrive");
+    }
   }
-  bootFill.style.width = pct + "%";
-  bootPct.textContent = Math.floor(pct);
-}, 90);
+
+  if (skipBoot) {
+    revealApp();
+    return;
+  }
+
+  let pct = 0;
+  const timer = setInterval(() => {
+    pct = Math.min(100, pct + Math.random() * 14 + 4);
+    bootFill.style.width = pct + "%";
+    bootPct.textContent = Math.floor(pct);
+    if (pct === 100) {
+      clearInterval(timer);
+      setTimeout(revealApp, 280);
+    }
+  }, 90);
+}
 
 /* ============ 卡片数字动画 ============ */
 function runCounters() {
@@ -1072,7 +1084,10 @@ function setActive(i) {
 
 items.forEach((el, i) => {
   el.addEventListener("mouseenter", () => setActive(i));
-  el.addEventListener("click", () => openView(el.dataset.view, i));
+  el.addEventListener("click", () => {
+    setActive(i);
+    openView(el.dataset.view, i);
+  });
 });
 
 function openView(key, index) {
@@ -1100,7 +1115,7 @@ function openView(key, index) {
 function closeView() {
   view.classList.remove("open");
   document.title = "陈宇萱 · PLAYER FILE";
-  history.replaceState(null, "", location.pathname);
+  history.replaceState(null, "", location.pathname + location.search);
   setPetContext("home");
 }
 document.getElementById("viewClose").addEventListener("click", closeView);
@@ -1152,7 +1167,7 @@ window.addEventListener("keydown", (e) => {
   } else if (e.key === "ArrowUp") {
     e.preventDefault();
     setActive((active - 1 + items.length) % items.length);
-  } else if (e.key === "Enter") {
+  } else if (e.key === "Enter" && !e.target.closest?.("a[href], button")) {
     openView(items[active].dataset.view, active);
   }
 });
@@ -1162,36 +1177,32 @@ setActive(0);
 /* 主题切换 */
 const themeToggle = document.getElementById("themeToggle");
 const rootEl = document.documentElement;
-function applyTheme(theme) {
-  rootEl.setAttribute("data-theme", theme);
-  if (themeToggle) themeToggle.textContent = theme === "light" ? "◑ 暗色" : "◐ 亮色";
+function updateThemeToggle() {
+  const isLight = rootEl.dataset.theme === "light";
+  themeToggle.textContent = isLight ? "◑ 暗色" : "◐ 亮色";
+  themeToggle.setAttribute("aria-label", isLight ? "切换到暗色主题" : "切换到亮色主题");
+}
+updateThemeToggle();
+themeToggle.addEventListener("click", () => {
+  const theme = rootEl.dataset.theme === "light" ? "dark" : "light";
+  rootEl.dataset.theme = theme;
+  updateThemeToggle();
   try { localStorage.setItem("portfolio-theme", theme); } catch (e) {}
-}
-const urlTheme = new URLSearchParams(location.search).get("theme");
-if (urlTheme === "light" || urlTheme === "dark") applyTheme(urlTheme);
-else {
-  try {
-    const saved = localStorage.getItem("portfolio-theme");
-    if (saved) applyTheme(saved);
-  } catch (e) {}
-}
-if (themeToggle) {
-  themeToggle.addEventListener("click", () => {
-    applyTheme(rootEl.getAttribute("data-theme") === "light" ? "dark" : "light");
-  });
-}
+});
 
 /* ============ 桌宠向导 ============ */
+const pet = document.getElementById("pet");
 const petBubble = document.getElementById("petBubble");
 const petText = document.getElementById("petText");
 const petBody = document.getElementById("petBody");
+const petDock = document.getElementById("petDock");
 
 const PET_LINES = {
   home: [
+    "可以拖我换个位置，点一下我就说话。",
     "↑↓ 选菜单，ENTER 进去，ESC 回来。",
     "这里是陈宇萱的 PLAYER FILE，随便逛逛。",
-    "右上角 ◐ 能切深浅色，暗色更像游戏。",
-    "六个入口，先看哪个都行。",
+    "右上角可以切换亮色和暗色。",
   ],
   profile: [
     "左边是个人信息，右边是教育背景和自我介绍。",
@@ -1240,6 +1251,9 @@ const PET_CLICKS = [
 let petCtx = "home";
 let petIdx = 0;
 let petClickIdx = 0;
+let petPosition;
+let petDrag;
+let petDragged = false;
 
 function petSay(text) {
   if (!petText || !petBubble) return;
@@ -1252,31 +1266,115 @@ function petSay(text) {
 function setPetContext(key) {
   if (!PET_LINES[key]) key = "home";
   petCtx = key;
+  syncPetDock();
+  if (dockLayout && !view.classList.contains("open")) {
+    petIdx = -1;
+    petBubble.classList.remove("show");
+    return;
+  }
   petIdx = 0;
   petSay(PET_LINES[key][0]);
 }
 
+function syncPetDock() {
+  const docked = dockLayout && !petPosition && !view.classList.contains("open");
+  pet.classList.toggle("is-docked", docked);
+  if (!docked) {
+    pet.classList.remove("dock-offscreen");
+    petBody.classList.remove("arrive");
+    return;
+  }
+  const { left, top, width, height } = petDock.getBoundingClientRect();
+  const centerY = top + height / 2;
+  const halfHeight = pet.offsetHeight / 2;
+  pet.style.setProperty("--dock-x", `${left + width / 2}px`);
+  pet.style.setProperty("--dock-y", `${centerY}px`);
+  pet.classList.toggle("dock-offscreen", centerY - halfHeight < 0 || centerY + halfHeight > rootEl.clientHeight);
+}
+
+function movePet(left, top) {
+  const width = pet.offsetWidth;
+  const height = pet.offsetHeight;
+  const viewportWidth = rootEl.clientWidth;
+  const viewportHeight = rootEl.clientHeight;
+  const x = Math.max(10, Math.min(left, viewportWidth - width - 10));
+  const y = Math.max(22, Math.min(top, viewportHeight - height - 10));
+
+  petPosition = { x, y };
+  pet.style.left = `${x}px`;
+  pet.style.top = `${y}px`;
+  pet.classList.remove("is-docked", "dock-offscreen");
+  pet.classList.add("is-positioned");
+  pet.classList.toggle("bubble-right", x + width / 2 < viewportWidth / 2);
+  pet.classList.toggle("bubble-below", y < viewportHeight / 2);
+}
+
 if (petBody) {
-  petBody.addEventListener("click", () => {
-    petBody.classList.remove("jump");
+  petBody.addEventListener("pointerdown", (e) => {
+    if (e.button !== 0 || !e.isPrimary || petDrag) return;
+    petBody.classList.remove("arrive");
+    const { left, top } = pet.getBoundingClientRect();
+    petDragged = false;
+    petDrag = { id: e.pointerId, left, top, startX: e.clientX, startY: e.clientY };
+    petBody.setPointerCapture(e.pointerId);
+  });
+
+  petBody.addEventListener("pointermove", (e) => {
+    if (petDrag?.id !== e.pointerId) return;
+    const dx = e.clientX - petDrag.startX;
+    const dy = e.clientY - petDrag.startY;
+    if (!petDragged && Math.hypot(dx, dy) < 6) return;
+    if (!petDragged) {
+      petDragged = true;
+      pet.classList.add("is-dragging");
+      petBody.classList.remove("jump");
+    }
+    movePet(petDrag.left + dx, petDrag.top + dy);
+  });
+
+  function finishPetDrag(e) {
+    if (petDrag?.id !== e.pointerId) return;
+    petDrag = null;
+    pet.classList.remove("is-dragging");
+  }
+  petBody.addEventListener("pointerup", finishPetDrag);
+  petBody.addEventListener("pointercancel", finishPetDrag);
+  petBody.addEventListener("lostpointercapture", finishPetDrag);
+  window.addEventListener("resize", () => {
+    if (petPosition) movePet(petPosition.x, petPosition.y);
+    else syncPetDock();
+  });
+  if (dockLayout) app.addEventListener("scroll", syncPetDock, { passive: true });
+
+  petBody.addEventListener("animationend", (e) => {
+    if (e.animationName === "petArrive") petBody.classList.remove("arrive");
+    if (e.animationName === "petJump") petBody.classList.remove("jump");
+  });
+  petBody.addEventListener("click", (e) => {
+    if (petDragged && e.detail > 0) return;
+    petBody.classList.remove("arrive", "jump");
     void petBody.offsetWidth;
     petBody.classList.add("jump");
     const lines = PET_LINES[petCtx] || PET_LINES.home;
     petIdx = (petIdx + 1) % lines.length;
-    const text = Math.random() < 0.3
+    const text = petIdx !== 0 && Math.random() < 0.3
       ? PET_CLICKS[petClickIdx++ % PET_CLICKS.length]
       : lines[petIdx];
     petSay(text);
   });
 }
 
-setTimeout(() => {
-  if (!view.classList.contains("open")) setPetContext("home");
-}, skipBoot ? 600 : 2600);
+if (dockLayout) setPetContext("home");
+else {
+  setTimeout(() => {
+    if (!view.classList.contains("open")) setPetContext("home");
+  }, skipBoot ? 600 : 2600);
+}
 
 /* 支持 #profile / #quest 等直达链接 */
-const initial = location.hash.slice(1);
-if (initial && DATA[initial]) {
+if (hasInitialView) {
   if (skipBoot) openView(initial);
   else setTimeout(() => openView(initial), 900);
 }
+
+startBoot();

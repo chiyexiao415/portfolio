@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="zh-CN" data-theme="light">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <script>
   (function () {
-    try {
-      var q = new URLSearchParams(location.search).get("theme");
-      var saved = localStorage.getItem("portfolio-theme");
-      var t = q === "light" || q === "dark" ? q : saved;
-      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-    } catch (e) {}
+    var theme = new URLSearchParams(location.search).get("theme");
+    if (theme !== "light" && theme !== "dark") {
+      try { theme = localStorage.getItem("portfolio-theme"); } catch (e) {}
+    }
+    if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
   })();
 </script>
 <title>陈宇萱 · PLAYER FILE</title>
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css?v=guide-arrival" />
 </head>
 <body>
 
@@ -29,14 +28,14 @@
 </div>
 
 <!-- 主界面 -->
-<main id="app">
+<main id="app" class="dock-layout">
   <header class="hud">
     <div class="hud-left">
       <span class="dot"></span>
       <span class="hud-name">PLAYER FILE</span>
     </div>
     <div class="hud-right">
-      <button id="themeToggle" class="theme-toggle" type="button" aria-label="切换主题">◐ 亮色</button>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="切换到暗色主题">◑ 暗色</button>
       <span class="hud-status">● ONLINE</span>
     </div>
   </header>
@@ -47,6 +46,10 @@
       <p class="hero-eyebrow">PLAYER PROFILE <span> / </span> GAME & CONTENT</p>
       <h1>陈宇萱</h1>
       <div class="hero-tags"><span>内容营销</span><span>游戏运营</span><span>AIGC 创作</span></div>
+      <div class="hero-dock" aria-hidden="true">
+        <span id="petDock" class="hero-dock-ring"></span>
+        <span class="hero-dock-label">小向导</span>
+      </div>
       <div class="hero-rule" aria-hidden="true"></div>
       <div class="hero-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
     </div>
@@ -55,32 +58,50 @@
       <ul id="menuList">
         <li data-view="profile" class="menu-item">
           <span class="num">01</span>
-          <span class="name">角色档案</span>
+          <span class="menu-copy">
+            <span class="name">角色档案</span>
+            <span class="menu-detail">教育背景 · 关于我 · 简历</span>
+          </span>
           <span class="en">CHARACTER</span>
         </li>
         <li data-view="games" class="menu-item">
           <span class="num">02</span>
-          <span class="name">游戏经历</span>
+          <span class="menu-copy">
+            <span class="name">游戏经历</span>
+            <span class="menu-detail">按 7 个品类整理的游戏记录</span>
+          </span>
           <span class="en">GAMES</span>
         </li>
         <li data-view="quest" class="menu-item">
           <span class="num">03</span>
-          <span class="name">经历</span>
+          <span class="menu-copy">
+            <span class="name">经历</span>
+            <span class="menu-detail">网易互娱 · 赢商网</span>
+          </span>
           <span class="en">EXPERIENCE</span>
         </li>
         <li data-view="works" class="menu-item">
           <span class="num">04</span>
-          <span class="name">作品</span>
+          <span class="menu-copy">
+            <span class="name">作品</span>
+            <span class="menu-detail">版本内容 · 赛事 · 直播</span>
+          </span>
           <span class="en">WORKS</span>
         </li>
         <li data-view="skill" class="menu-item">
           <span class="num">05</span>
-          <span class="name">技能树</span>
+          <span class="menu-copy">
+            <span class="name">技能树</span>
+            <span class="menu-detail">内容 × AI · 达人 · 数据</span>
+          </span>
           <span class="en">SKILLS</span>
         </li>
         <li data-view="contact" class="menu-item">
           <span class="num">06</span>
-          <span class="name">组队邀请</span>
+          <span class="menu-copy">
+            <span class="name">组队邀请</span>
+            <span class="menu-detail">邮件 · 电话 · 所在城市</span>
+          </span>
           <span class="en">CONTACT</span>
         </li>
       </ul>
@@ -111,7 +132,7 @@
 <!-- 桌宠向导 -->
 <div id="pet" class="pet">
   <div class="pet-bubble" id="petBubble"><span id="petText"></span></div>
-  <button class="pet-body" id="petBody" type="button" aria-label="小向导">
+  <button class="pet-body" id="petBody" type="button" aria-label="小向导：点我说话，也可以拖动">
     <svg viewBox="0 0 48 48" aria-hidden="true">
       <ellipse class="pet-shadow" cx="24" cy="45" rx="11" ry="2.6" />
       <path class="pet-blob" d="M24 4c10 0 17 8.4 17 19 0 10.2-7.6 18-17 18S7 33.2 7 23 14 4 24 4z" />
@@ -136,7 +157,7 @@
 
 <script>
   (() => {
-    const version = new URLSearchParams(location.search).get("v") || "9a7417c";
+    const version = new URLSearchParams(location.search).get("v") || "guide-arrival";
     const siteScript = document.createElement("script");
     siteScript.src = location.protocol === "file:" ? "script.js" : `script.js?v=${encodeURIComponent(version)}`;
     document.body.append(siteScript);
