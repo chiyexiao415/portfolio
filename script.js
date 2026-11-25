@@ -581,7 +581,7 @@ const DATA = {
       <ul class="resume-list">
         <li><b>对接产品与赛事：</b>确认版本节点、玩法改动、赛制、赛程和线下安排。</li>
         <li><b>写版本文案、跟进发布：</b>拆图文框架，写长图、新闻稿和招募文案，按节点跟进发布。</li>
-        <li><b>写赛程视频文案、配合视觉交付：</b>按轮次梳理视频要讲的信息，和视觉同事一起交付活动封面、场馆主视觉、对阵大屏和冠军 KV。</li>
+        <li><b>赛程视频与视觉物料：</b>按轮次写赛程视频文案，跟进活动封面、场馆主视觉、对阵大屏和冠军 KV。</li>
       </ul>
 
       <figure class="case-hero">
@@ -589,6 +589,46 @@ const DATA = {
       </figure>
 
       <h4 class="case-subhead">版本内容</h4>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">社媒</span>
+          <div>
+            <h4>新玩法图解</h4>
+            <p>这组图发到社媒：用一张总览交代赛季变化，再分开讲国战怎么参加、冰原战场怎么得分、武经套装怎么组成。点图可以放大。</p>
+          </div>
+        </header>
+        <div class="case-media is-narrow" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));">
+          <div class="case-media is-pair" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+            <figure class="case-shot">
+              <a class="shot-frame" href="assets/case/play-season.jpg" data-shot>
+                <img src="assets/case/play-season.jpg" alt="新赛季三大重点：任务链、战阶、赛事" width="1200" height="2133" loading="lazy" />
+              </a>
+              <figcaption><b>新赛季总览</b><span>任务链、战阶奖励、1V1 / 5V5 每周轮换</span></figcaption>
+            </figure>
+            <figure class="case-shot">
+              <a class="shot-frame" href="assets/case/play-nation-war.jpg" data-shot>
+                <img src="assets/case/play-nation-war.jpg" alt="万国霸业国战玩法与报名安排" width="1200" height="2133" loading="lazy" />
+              </a>
+              <figcaption><b>万国霸业 · 国战</b><span>一国三帮，每周报名、周五开战</span></figcaption>
+            </figure>
+          </div>
+          <div class="case-media is-pair" style="grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 0;">
+            <figure class="case-shot">
+              <a class="shot-frame" href="assets/case/play-icefield.jpg" data-shot>
+                <img src="assets/case/play-icefield.jpg" alt="冰原战场四塔争夺、中央夺旗和获胜条件" width="1200" height="2133" loading="lazy" />
+              </a>
+              <figcaption><b>冰原战场</b><span>15V15：占塔持续得分，夺旗回塔加分</span></figcaption>
+            </figure>
+            <figure class="case-shot">
+              <a class="shot-frame" href="assets/case/play-wujing.jpg" data-shot>
+                <img src="assets/case/play-wujing.jpg" alt="武经赛季套装：一经统御，六略成套" width="1200" height="2133" loading="lazy" />
+              </a>
+              <figcaption><b>武经套装</b><span>1 经统御、6 略成套</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
 
       <section class="case-node">
         <header class="case-node-head">
@@ -649,46 +689,6 @@ const DATA = {
             <img src="assets/case/cover-commander.png" alt="最强指挥招募封面与文案" loading="lazy" />
             <span><b>「最强指挥」招募</b><em>标题、文案与封面</em></span>
           </a>
-        </div>
-      </section>
-
-      <section class="case-node">
-        <header class="case-node-head">
-          <span class="case-node-date">社媒</span>
-          <div>
-            <h4>新玩法图解</h4>
-            <p>版本长图先讲改了什么。这组图发到社媒：用一张总览交代赛季变化，再分开讲国战怎么参加、冰原战场怎么得分、武经套装怎么组成。点图可以放大。</p>
-          </div>
-        </header>
-        <div class="case-media is-narrow" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));">
-          <div class="case-media is-pair" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
-            <figure class="case-shot">
-              <a class="shot-frame" href="assets/case/play-season.jpg" data-shot>
-                <img src="assets/case/play-season.jpg" alt="新赛季三大重点：任务链、战阶、赛事" width="1200" height="2133" loading="lazy" />
-              </a>
-              <figcaption><b>新赛季总览</b><span>任务链、战阶奖励、1V1 / 5V5 每周轮换</span></figcaption>
-            </figure>
-            <figure class="case-shot">
-              <a class="shot-frame" href="assets/case/play-nation-war.jpg" data-shot>
-                <img src="assets/case/play-nation-war.jpg" alt="万国霸业国战玩法与报名安排" width="1200" height="2133" loading="lazy" />
-              </a>
-              <figcaption><b>万国霸业 · 国战</b><span>一国三帮，每周报名、周五开战</span></figcaption>
-            </figure>
-          </div>
-          <div class="case-media is-pair" style="grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 0;">
-            <figure class="case-shot">
-              <a class="shot-frame" href="assets/case/play-icefield.jpg" data-shot>
-                <img src="assets/case/play-icefield.jpg" alt="冰原战场四塔争夺、中央夺旗和获胜条件" width="1200" height="2133" loading="lazy" />
-              </a>
-              <figcaption><b>冰原战场</b><span>15V15：占塔持续得分，夺旗回塔加分</span></figcaption>
-            </figure>
-            <figure class="case-shot">
-              <a class="shot-frame" href="assets/case/play-wujing.jpg" data-shot>
-                <img src="assets/case/play-wujing.jpg" alt="武经赛季套装：一经统御，六略成套" width="1200" height="2133" loading="lazy" />
-              </a>
-              <figcaption><b>武经套装</b><span>1 经统御、6 略成套</span></figcaption>
-            </figure>
-          </div>
         </div>
       </section>
 
