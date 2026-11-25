@@ -757,6 +757,32 @@ const DATA = {
             <p>5V5 总决赛落地广州网易园区。场馆沿用赛事主视觉，对阵大屏让观众认清交手队伍，胜利和冠军 KV 用来展示赛果。</p>
           </div>
         </header>
+        <div style="max-width: 680px; margin-bottom: 20px; --photo-height: clamp(175px, 35vw, 260px);">
+          <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; margin-bottom: 10px;">
+            <h5 id="finale-photos-title" class="case-tag">总决赛现场 · 3 张</h5>
+            <span class="case-detail-text" style="font-size: 12px;">← 左右滑动 → · 点图放大</span>
+          </div>
+          <div role="region" aria-labelledby="finale-photos-title" tabindex="0" style="display: flex; gap: 12px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; padding-bottom: 8px; scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent;">
+            <figure class="case-shot" style="flex: 0 0 82%; max-width: 460px; scroll-snap-align: start;">
+              <a class="shot-frame" href="assets/case/finale-stage.jpg" data-shot>
+                <img src="assets/case/finale-stage.jpg" alt="潜龙争霸赛总决赛舞台全景与大屏主视觉" width="1440" height="810" loading="lazy" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
+              </a>
+              <figcaption><b>01 / 03</b><span>舞台全景</span></figcaption>
+            </figure>
+            <figure class="case-shot" style="flex: 0 0 82%; max-width: 460px; scroll-snap-align: start;">
+              <a class="shot-frame" href="assets/case/finale-trophy.jpg" data-shot>
+                <img src="assets/case/finale-trophy.jpg" alt="潜龙争霸赛现场奖杯特写" width="1080" height="1440" loading="lazy" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
+              </a>
+              <figcaption><b>02 / 03</b><span>奖杯特写</span></figcaption>
+            </figure>
+            <figure class="case-shot" style="flex: 0 0 82%; max-width: 460px; scroll-snap-align: start;">
+              <a class="shot-frame" href="assets/case/finale-champion.jpg" data-shot>
+                <img src="assets/case/finale-champion.jpg" alt="总决赛冠军揭晓时的大屏和舞台烟雾效果" width="1440" height="1080" loading="lazy" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
+              </a>
+              <figcaption><b>03 / 03</b><span>冠军揭晓</span></figcaption>
+            </figure>
+          </div>
+        </div>
         <div class="case-media is-narrow" style="max-width: min(680px, 90%);">
           <figure class="case-shot is-scroll">
             <div class="shot-box">
@@ -901,6 +927,26 @@ const DATA = {
             <h4 class="case-subhead" style="margin: 8px 0;">礼物寄出与数据复盘</h4>
             <p>继续跟进直播礼物寄出，汇总直播数据、核算指标，整理本次直播复盘。</p>
           </article>
+        </div>
+        <div style="max-width: 470px; margin-top: 20px; --photo-height: clamp(190px, 55vw, 320px);">
+          <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; margin-bottom: 10px;">
+            <h5 id="double11-photos-title" class="case-tag">双十一直播现场 · 2 张</h5>
+            <span class="case-detail-text" style="font-size: 12px;">← 左右滑动 → · 点图放大</span>
+          </div>
+          <div role="region" aria-labelledby="double11-photos-title" tabindex="0" style="display: flex; gap: 12px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; padding-bottom: 8px; scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent;">
+            <figure class="case-shot" style="flex: 0 0 78%; max-width: 300px; scroll-snap-align: start;">
+              <a class="shot-frame" href="assets/case/double11-live-control.jpg" data-shot>
+                <img src="assets/case/double11-live-control.jpg" alt="双十一直播的导播工作区与布景，屏幕和纸面细节已遮挡" width="1080" height="1437" loading="lazy" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
+              </a>
+              <figcaption><b>01 / 02</b><span>导播工作区</span></figcaption>
+            </figure>
+            <figure class="case-shot" style="flex: 0 0 78%; max-width: 300px; scroll-snap-align: start;">
+              <a class="shot-frame" href="assets/case/double11-live-stage.jpg" data-shot>
+                <img src="assets/case/double11-live-stage.jpg" alt="从侧上方拍摄的双十一直播舞台和布景" width="1080" height="1437" loading="lazy" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
+              </a>
+              <figcaption><b>02 / 02</b><span>直播舞台</span></figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
