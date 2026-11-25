@@ -592,10 +592,49 @@ const DATA = {
 
       <section class="case-node">
         <header class="case-node-head">
+          <span class="case-node-date">11.02</span>
+          <div>
+            <h4>从图文框架到首曝长图</h4>
+            <p>资料片同时有经典服、黄金服的更新，还有单独的赛事安排。我先在框架里把三块拆开，再把每块的重点写进首曝长图。玩家可以先找自己所在服，看这次有哪些改动；只关心比赛的，也能直接看赛事安排。</p>
+          </div>
+        </header>
+        <div class="case-media is-pair">
+          <figure class="case-shot is-scroll">
+            <div class="shot-box">
+              <div class="shot-frame">
+                <img src="assets/case/framework.jpg" alt="大唐无双万国霸业图文框架文档" loading="lazy" />
+              </div>
+              <span class="shot-hint">悬停滚动查看</span>
+            </div>
+            <figcaption>
+              <b>图文框架</b>
+              <span>按经典服、黄金服、赛事拆分要讲的信息</span>
+              <a class="shot-open" href="assets/case/framework.jpg" target="_blank" rel="noopener">原图 ↗</a>
+            </figcaption>
+          </figure>
+          <figure class="case-shot is-scroll">
+            <div class="shot-box">
+              <div class="shot-frame">
+                <img src="assets/case/keyvisual.jpg" alt="大唐无双万国霸业资料片更新内容长图" loading="lazy" />
+              </div>
+              <span class="shot-hint">悬停滚动查看</span>
+            </div>
+            <figcaption>
+              <b>成品 · 版本内容长图</b>
+              <span>玩家可以按服查国战、赛季玩法等改动，再单独看赛事安排</span>
+              <a class="shot-open" href="assets/case/keyvisual.jpg" target="_blank" rel="noopener">原图 ↗</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
           <span class="case-node-date">社媒</span>
           <div>
             <h4>新玩法图解</h4>
-            <p>这组图发到社媒：用一张总览交代赛季变化，再分开讲国战怎么参加、冰原战场怎么得分、武经套装怎么组成。点图可以放大。</p>
+            <p>首曝长图先讲「这次改了什么」，社媒图再讲「具体怎么玩」。新赛季用一张图做总览，国战报名、冰原战场计分、武经套装各用一张。玩家只刷到其中一张，也能先看懂重点。</p>
+            <p><b>拿冰原战场来说：</b>上半张用「15V15」和「四塔争夺、中央夺旗」交代这局打什么，底下再讲怎么得分、怎么赢：占塔持续得分，夺旗回塔加分；20 分钟决胜，先达 3000 分获胜。点图可放大。</p>
           </div>
         </header>
         <div class="case-media is-narrow" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));">
@@ -627,44 +666,6 @@ const DATA = {
               <figcaption><b>武经套装</b><span>1 经统御、6 略成套</span></figcaption>
             </figure>
           </div>
-        </div>
-      </section>
-
-      <section class="case-node">
-        <header class="case-node-head">
-          <span class="case-node-date">11.02</span>
-          <div>
-            <h4>从图文框架到首曝长图</h4>
-            <p>先把经典服、黄金服和赛事分开写：玩家先找到自己所在服的改动，想打比赛的再看赛事安排。首曝用长图和新闻稿讲清国战、赛季玩法等改动。</p>
-          </div>
-        </header>
-        <div class="case-media is-pair">
-          <figure class="case-shot is-scroll">
-            <div class="shot-box">
-              <div class="shot-frame">
-                <img src="assets/case/framework.jpg" alt="大唐无双万国霸业图文框架文档" loading="lazy" />
-              </div>
-              <span class="shot-hint">悬停滚动查看</span>
-            </div>
-            <figcaption>
-              <b>图文框架</b>
-              <span>按经典服、黄金服、赛事拆分要讲的信息</span>
-              <a class="shot-open" href="assets/case/framework.jpg" target="_blank" rel="noopener">原图 ↗</a>
-            </figcaption>
-          </figure>
-          <figure class="case-shot is-scroll">
-            <div class="shot-box">
-              <div class="shot-frame">
-                <img src="assets/case/keyvisual.jpg" alt="大唐无双万国霸业资料片更新内容长图" loading="lazy" />
-              </div>
-              <span class="shot-hint">悬停滚动查看</span>
-            </div>
-            <figcaption>
-              <b>成品 · 版本内容长图</b>
-              <span>玩家可以按服查国战、赛季玩法等改动，再单独看赛事安排</span>
-              <a class="shot-open" href="assets/case/keyvisual.jpg" target="_blank" rel="noopener">原图 ↗</a>
-            </figcaption>
-          </figure>
         </div>
       </section>
 
