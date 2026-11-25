@@ -588,11 +588,43 @@ const DATA = {
         <img src="assets/case/hero.jpg" alt="大唐无双「万国霸业」资料片主视觉" loading="lazy" />
       </figure>
 
-      <h4 class="case-subhead">版本内容</h4>
+      <h4 class="case-subhead">项目时间线</h4>
 
       <section class="case-node">
         <header class="case-node-head">
-          <span class="case-node-date">11.02</span>
+          <time class="case-node-date" datetime="2026-10-20">10.20</time>
+          <div>
+            <h4>潜龙争霸赛开赛</h4>
+            <p>5V5 赛程文案先讲怎么组队报名，再给出预热赛、淘汰赛、双败赛和总决赛的日期。</p>
+            <div class="case-docs">
+              <a class="case-doc" href="assets/case/video-5v5.png" data-shot>
+                <img src="assets/case/video-5v5.png" alt="潜龙争霸赛 5V5 赛程视频文案" loading="lazy" style="width: 108px; height: 82px; object-fit: contain; flex: none;" />
+                <span><b>5V5 赛程视频 · 文案</b><em>报名方式与关键赛程</em></span>
+              </a>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <time class="case-node-date" datetime="2026-10-31">10.31</time>
+          <div>
+            <h4>淘汰赛</h4>
+            <p>从 64 强到 8 强逐轮标出哪些种子队不会提前相遇，单独提醒「种子不等于保送」：每一轮都要打赢才能晋级。</p>
+            <div class="case-docs">
+              <a class="case-doc" href="assets/case/event-seed-protection.jpg" data-shot>
+                <img src="assets/case/event-seed-protection.jpg" alt="潜龙争霸赛淘汰赛种子保护图解：从 64 强到 8 强的对阵规则" loading="lazy" style="width: 64px; height: 114px; object-fit: contain; flex: none;" />
+                <span><b>种子保护图解</b><em>种子队怎么定、每轮怎么排对阵</em></span>
+              </a>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <time class="case-node-date" datetime="2026-11-02">11.02</time>
           <div>
             <h4>从图文框架到首曝长图</h4>
             <p>资料片同时有经典服、黄金服的更新，还有单独的赛事安排。我先在框架里把三块拆开，再把每块的重点写进首曝长图。玩家可以先找自己所在服，看这次有哪些改动；只关心比赛的，也能直接看赛事安排。</p>
@@ -626,14 +658,52 @@ const DATA = {
             </figcaption>
           </figure>
         </div>
+        <div class="case-docs">
+          <a class="case-doc" href="assets/case/news-1102.png" data-shot>
+            <img src="assets/case/news-1102.png" alt="万国霸业更新首曝新闻稿" loading="lazy" style="width: 64px; height: 82px; flex: none;" />
+            <span><b>官网首曝新闻稿</b><em>国战与赛季玩法改动</em></span>
+          </a>
+        </div>
       </section>
 
       <section class="case-node">
         <header class="case-node-head">
-          <span class="case-node-date">社媒</span>
+          <time class="case-node-date" datetime="2026-11-07">11.07</time>
           <div>
-            <h4>新玩法图解</h4>
-            <p>首曝长图先讲「这次改了什么」，社媒图再讲「具体怎么玩」。新赛季用一张图做总览，国战报名、冰原战场计分、武经套装各用一张。玩家只刷到其中一张，也能先看懂重点。</p>
+            <h4>双败赛</h4>
+            <p>这轮文案讲清四强怎么打：五局三胜、两败出局，最后两支队伍进入线下总决赛。</p>
+            <div class="case-docs">
+              <a class="case-doc" href="assets/case/video-dual.png" data-shot>
+                <img src="assets/case/video-dual.png" alt="双败赛开战视频文案" loading="lazy" style="width: 108px; height: 82px; object-fit: contain; flex: none;" />
+                <span><b>双败赛开战视频 · 文案</b><em>四强对抗与晋级规则</em></span>
+              </a>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <time class="case-node-date" datetime="2026-11-12">11.12</time>
+          <div>
+            <h4>官网开战预告</h4>
+            <p>上线前一天发出官网稿，告知玩家资料片和黄金战服新区「森罗万象」将在 11.13 开启，并整理新玩法和开服福利。</p>
+            <div class="case-docs">
+              <a class="case-doc" href="assets/case/news-1112.png" data-shot>
+                <img src="assets/case/news-1112.png" alt="万国霸业开战预告新闻稿" loading="lazy" style="width: 64px; height: 82px; flex: none;" />
+                <span><b>官网开战稿</b><em>上线时间、新区与福利</em></span>
+              </a>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <time class="case-node-date" datetime="2026-11-13">11.13</time>
+          <div>
+            <h4>资料片上线 · 新玩法图解</h4>
+            <p>资料片与新区「森罗万象」上线。首曝长图先讲「这次改了什么」，配套社媒图再讲「具体怎么玩」：新赛季用一张图做总览，国战报名、冰原战场计分、武经套装各用一张。</p>
             <p><b>拿冰原战场来说：</b>上半张用「15V15」和「四塔争夺、中央夺旗」交代这局打什么，底下再讲怎么得分、怎么赢：占塔持续得分，夺旗回塔加分；20 分钟决胜，先达 3000 分获胜。点图可放大。</p>
           </div>
         </header>
@@ -671,63 +741,7 @@ const DATA = {
 
       <section class="case-node">
         <header class="case-node-head">
-          <span class="case-node-date">11.13</span>
-          <div>
-            <h4>官网新闻与招募封面</h4>
-            <p>首曝回答「版本改了什么」，开战预告回答「什么时候开、去哪个新区、有什么福利」。公众号同步发更新公告和封面。</p>
-          </div>
-        </header>
-        <div class="case-docs">
-          <a class="case-doc" href="assets/case/news-1102.png" data-shot>
-            <img src="assets/case/news-1102.png" alt="万国霸业更新首曝新闻稿" loading="lazy" style="width: 64px; height: 82px; flex: none;" />
-            <span><b>首曝新闻稿</b><em>11.02 · 版本改动</em></span>
-          </a>
-          <a class="case-doc" href="assets/case/news-1112.png" data-shot>
-            <img src="assets/case/news-1112.png" alt="万国霸业今日开战新闻稿" loading="lazy" style="width: 64px; height: 82px; flex: none;" />
-            <span><b>开战预告</b><em>11.12 · 上线时间与新区「森罗万象」</em></span>
-          </a>
-          <a class="case-doc" href="assets/case/cover-commander.png" data-shot>
-            <img src="assets/case/cover-commander.png" alt="最强指挥招募封面与文案" loading="lazy" style="width: 64px; height: 82px; flex: none;" />
-            <span><b>「最强指挥」招募</b><em>标题、文案与封面</em></span>
-          </a>
-        </div>
-      </section>
-
-      <h4 class="case-subhead">赛事与线下</h4>
-
-      <section class="case-node">
-        <header class="case-node-head">
-          <span class="case-node-date">10.20</span>
-          <div>
-            <h4>赛事图解与视频文案</h4>
-            <p>开赛时讲清怎么报名、各轮什么时候打；到了淘汰赛和双败赛，再分别解释种子保护、四强对阵和出局规则。</p>
-          </div>
-        </header>
-        <div class="case-media is-pair" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));">
-          <figure class="case-shot">
-            <a class="shot-frame" href="assets/case/video-5v5.png" data-shot style="aspect-ratio: 4 / 3; flex: none;">
-              <img src="assets/case/video-5v5.png" alt="潜龙争霸赛 5V5 赛程视频文案" loading="lazy" style="position: absolute; inset: 0; height: 100%; object-fit: contain;" />
-            </a>
-            <figcaption><b>5V5 赛程视频 · 文案</b><span>开赛时讲清报名和各轮日期</span></figcaption>
-          </figure>
-          <figure class="case-shot">
-            <a class="shot-frame" href="assets/case/event-seed-protection.jpg" data-shot style="aspect-ratio: 4 / 3; flex: none;">
-              <img src="assets/case/event-seed-protection.jpg" alt="潜龙争霸赛淘汰赛种子保护图解：从 64 强到 8 强的对阵规则" loading="lazy" style="position: absolute; inset: 0; height: 100%; object-fit: contain;" />
-            </a>
-            <figcaption><b>淘汰赛 · 种子保护图解</b><span>10.31 · 哪些种子队不会提前碰上</span></figcaption>
-          </figure>
-          <figure class="case-shot">
-            <a class="shot-frame" href="assets/case/video-dual.png" data-shot style="aspect-ratio: 4 / 3; flex: none;">
-              <img src="assets/case/video-dual.png" alt="双败赛开战视频文案" loading="lazy" style="position: absolute; inset: 0; height: 100%; object-fit: contain;" />
-            </a>
-            <figcaption><b>双败赛开战视频 · 文案</b><span>讲清四强对阵、五局三胜和出局规则</span></figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="case-node">
-        <header class="case-node-head">
-          <span class="case-node-date">11.22</span>
+          <time class="case-node-date" datetime="2026-11-22">11.22</time>
           <div>
             <h4>线下总决赛</h4>
             <p>5V5 总决赛落地广州网易园区。场馆沿用赛事主视觉，对阵大屏让观众认清交手队伍，胜利和冠军 KV 用来展示赛果。</p>
@@ -749,6 +763,14 @@ const DATA = {
           </figure>
         </div>
       </section>
+
+      <h4 class="case-subhead">新服配套物料</h4>
+      <div class="case-docs">
+        <a class="case-doc" href="assets/case/cover-commander.png" data-shot>
+          <img src="assets/case/cover-commander.png" alt="最强指挥招募封面与文案" loading="lazy" style="width: 64px; height: 82px; flex: none;" />
+          <span><b>「最强指挥」招募</b><em>黄金战服 11 月新服 · 标题、文案与封面</em></span>
+        </a>
+      </div>
 
       <h4 class="case-subhead">项目产出与赛事结果</h4>
       <div class="case-stats">
