@@ -469,12 +469,13 @@ const DATA = {
     en: "WORKS",
     title: "作品",
     html: `
-      <p class="works-intro">项目产出和私人作品分开放。图片还在整理，先把每个项目做了什么、结果多少写清楚。</p>
+      <p class="works-intro">项目产出和私人作品分开放。实习里的资料片和赛事内容有完整留档，点进案例能看每一步的物料。</p>
 
       <section class="work-block">
         <div class="work-block-head"><h3>实习成果</h3><span>网易互娱 / 赢商网</span></div>
 
         <article class="case-card case-featured">
+          <a class="case-cover" href="#caseSocial" data-goto="caseSocial"><img src="assets/case/thumb.jpg" alt="大唐无双万国霸业资料片主视觉" loading="lazy" /></a>
           <span class="case-tag">CASE 01 · 官方社媒运营</span>
           <h3>《大唐无双》万国霸业 · 潜龙争霸赛</h3>
           <p>资料片和线下赛事并行推进，按首曝、资料片上线、线下总决赛三个节点配内容：版本长图、公众号公告、直播预告、赛程视频、线下主视觉。</p>
@@ -569,7 +570,11 @@ const DATA = {
 
       <p class="case-detail-kicker">网易互娱《大唐无双》2026 年末版本</p>
       <h3 class="case-detail-title">一个版本，一套内容节奏</h3>
-      <p class="case-detail-lead">资料片「万国霸业」11.13 上线，潜龙争霸赛 11.21 落地线下总决赛。从首曝到赛事收口，每个节点配一套内容。</p>
+      <p class="case-detail-lead">资料片「万国霸业」11.13 上线，潜龙争霸赛 11.22 落地线下总决赛。从首曝到赛事收口，每个节点配一套内容。</p>
+
+      <figure class="case-hero">
+        <img src="assets/case/hero.jpg" alt="大唐无双「万国霸业」资料片主视觉" loading="lazy" />
+      </figure>
 
       <div class="case-meta">
         <div><span>项目</span><b>万国霸业资料片 / 潜龙争霸赛</b></div>
@@ -588,7 +593,7 @@ const DATA = {
           <p>开战预告把上线时间钉死，同步黄金战服新区「森罗万象」和福利信息；公众号发更新公告和封面。</p>
         </li>
         <li>
-          <b>11.21 线下总决赛</b>
+          <b>11.22 线下总决赛</b>
           <p>潜龙争霸赛 5V5 落地广州网易园区。赛程视频、线下主视觉和现场物料统一语言，把线上热度接到线下。</p>
         </li>
       </ol>
@@ -599,6 +604,87 @@ const DATA = {
         <span><b>1</b>套线下主视觉</span>
         <span><b>100w+</b>直播观看</span>
       </div>
+
+      <h4 class="case-subhead">产出</h4>
+
+      <section class="case-phase">
+        <header class="case-phase-head"><span>PHASE 01</span><b>11.02 首曝</b></header>
+        <div class="case-gallery">
+          <figure class="case-shot is-narrow">
+            <a class="shot-frame" href="assets/case/news-1102.png" data-shot>
+              <img src="assets/case/news-1102.png" alt="大唐无双万国霸业更新首曝新闻稿" loading="lazy" />
+            </a>
+            <figcaption><b>首曝新闻稿</b><span>官网 2026.11.02 发布，配长图拆版本</span></figcaption>
+          </figure>
+
+          <figure class="case-shot is-scroll">
+            <div class="shot-box">
+              <div class="shot-frame">
+                <img src="assets/case/keyvisual.jpg" alt="大唐无双万国霸业资料片更新内容长图" loading="lazy" />
+              </div>
+              <span class="shot-hint">悬停滚动查看</span>
+            </div>
+            <figcaption><b>版本内容长图</b><span>国战体系、赛季玩法、风云录、江湖天梯、冰原战场、赛事安排，一张图讲完</span></figcaption>
+          </figure>
+
+          <figure class="case-shot is-scroll">
+            <div class="shot-box">
+              <div class="shot-frame">
+                <img src="assets/case/framework.jpg" alt="大唐无双万国霸业图文框架文档长图" loading="lazy" />
+              </div>
+              <span class="shot-hint">悬停滚动查看</span>
+            </div>
+            <figcaption><b>图文框架文档</b><span>先定框架再出图：经典服、黄金服、赛事三块分开，逐条写改了什么、卖点在哪</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-phase">
+        <header class="case-phase-head"><span>PHASE 02</span><b>11.13 资料片上线</b></header>
+        <div class="case-gallery is-pair">
+          <figure class="case-shot">
+            <a class="shot-frame" href="assets/case/news-1112.png" data-shot>
+              <img src="assets/case/news-1112.png" alt="万国霸业今日开战新闻稿" loading="lazy" />
+            </a>
+            <figcaption><b>开战预告</b><span>2026.11.12 发布，11.13 上线 + 黄金战服新区「森罗万象」</span></figcaption>
+          </figure>
+          <figure class="case-shot">
+            <a class="shot-frame" href="assets/case/cover-commander.png" data-shot>
+              <img src="assets/case/cover-commander.png" alt="最强指挥招募封面与文案" loading="lazy" />
+            </a>
+            <figcaption><b>「最强指挥」招募</b><span>标题、文案、封面一套出，官方社媒同步发布</span></figcaption>
+          </figure>
+        </div>
+        <div class="case-gallery">
+          <figure class="case-shot">
+            <a class="shot-frame" href="assets/case/video-5v5.png" data-shot>
+              <img src="assets/case/video-5v5.png" alt="潜龙争霸赛 5V5 赛程视频文案" loading="lazy" />
+            </a>
+            <figcaption><b>5V5 赛程视频</b><span>文案 + 赛程：报名 10.20、预选 10.21–10.30、淘汰 10.31、双败 11.07、总决赛 11.22</span></figcaption>
+          </figure>
+          <figure class="case-shot">
+            <a class="shot-frame" href="assets/case/video-dual.png" data-shot>
+              <img src="assets/case/video-dual.png" alt="双败赛开战视频文案" loading="lazy" />
+            </a>
+            <figcaption><b>双败赛开战视频</b><span>四强对阵，五局三胜，两败出局，赢家去线下</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-phase">
+        <header class="case-phase-head"><span>PHASE 03</span><b>11.22 线下总决赛</b></header>
+        <div class="case-gallery">
+          <figure class="case-shot is-scroll">
+            <div class="shot-box">
+              <div class="shot-frame">
+                <img src="assets/case/offline.jpg" alt="潜龙争霸赛线下总决赛场馆与主视觉" loading="lazy" />
+              </div>
+              <span class="shot-hint">悬停滚动查看</span>
+            </div>
+            <figcaption><b>线下总决赛物料</b><span>场馆主视觉、对阵大屏、冠军与胜利 KV，统一一套视觉语言</span></figcaption>
+          </figure>
+        </div>
+      </section>
 
       <h4 class="case-subhead">我做了什么</h4>
       <ul class="resume-list">
