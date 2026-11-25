@@ -1523,37 +1523,32 @@ html[data-theme="light"] .case-card p { color: #4a4136; }
 .case-meta div { display: flex; gap: 14px; font-size: 13.5px; }
 .case-meta span { color: var(--dim); letter-spacing: .1em; min-width: 44px; }
 .case-meta b { font-weight: 500; }
-.case-timeline {
+.case-dates {
   list-style: none;
-  margin: 8px 0 0;
-  padding-left: 22px;
-  border-left: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 26px 0 0;
 }
-.case-timeline li { position: relative; padding: 0 0 26px 8px; }
-.case-timeline li::before {
-  content: "";
-  position: absolute;
-  left: -27px;
-  top: 7px;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 4px rgba(110, 240, 201, .12);
+.case-dates li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  background: rgba(13, 19, 26, .4);
 }
-.case-timeline b {
-  display: block;
+.case-dates b {
   font-family: ui-monospace, Consolas, monospace;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 600;
-  letter-spacing: .08em;
-  color: var(--text);
+  letter-spacing: .04em;
+  color: var(--accent);
 }
-.case-timeline p {
-  margin-top: 8px;
-  font-size: 14.5px;
-  line-height: 1.95;
-  color: #b7c6d2;
+.case-dates span {
+  font-size: 12.5px;
+  letter-spacing: .08em;
+  color: var(--dim);
 }
 .case-subhead {
   margin: 38px 0 14px;
@@ -1567,9 +1562,9 @@ html[data-theme="light"] .case-card p { color: #4a4136; }
   color: #b7c6d2;
 }
 html[data-theme="light"] .case-detail-lead,
-html[data-theme="light"] .case-timeline p,
+html[data-theme="light"] .case-node-head p,
 html[data-theme="light"] .case-detail-text { color: #4a4136; }
-html[data-theme="light"] .case-timeline li::before { box-shadow: 0 0 0 4px rgba(13, 111, 92, .1); }
+html[data-theme="light"] .case-dates li { background: rgba(255, 253, 249, .6); }
 
 /* 案例封面与产出图 */
 .case-hero {
@@ -1597,37 +1592,92 @@ html[data-theme="light"] .case-timeline li::before { box-shadow: 0 0 0 4px rgba(
 }
 .case-featured:hover .case-cover img { transform: scale(1.03); }
 
-.case-phase { margin-top: 28px; }
-.case-phase-head {
-  display: flex;
-  align-items: baseline;
-  gap: 14px;
-  padding-bottom: 10px;
-  margin-bottom: 16px;
-  border-bottom: 1px solid var(--line);
+/* 案例节点：日期 + 标题，下面左右配对放图 */
+.case-node {
+  margin-top: 44px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
 }
-.case-phase-head span {
+.case-node-head {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 22px;
+  margin-bottom: 20px;
+}
+.case-node-date {
   font-family: ui-monospace, Consolas, monospace;
-  font-size: 10.5px;
-  letter-spacing: .2em;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  line-height: 1.15;
   color: var(--accent);
-  opacity: .85;
 }
-.case-phase-head b {
-  font-size: 15.5px;
+.case-node-head h4 {
+  font-size: 21px;
   font-weight: 500;
-  letter-spacing: .06em;
+  letter-spacing: .05em;
+}
+.case-node-head p {
+  margin-top: 10px;
+  max-width: 700px;
+  font-size: 14px;
+  line-height: 1.95;
+  color: #b7c6d2;
 }
 
-.case-gallery { display: grid; gap: 16px; }
-.case-gallery + .case-gallery { margin-top: 16px; }
-.case-gallery.is-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.case-media { display: grid; gap: 16px; }
+.case-media.is-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.case-media + .case-media { margin-top: 16px; }
+/* 同一行的两张图高度对齐，说明落在卡片底部 */
+.case-media.is-pair .case-shot { display: flex; flex-direction: column; }
+.case-media.is-pair .case-shot .shot-frame { flex: 1 1 auto; }
+
+/* 文档缩略卡（新闻稿这类单页截图） */
+.case-docs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+.case-doc {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 20px 10px 10px;
+  border: 1px solid var(--line);
+  background: rgba(13, 19, 26, .55);
+  text-decoration: none;
+  transition: border-color .2s;
+}
+.case-doc:hover { border-color: var(--line-strong); }
+.case-doc img {
+  display: block;
+  width: 54px;
+  height: 70px;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid var(--line);
+}
+.case-doc b {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text);
+}
+.case-doc em {
+  display: block;
+  margin-top: 5px;
+  font-style: normal;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: var(--dim);
+}
 
 .case-shot {
   border: 1px solid var(--line);
   background: rgba(13, 19, 26, .55);
 }
-.case-shot.is-narrow { max-width: 460px; }
 .case-shot .shot-box { position: relative; }
 .case-shot .shot-frame {
   display: block;
@@ -1693,9 +1743,22 @@ html[data-theme="light"] .case-timeline li::before { box-shadow: 0 0 0 4px rgba(
   letter-spacing: .03em;
   color: var(--text);
 }
+.shot-open {
+  margin-left: auto;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 10.5px;
+  letter-spacing: .1em;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(110, 240, 201, .35);
+  white-space: nowrap;
+}
+.shot-open:hover { border-color: var(--accent); }
 
 html[data-theme="light"] .case-shot { background: rgba(255, 253, 249, .72); }
 html[data-theme="light"] .case-shot figcaption b { color: #241f1a; }
+html[data-theme="light"] .case-doc { background: rgba(255, 253, 249, .72); }
+html[data-theme="light"] .case-doc b { color: #241f1a; }
 html[data-theme="light"] .shot-hint {
   color: #3c3024;
   background: rgba(255, 253, 248, .92);
@@ -1705,7 +1768,9 @@ html[data-theme="light"] .shot-box::after {
 }
 
 @media (max-width: 880px) {
-  .case-gallery.is-pair { grid-template-columns: 1fr; }
+  .case-media.is-pair { grid-template-columns: 1fr; }
+  .case-node-head { grid-template-columns: 1fr; gap: 6px; }
+  .case-dates { grid-template-columns: 1fr; gap: 8px; }
   .case-shot.is-scroll .shot-frame { max-height: 430px; }
 }
 @media (hover: none) {
