@@ -699,34 +699,28 @@ const DATA = {
         <header class="case-node-head">
           <span class="case-node-date">10.20</span>
           <div>
-            <h4>赛程与视频</h4>
-            <p>规则总图把参赛资格、报名时间和晋级路径放在一起。淘汰赛另用一张图解释种子保护：种子队不会在指定轮次提前相遇，但每轮都得打赢才能晋级。赛程视频再按轮次更新。</p>
+            <h4>赛事图解与视频文案</h4>
+            <p>开赛时讲清怎么报名、各轮什么时候打；到了淘汰赛和双败赛，再分别解释种子保护、四强对阵和出局规则。</p>
           </div>
         </header>
-        <div class="case-media is-narrow">
+        <div class="case-media is-pair" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));">
           <figure class="case-shot">
-            <a class="shot-frame" href="assets/case/rule-map.png" data-shot>
-              <img src="assets/case/rule-map.png" alt="潜龙争霸赛赛程规则与晋级路径" loading="lazy" />
+            <a class="shot-frame" href="assets/case/video-5v5.png" data-shot style="aspect-ratio: 4 / 3; flex: none;">
+              <img src="assets/case/video-5v5.png" alt="潜龙争霸赛 5V5 赛程视频文案" loading="lazy" style="position: absolute; inset: 0; height: 100%; object-fit: contain;" />
             </a>
-            <figcaption><b>赛程规则图</b><span>报名、预选、淘汰、双败、总决赛五个阶段，参赛资格和晋级路径一张讲完</span></figcaption>
-          </figure>
-          <a class="case-doc" href="assets/case/event-seed-protection.jpg" data-shot style="justify-self: start;">
-            <img src="assets/case/event-seed-protection.jpg" alt="潜龙争霸赛淘汰赛种子保护图解：从 64 强到 8 强的对阵规则" width="1152" height="2048" loading="lazy" style="width: 76px; height: auto; flex: none;" />
-            <span><b>淘汰赛 · 种子保护图解</b><em>10.31 · 谁是种子队，哪些队不会提前碰上</em></span>
-          </a>
-        </div>
-        <div class="case-media is-pair">
-          <figure class="case-shot">
-            <a class="shot-frame" href="assets/case/video-5v5.png" data-shot>
-              <img src="assets/case/video-5v5.png" alt="潜龙争霸赛 5V5 赛程视频文案" loading="lazy" />
-            </a>
-            <figcaption><b>5V5 赛程视频 · 文案</b><span>先交代怎么报名，再给出各轮日期，方便玩家跟赛程</span></figcaption>
+            <figcaption><b>5V5 赛程视频 · 文案</b><span>开赛时讲清报名和各轮日期</span></figcaption>
           </figure>
           <figure class="case-shot">
-            <a class="shot-frame" href="assets/case/video-dual.png" data-shot>
-              <img src="assets/case/video-dual.png" alt="双败赛开战视频文案" loading="lazy" />
+            <a class="shot-frame" href="assets/case/event-seed-protection.jpg" data-shot style="aspect-ratio: 4 / 3; flex: none;">
+              <img src="assets/case/event-seed-protection.jpg" alt="潜龙争霸赛淘汰赛种子保护图解：从 64 强到 8 强的对阵规则" loading="lazy" style="position: absolute; inset: 0; height: 100%; object-fit: contain;" />
             </a>
-            <figcaption><b>双败赛开战视频 · 文案</b><span>讲清四强怎么对阵、五局三胜怎么打、输几次出局</span></figcaption>
+            <figcaption><b>淘汰赛 · 种子保护图解</b><span>10.31 · 哪些种子队不会提前碰上</span></figcaption>
+          </figure>
+          <figure class="case-shot">
+            <a class="shot-frame" href="assets/case/video-dual.png" data-shot style="aspect-ratio: 4 / 3; flex: none;">
+              <img src="assets/case/video-dual.png" alt="双败赛开战视频文案" loading="lazy" style="position: absolute; inset: 0; height: 100%; object-fit: contain;" />
+            </a>
+            <figcaption><b>双败赛开战视频 · 文案</b><span>讲清四强对阵、五局三胜和出局规则</span></figcaption>
           </figure>
         </div>
       </section>
