@@ -474,47 +474,53 @@ const DATA = {
       <section class="work-block">
         <div class="work-block-head"><h3><em>01</em>版本与赛事内容整合</h3><span>VERSION &amp; EVENT</span></div>
         <p class="work-block-desc">一个版本从首曝到线下总决赛：先写内容框架，再出长图、新闻稿、赛程视频和现场视觉，按节点发出去。</p>
-        <div class="case-grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); grid-auto-rows: 1fr;">
-          <article class="case-card" style="display: flex; flex-direction: column;">
-            <a class="case-cover" href="#caseContent" data-goto="caseContent" style="flex: none;"><img src="assets/case/thumb.jpg" alt="大唐无双万国霸业资料片主视觉" loading="lazy" /></a>
-            <span class="case-tag">CASE 01 · 大唐无双</span>
-            <h3>《万国霸业》版本内容与潜龙争霸赛</h3>
-            <p>资料片 11.13 上线，赛事 10.20 开赛、11.22 线下总决赛。内容框架、版本长图、新闻稿、赛程视频、线下物料全套产出。</p>
-            <div class="case-stats">
-              <span><b>3</b>个内容节点</span>
-              <span><b>3</b>支赛程视频</span>
-              <span><b>1</b>套线下主视觉</span>
+        <div class="case-grid" style="grid-template-columns: minmax(0, 1fr); grid-auto-rows: 1fr;">
+          <article class="case-card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
+            <a class="case-cover" href="#caseContent" data-goto="caseContent" style="flex: 1 1 165px; min-width: 0; margin: 0; aspect-ratio: 16 / 9;"><img src="assets/case/thumb.jpg" alt="大唐无双万国霸业资料片主视觉" loading="lazy" /></a>
+            <div style="flex: 2 1 250px; min-width: 0;">
+              <span class="case-tag">CASE 01 · 大唐无双</span>
+              <h3>《万国霸业》版本内容与潜龙争霸赛</h3>
+              <p>资料片 11.13 上线，赛事 10.20 开赛、11.22 线下总决赛。内容框架、版本长图、新闻稿、赛程视频、线下物料全套产出。</p>
+              <div class="case-stats">
+                <span><b>3</b>个内容节点</span>
+                <span><b>3</b>支赛程视频</span>
+                <span><b>1</b>套线下主视觉</span>
+              </div>
+              <div class="case-tags">
+                <span class="tag">内容策划</span>
+                <span class="tag">赛事内容</span>
+                <span class="tag">线下执行</span>
+              </div>
+              <a class="case-link" href="#caseContent" data-goto="caseContent">查看案例 →</a>
             </div>
-            <div class="case-tags">
-              <span class="tag">内容策划</span>
-              <span class="tag">赛事内容</span>
-              <span class="tag">线下执行</span>
-            </div>
-            <a class="case-link" href="#caseContent" data-goto="caseContent" style="align-self: flex-start; margin-top: auto; padding-top: 16px;">查看案例 →</a>
           </article>
 
-          <article class="case-card" style="display: flex; flex-direction: column;">
-            <a class="case-cover" href="#caseDouble11" data-goto="caseDouble11" style="flex: none;"><img src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" loading="lazy" /></a>
-            <span class="case-tag">CASE 02 · 大唐无双</span>
-            <h3>双十一官方直播</h3>
-            <p>独立撰写手游预热新闻稿，跟进端手游商品、上架测试和预告发布，再跟到直播现场与播后寄送、数据复盘。</p>
-            <div class="case-stats">
-              <span><b>100+</b>端手游商品</span>
-              <span><b>50万+</b>直播观看</span>
+          <article class="case-card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
+            <a class="case-cover" href="#caseDouble11" data-goto="caseDouble11" style="flex: 1 1 165px; min-width: 0; margin: 0; aspect-ratio: 16 / 9;"><img src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" loading="lazy" /></a>
+            <div style="flex: 2 1 250px; min-width: 0;">
+              <span class="case-tag">CASE 02 · 大唐无双</span>
+              <h3>双十一官方直播</h3>
+              <p>独立撰写手游预热新闻稿，跟进端手游商品、上架测试和预告发布，再跟到直播现场与播后寄送、数据复盘。</p>
+              <div class="case-stats">
+                <span><b>100+</b>端手游商品</span>
+                <span><b>50万+</b>直播观看</span>
+              </div>
+              <a class="case-link" href="#caseDouble11" data-goto="caseDouble11">查看案例 →</a>
             </div>
-            <a class="case-link" href="#caseDouble11" data-goto="caseDouble11" style="align-self: flex-start; margin-top: auto; padding-top: 16px;">查看案例 →</a>
           </article>
 
-          <article class="case-card" style="display: flex; flex-direction: column;">
-            <div class="case-cover" style="display: grid; place-items: center; flex: none; background: var(--panel); border-bottom: 1px solid var(--line);" aria-hidden="true">
+          <article class="case-card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
+            <div class="case-cover" style="display: grid; place-items: center; flex: 1 1 165px; min-width: 0; margin: 0; aspect-ratio: 16 / 9; background: var(--panel); border: 1px solid var(--line);" aria-hidden="true">
               <span class="case-tag" style="font-size: 22px;">H5 · 制作中</span>
             </div>
-            <span class="case-tag">CASE · 在建</span>
-            <h3>手游年末资料片 + H5</h3>
-            <p>正在做的年末资料片，配套一版 H5 互动，上线后补物料和复盘。</p>
-            <div class="case-tags">
-              <span class="tag">版本内容</span>
-              <span class="tag">H5</span>
+            <div style="flex: 2 1 250px; min-width: 0;">
+              <span class="case-tag">CASE · 在建</span>
+              <h3>手游年末资料片 + H5</h3>
+              <p>正在做的年末资料片，配套一版 H5 互动，上线后补物料和复盘。</p>
+              <div class="case-tags">
+                <span class="tag">版本内容</span>
+                <span class="tag">H5</span>
+              </div>
             </div>
           </article>
         </div>
