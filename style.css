@@ -2522,3 +2522,74 @@ html[data-theme="light"] .pet-pupil { fill: #17332c; }
   .pet-bubble { transition: none; }
 }
 
+
+/* ---------- 数据表（案例页） ---------- */
+.case-table-wrap {
+  margin-top: 14px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+.case-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.75;
+}
+.case-table th {
+  padding: 8px 14px 10px;
+  text-align: left;
+  white-space: nowrap;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  color: var(--dim);
+  border-bottom: 1px solid var(--line-strong);
+}
+.case-table td {
+  padding: 12px 14px;
+  vertical-align: top;
+  color: #b7c6d2;
+  border-bottom: 1px solid var(--line);
+}
+.case-table td:first-child {
+  color: var(--text);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.case-table tbody tr:last-child td { border-bottom: 0; }
+.case-table--num td:not(:first-child) {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 13px;
+  letter-spacing: .02em;
+}
+.case-table--num td:last-child {
+  font-family: inherit;
+  font-size: 14px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.case-note {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--dim);
+}
+html[data-theme="light"] .case-table td { color: #4a4136; }
+html[data-theme="light"] .case-table td:first-child { color: #241f1a; }
+html[data-theme="light"] .case-table th { color: #6b5f52; border-bottom-color: rgba(60, 45, 30, .28); }
+html[data-theme="light"] .case-table td { border-bottom-color: rgba(60, 45, 30, .14); }
+html[data-theme="light"] .case-note { color: #6b5f52; }
+
+@media (max-width: 620px) {
+  .case-table { font-size: 12.5px; }
+  .case-table th, .case-table td { padding: 9px 10px; }
+  .case-table td:first-child { white-space: normal; }
+}
+
+@media (min-width: 621px) {
+  .case-meta > div:nth-child(5):last-child { grid-column: 1 / -1; }
+}
+html[data-theme="light"] .case-table th { color: #57504a; }

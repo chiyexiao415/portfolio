@@ -489,10 +489,10 @@ const DATA = {
           <div class="work-entry-copy">
             <span class="work-kicker">CASE 02 / KOL &amp; SOCIAL</span>
             <h3>达人合作与账号运营</h3>
-            <p>达人对接 · KOC 活动 · 个人 cos 账号</p>
+            <p>星推计划 · 招募物料 · 内容抽审</p>
             <div class="work-entry-stats">
               <span><b>2000w+</b>抖音曝光</span>
-              <span><b>+25%</b>曝光提升</span>
+              <span><b>5.01%</b>抽审比例</span>
               <span><b>5w+</b>个人号曝光</span>
             </div>
             <span class="work-action">2 个部分 · 查看 <span aria-hidden="true">↗</span></span>
@@ -502,13 +502,13 @@ const DATA = {
           <div class="work-entry-copy">
             <span class="work-kicker">CASE 03 / DATA OPERATIONS</span>
             <h3>数据运营</h3>
-            <p>商业选址数据清洗 · 判定口径 · SOP 与模板</p>
+            <p>礼包码核算 · 异常识别 · 选址清洗</p>
             <div class="work-entry-stats">
-              <span><b>6.8w</b>条数据</span>
-              <span><b>95%</b>有效保留</span>
-              <span><b>7h→4.9h</b>单批时长</span>
+              <span><b>12,687</b>行激活明细</span>
+              <span><b>13.7%</b>异常识别</span>
+              <span><b>6.8w</b>条选址数据</span>
             </div>
-            <span class="work-action">查看案例 <span aria-hidden="true">↗</span></span>
+            <span class="work-action">2 个案例 · 查看 <span aria-hidden="true">↗</span></span>
           </div>
         </a>
       </nav>
@@ -614,20 +614,23 @@ const DATA = {
     title: "达人合作与账号运营",
     html: `
       <a class="case-back" href="#works" data-goto="works">← 返回作品</a>
-      <p class="works-intro">一边跟进达人合作和 KOC 活动，一边独立运营自己的 cos 账号。</p>
+      <p class="works-intro">一边跟产品和供应商把达人激励落地，一边运营自己的 cos 账号。</p>
       <div class="project-grid">
-        <article class="project-card tone-violet">
+        <a class="project-card tone-violet" href="#caseStarPlan" data-goto="caseStarPlan">
           <div class="project-card-heading">
-            <span class="work-kicker">达人合作</span>
-            <h3>达人对接与 KOC 活动</h3>
+            <div>
+              <span class="work-kicker">星推计划 · 第十六期</span>
+              <h3>达人激励计划与投放</h3>
+            </div>
           </div>
-          <p>建联游戏直播博主和 coser，跟进直播排期、礼包码结算，参与活动框架和激励调整。</p>
+          <p>定本期的激励结构，写 brief 和招募文案，跟长图出稿、发礼包码，结束后核算和抽审。</p>
           <div class="case-stats">
             <span><b>2000w+</b>抖音曝光</span>
-            <span><b>+15%</b>参与量</span>
-            <span><b>+25%</b>曝光</span>
+            <span><b>5.01%</b>抽审比例</span>
+            <span><b>272</b>个礼包码</span>
           </div>
-        </article>
+          <span class="work-action">查看案例 <span aria-hidden="true">↗</span></span>
+        </a>
         <article class="project-card tone-ember">
           <div class="project-card-heading">
             <span class="work-kicker">个人 · 抖音</span>
@@ -638,6 +641,7 @@ const DATA = {
             <span><b>5w+</b>累计曝光</span>
             <span><b>5k+</b>点赞收藏</span>
           </div>
+          <p class="case-detail-text" style="margin-top:14px;font-size:13px;">账号截图和作品还在整理，素材到位后补进这一块。</p>
         </article>
       </div>
     `,
@@ -645,22 +649,39 @@ const DATA = {
   dataWork: {
     caseNumber: "03",
     en: "DATA OPERATIONS",
-    title: "数据整理",
+    title: "数据运营",
     html: `
       <a class="case-back" href="#works" data-goto="works">← 返回作品</a>
-      <p class="works-intro">清洗多来源数据，把判定口径整理成团队能沿用的 SOP 和模板。</p>
-      <article class="project-card tone-blue">
-        <div class="project-card-heading">
-          <span class="work-kicker">赢商网</span>
-          <h3>商业选址多源数据清洗</h3>
-        </div>
-        <p>地理、人口、消费三类数据的去重、缺失值分级、异常值校验，判定口径整理成 SOP 和模板。</p>
-        <div class="case-stats">
-          <span><b>6.8w</b>条数据</span>
-          <span><b>95%</b>保留率</span>
-          <span><b>7h→4.9h</b>单批时长</span>
-        </div>
-      </article>
+      <p class="works-intro">两段实习都有一半时间在跟数据打交道：网易核礼包码，赢商网洗商业选址。</p>
+      <div class="project-grid">
+        <a class="project-card tone-blue" href="#caseCodeData" data-goto="caseCodeData">
+          <div class="project-card-heading">
+            <div>
+              <span class="work-kicker">网易互娱 · 礼包码核销</span>
+              <h3>5 个批次、1.2 万行数据清洗</h3>
+            </div>
+          </div>
+          <p>先把分层和异常口径定死，再把原始激活流水洗成一张能对账的汇总表，配一份交接用的 SOP。</p>
+          <div class="case-stats">
+            <span><b>12,687</b>行有效激活</span>
+            <span><b>13.7%</b>异常识别</span>
+            <span><b>8</b>个 sheet</span>
+          </div>
+          <span class="work-action">查看案例 <span aria-hidden="true">↗</span></span>
+        </a>
+        <article class="project-card tone-ember">
+          <div class="project-card-heading">
+            <span class="work-kicker">赢商网</span>
+            <h3>商业选址多源数据清洗</h3>
+          </div>
+          <p>地理、人口、消费三类数据的去重、缺失值分级、异常值校验，判定口径整理成 SOP 和模板。</p>
+          <div class="case-stats">
+            <span><b>6.8w</b>条数据</span>
+            <span><b>95%</b>保留率</span>
+            <span><b>7h→4.9h</b>单批时长</span>
+          </div>
+        </article>
+      </div>
     `,
   },
   caseContent: {
@@ -1037,6 +1058,280 @@ const DATA = {
       <a class="case-back" href="#officialContent" data-goto="officialContent">← 返回官方内容与社媒运营</a>
     `,
   },
+  caseStarPlan: {
+    en: "STAR PLAN",
+    title: "星推计划 · 达人激励与投放",
+    html: `
+      <a class="case-back" href="#creatorWork" data-goto="creatorWork">← 返回达人合作与账号运营</a>
+
+      <p class="case-detail-kicker">网易互娱《大唐无双》· 星推计划第十六期 / 2026.12</p>
+      <h3 class="case-detail-title">先把激励定明白，再谈发多少稿</h3>
+      <p class="case-detail-lead">星推计划是给游戏主播和内容作者的月度激励项目。这一期我做的事：把「下个月推什么」翻成激励安排——哪些赛道留着、哪些加一档、什么样的内容算达标，写成 brief 交给供应商出长图，同步申请礼包码发给达人；结束后按规则验算，再抽审内容。奖励金额和内部结算口径不对外，这里只写结构和做法。</p>
+
+      <section class="case-meta" aria-label="这一期的五步流程">
+        <div><span>01</span><b>定本期重点</b></div>
+        <div><span>02</span><b>定激励结构</b></div>
+        <div><span>03</span><b>写 brief 与文案</b></div>
+        <div><span>04</span><b>投放与发码</b></div>
+        <div><span>05</span><b>验算与抽审</b></div>
+      </section>
+
+      <h4 class="case-subhead">这期推什么，先看产品节奏</h4>
+      <p class="case-detail-text">期次的侧重跟着产品当月重点走。这个月主推新资料片和新区，激励就往「新区内容」和「长线开播」上倾斜：原有直播、短视频两条赛道不动，另加一条新区打卡赛道，统一挂一个话题标签收口——内容散在几十个话题里，后面既不好统计，也没法判断这一期到底跑没跑起来。</p>
+
+      <h4 class="case-subhead">激励怎么分档</h4>
+      <p class="case-detail-text">每条赛道都要能用后台数据直接判，不留「看起来不错」这种算不了的口径。</p>
+      <div class="case-table-wrap">
+        <table class="case-table">
+          <thead>
+            <tr><th>赛道</th><th>看什么</th><th>怎么结算</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>直播 · 基础档</td><td>有效开播天数、日均时长、总场观</td><td>三项一起达标，分五档一次性发放</td></tr>
+            <tr><td>直播 · 排名</td><td>平均在线人数（ACU）</td><td>取前 40 名，分五段按名次给</td></tr>
+            <tr><td>直播 · 新人</td><td>首次参与，有效开播 ≥7 天</td><td>额外一次性激励</td></tr>
+            <tr><td>短视频 · 单条</td><td>单作品播放量</td><td>1k–3k、3k 以上两档，每天限 2 条</td></tr>
+            <tr><td>短视频 · 总量</td><td>账号期内总播放量</td><td>5 万到 50 万分五档，取高不叠加</td></tr>
+            <tr><td>短视频 · 加奖</td><td>分发到快手、视频号；7 日破 1.5 万</td><td>单平台加奖 + 爆款加奖，都设单人上限</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="case-detail-text case-note">档位和上限按预算倒推，金额单独报批，不进对外物料。</p>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">03</span>
+          <div>
+            <h4>brief 里我只写三件事</h4>
+            <p>本期主推什么、每条赛道的达标口径、素材要求（时长、封面、必须提到的关键词）。版式和配图交给供应商，我只看验收点对不对。</p>
+          </div>
+        </header>
+        <div class="case-media is-pair">
+          <figure class="case-shot">
+            <a class="shot-frame" href="assets/case/koc-copy.png" data-shot>
+              <img src="assets/previews/koc-copy.webp" data-original-src="assets/case/koc-copy.png" alt="星推计划招募文案：活动介绍、赛道说明与参与须知" width="666" height="708" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>
+              <span class="focus-step" aria-hidden="true">01</span>
+              <b>招募文案</b>
+              <span>活动介绍 → 直播激励 → 短视频激励 → 新区打卡 → 参与须知</span>
+            </figcaption>
+          </figure>
+          <figure class="case-shot is-scroll">
+            <div class="shot-box">
+              <div class="shot-frame" tabindex="0" role="region" aria-label="星推计划招募长图封面，可上下滚动">
+                <img src="assets/previews/koc-cover.webp" data-original-src="assets/case/koc-cover.jpg" alt="大唐无双星推计划第十六期招募长图封面" width="750" height="1400" loading="eager" decoding="async" />
+              </div>
+              <span class="shot-hint">图内可上下滚动</span>
+            </div>
+            <figcaption>
+              <span class="focus-step" aria-hidden="true">02</span>
+              <b>长图 · 上线版</b>
+              <span>供应商按 brief 出稿，我改到信息层级和文案都顺</span>
+              <a class="shot-open" href="assets/case/koc-cover.jpg" target="_blank" rel="noopener">原图 ↗</a>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="case-detail-text" style="margin-top:14px;">文案的写作顺序定死：一句话说清怎么参与 → 三条赛道各自怎么算 → 参与须知（必须原创、禁搬运、禁刷量，违规取消资格）。玩家从长图从上往下滑，先知道能不能赚、再知道自己差多少。</p>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">04</span>
+          <div>
+            <h4>长图定稿，码和名单一起提</h4>
+            <p>物料和礼包码两条需求同步走：产品侧按批次给码，我按批次分给供应商，供应商再对到具体达人。<strong>每个码对应一批激活，后面核算才有唯一键。</strong>码不对应到人，结算就只能算总量，算不出谁该给多少。</p>
+          </div>
+        </header>
+        <div class="case-stats">
+          <span><b>4</b>个批次申请</span>
+          <span><b>272</b>个礼包码</span>
+          <span><b>20%</b>留痕抽检</span>
+        </div>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">05</span>
+          <div>
+            <h4>上线之后：抽审和巡场</h4>
+            <p>按 5% 抽稿件，看是不是原创、有没有真讲到当期玩法、有没有挂无关内容；同时在抖音按话题刷最新作品，判断这一期的内容风向——攻略多还是吐槽多，跑偏的直接打回。</p>
+          </div>
+        </header>
+        <div class="case-stats">
+          <span><b>5.01%</b>实际抽审比例</span>
+          <span><b>99%</b>抽审质量</span>
+          <span><b>151</b>条稿件 · 2 条不通过</span>
+        </div>
+        <p class="case-detail-text case-note">项目线是抽审 5%、质量 95%，这一期实际做到 5.01% 和 99%。</p>
+      </section>
+
+      <h4 class="case-subhead">结算那一段在哪</h4>
+      <p class="case-detail-text">这一期的礼包码激活数据，我单独洗了一版：5 个批次、1.2 万行，异常账号 13.7%。过程和交付物在 CASE 03 数据运营里。</p>
+
+      <a class="case-back" href="#creatorWork" data-goto="creatorWork">← 返回达人合作与账号运营</a>
+    `,
+  },
+  caseCodeData: {
+    en: "REDEEM DATA",
+    title: "礼包码数据清洗",
+    html: `
+      <a class="case-back" href="#dataWork" data-goto="dataWork">← 返回数据运营</a>
+
+      <p class="case-detail-kicker">网易互娱《大唐无双》· 星推计划结算</p>
+      <h3 class="case-detail-title">1.2 万行激活流水，洗成一张能对账的表</h3>
+      <p class="case-detail-lead">每期达人激励结束都要按规则核算，前提是先把礼包码的激活数据洗干净。原始给过来的是「一个账号一行」的流水，里面有同码批量激活、脚本注册的小号、领了码没消费的空号。我做了三件事：把口径定死、把异常单独拎出来、把能直接对账的汇总表和交接说明交出去。</p>
+
+      <div class="case-stats">
+        <span><b>12,687</b>行有效激活</span>
+        <span><b>1,732</b>行异常 · 13.7%</span>
+        <span><b>5</b>个批次</span>
+        <span><b>8</b>个 sheet</span>
+      </div>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">01</span>
+          <div>
+            <h4>先把口径定死</h4>
+            <p>四个用户分层只用两个字段判：两周内登录、一年内登录。口径固定下来，换批次不用改逻辑，五个月的数据才能横向比。</p>
+          </div>
+        </header>
+        <div class="case-table-wrap">
+          <table class="case-table">
+            <thead>
+              <tr><th>分层</th><th>判定</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>新用户</td><td>注册时间 ≥ 本批次查询区间开始日</td></tr>
+              <tr><td>活跃老用户</td><td>区间前已注册，两周内登录 = 1</td></tr>
+              <tr><td>轻度回流</td><td>区间前已注册，两周内登录 = 0，过去一年登录 = 1</td></tr>
+              <tr><td>重度回流</td><td>区间前已注册，两周内登录 = 0，过去一年登录 = 0</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">02</span>
+          <div>
+            <h4>异常怎么筛</h4>
+            <p>三条规则取并集，一条都不删。明细里单独标「命中规则」，一个账号可能同时命中多条，标全才不会漏看。</p>
+          </div>
+        </header>
+        <div class="case-table-wrap">
+          <table class="case-table">
+            <thead>
+              <tr><th>规则</th><th>定义</th><th>为什么这么定</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>A</td><td>同一礼包码，1 分钟内 ≥5 个账号激活</td><td>正常玩家激活时间是散的，一分钟挤进来 5 个以上不正常</td></tr>
+              <tr><td>C</td><td>同一码、同一注册日 ≥3 个账号，且消费点数全为 0</td><td>对应「一批相似账号都没消费」的情况</td></tr>
+              <tr><td>G</td><td>同一码，账号前缀相同、尾号连号 ≥3 个</td><td>脚本批量注册的典型特征</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="case-detail-text case-note">各批次命中形态不一样，这条统计是用来判断「这批主要是什么问题」的。</p>
+        <div class="case-table-wrap">
+          <table class="case-table case-table--num">
+            <thead>
+              <tr><th>批次</th><th>A</th><th>C</th><th>G</th><th>主要形态</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>4 月</td><td>338</td><td>125</td><td>114</td><td>三种都有</td></tr>
+              <tr><td>5 月</td><td>144</td><td>26</td><td>230</td><td>批量小号为主</td></tr>
+              <tr><td>6-7 月</td><td>288</td><td>131</td><td>18</td><td>集中激活为主</td></tr>
+              <tr><td>8 月</td><td>0</td><td>5</td><td>0</td><td>同注册日全零消费</td></tr>
+              <tr><td>9-10 月</td><td>296</td><td>72</td><td>19</td><td>集中激活为主</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">03</span>
+          <div>
+            <h4>脏数据长什么样</h4>
+            <p>原始明细一行一个账号，码、激活时间、注册时间、账号类型、分层、消费全在一张表里。我一行没删，只加标记——删了就查不回，也没法证明筛得对不对。</p>
+          </div>
+        </header>
+        <figure class="case-shot">
+          <a class="shot-frame" href="assets/case/koc-raw.png" data-shot>
+            <img src="assets/previews/koc-raw.webp" data-original-src="assets/case/koc-raw.png" alt="原始礼包码激活明细，账号与消费相关列已打码" width="1445" height="340" loading="lazy" decoding="async" />
+          </a>
+          <figcaption>
+            <b>原始明细 · 节选</b>
+            <span>账号、消费、付费列已打码；礼包码、激活时间、注册时间只做核对用</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">04</span>
+          <div>
+            <h4>交出去的是 8 个 sheet</h4>
+            <p>不按「数据」分，按「给谁看」分：看结论的人只看汇总，核对的人看明细。最后留一页「待确认事项」，写清哪些我没敢自己定。</p>
+          </div>
+        </header>
+        <ul class="resume-list">
+          <li><b>说明与口径（47 行）：</b>批次、分层规则、清洗步骤、三条规则原文、注意事项。</li>
+          <li><b>汇总_按批次（6 行）：</b>激活、四类分层、新用户占比、回流合计、异常行数。</li>
+          <li><b>汇总_按月（7 行）：</b>把 6-7 月、9-10 月拆回单月看，交付仍按并批口径。</li>
+          <li><b>汇总_按码（272 行）：</b>按异常占比排序，一眼看出哪个达人、哪个码有问题。</li>
+          <li><b>明细_全部（12,687 行）：</b>唯一能追到原始记录的一页。</li>
+          <li><b>异常账号_全部（1,732 行）：</b>带簇编号、命中规则、同族账号数，可以按簇抽检。</li>
+          <li><b>异常_按规则统计：</b>批次 × 规则交叉，判断这一批主要是哪种形态。</li>
+          <li><b>待确认事项（6 行）：</b>需要别人拍板的 6 个问题，交接时对着这页走。</li>
+        </ul>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">05</span>
+          <div>
+            <h4>从数据里读出来的三件事</h4>
+          </div>
+        </header>
+        <div class="case-table-wrap">
+          <table class="case-table case-table--num">
+            <thead>
+              <tr><th>批次</th><th>激活</th><th>新用户占比</th><th>异常占比</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>4 月</td><td>2,234</td><td>41.1%</td><td>24.0%</td></tr>
+              <tr><td>5 月</td><td>2,440</td><td>41.0%</td><td>15.5%</td></tr>
+              <tr><td>6-7 月</td><td>3,605</td><td>55.6%</td><td>12.1%</td></tr>
+              <tr><td>8 月</td><td>11</td><td>9.1%</td><td>45.5%</td></tr>
+              <tr><td>9-10 月</td><td>4,397</td><td>12.7%</td><td>8.6%</td></tr>
+              <tr><td>合计</td><td>12,687</td><td>35.3%</td><td>13.7%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="resume-list">
+          <li><b>6-7 月拉新最猛：</b>新用户占 55.6%，五个批次里最高。</li>
+          <li><b>9-10 月盘子最大、但靠老用户：</b>激活 4,397 最多，新用户只占 12.7%，主要是老用户和回流撑起来的。</li>
+          <li><b>8 月基本等于没投放：</b>80 个码里 78 个零激活，只有 11 行有效激活——当天就报了异常，没往结算里算。</li>
+        </ul>
+        <p class="case-detail-text">规则跑顺之后异常占比一路往下：24.0% → 15.5% → 12.1% → 8.6%。8 月的 45.5% 是分母太小，不是规则变松。</p>
+      </section>
+
+      <section class="case-node">
+        <header class="case-node-head">
+          <span class="case-node-date">06</span>
+          <div>
+            <h4>复核只有三步</h4>
+            <p>别人拿到文件，先翻「说明与口径」，再核「汇总_按批次」——五组数字加起来得等于激活数；最后在「异常账号_全部」按簇抽 2-3 个，看用户名是不是连号、注册时间和激活时间贴不贴。抽完没问题，说明规则可能偏严，回去调阈值。</p>
+          </div>
+        </header>
+        <p class="case-detail-text">这套做法我后来直接搬到了赢商网的商业选址清洗：先定口径，再分级异常，最后把「给谁看」拆进同一份文件。</p>
+      </section>
+
+      <a class="case-back" href="#dataWork" data-goto="dataWork">← 返回数据运营</a>
+    `,
+  },
   skill: {
     en: "SKILL TREE",
     title: "技能树",
@@ -1386,6 +1681,16 @@ const PET_LINES = {
   ],
   caseDouble11: [
     "手游预热新闻稿是独立撰写的，可以点开看长图。",
+  ],
+  caseStarPlan: [
+    "这页讲的是激励怎么定，不是稿子怎么写。",
+    "金额不对外，表里只写结构和口径。",
+    "长图能点开看原图。",
+  ],
+  caseCodeData: [
+    "1.2 万行明细，全靠口径统一才洗得动。",
+    "异常账号单独拎出来，一条没删。",
+    "表格可以左右滑，手机上也看得清。",
   ],
   skill: [
     "技能树：内容营销、数据、达人、赛事，还有工具。",
