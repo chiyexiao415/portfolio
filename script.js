@@ -469,7 +469,7 @@ const DATA = {
     en: "WORKS",
     title: "作品",
     html: `
-      <p class="works-intro">按能力浏览三个案例，查看我的分工、作品与结果。</p>
+      <p class="works-intro">三个案例：官方内容、达人合作、数据运营。每个都能看到我写的稿、做出来的物料，和最后跑出来的结果。</p>
 
       <nav class="work-index tone-ember" aria-label="作品分类">
         <a class="work-entry" href="#officialContent" data-goto="officialContent">
@@ -477,24 +477,39 @@ const DATA = {
             <span class="work-kicker">CASE 01 / OFFICIAL CHANNELS</span>
             <h3>官方内容与社媒运营</h3>
             <p>资料片与赛事 · 双十一直播 · 互动 H5 · 日常内容</p>
+            <div class="work-entry-stats">
+              <span><b>100w+</b>赛事直播观看</span>
+              <span><b>50 万+</b>双十一观看</span>
+              <span><b>100+</b>端手游商品</span>
+            </div>
+            <span class="work-action">4 个项目 · 查看 <span aria-hidden="true">↗</span></span>
           </div>
-          <span class="work-action">查看项目坐标 <span aria-hidden="true">↗</span></span>
         </a>
         <a class="work-entry" href="#creatorWork" data-goto="creatorWork">
           <div class="work-entry-copy">
             <span class="work-kicker">CASE 02 / KOL &amp; SOCIAL</span>
             <h3>达人合作与账号运营</h3>
             <p>达人对接 · KOC 活动 · 个人 cos 账号</p>
+            <div class="work-entry-stats">
+              <span><b>2000w+</b>抖音曝光</span>
+              <span><b>+25%</b>曝光提升</span>
+              <span><b>5w+</b>个人号曝光</span>
+            </div>
+            <span class="work-action">2 个部分 · 查看 <span aria-hidden="true">↗</span></span>
           </div>
-          <span class="work-action">查看案例 <span aria-hidden="true">↗</span></span>
         </a>
         <a class="work-entry" href="#dataWork" data-goto="dataWork">
           <div class="work-entry-copy">
             <span class="work-kicker">CASE 03 / DATA OPERATIONS</span>
-            <h3>数据整理</h3>
+            <h3>数据运营</h3>
             <p>商业选址数据清洗 · 判定口径 · SOP 与模板</p>
+            <div class="work-entry-stats">
+              <span><b>6.8w</b>条数据</span>
+              <span><b>95%</b>有效保留</span>
+              <span><b>7h→4.9h</b>单批时长</span>
+            </div>
+            <span class="work-action">查看案例 <span aria-hidden="true">↗</span></span>
           </div>
-          <span class="work-action">查看案例 <span aria-hidden="true">↗</span></span>
         </a>
       </nav>
     `,
@@ -1527,3 +1542,4 @@ if (hasInitialView) {
 }
 
 startBoot();
+

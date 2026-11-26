@@ -2078,6 +2078,25 @@ a.project-card:focus-visible { outline: 2px solid var(--section-accent); outline
 .work-entry p,
 .project-card p,
 .work-map-head p { color: var(--dim); font-size: 14px; line-height: 1.65; }
+.work-entry-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 16px;
+  margin-top: 2px;
+}
+.work-entry-stats span {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  color: var(--dim);
+  font-size: 12px;
+}
+.work-entry-stats b {
+  color: var(--text);
+  font: 600 clamp(15px, 1.8vw, 18px) / 1.1 ui-monospace, Consolas, monospace;
+  letter-spacing: -.01em;
+}
 .work-kicker {
   color: var(--section-accent);
   font: 600 12px ui-monospace, Consolas, monospace;
@@ -2240,6 +2259,7 @@ a.project-card:focus-visible { outline: 2px solid var(--section-accent); outline
 }
 @media (max-width: 520px) {
   .work-entry { grid-template-columns: minmax(0, 1fr); }
+  .work-glyph { width: 34px; top: 14px; translate: none; opacity: .12; }
 }
 .work-grid {
   display: grid;
@@ -2501,3 +2521,4 @@ html[data-theme="light"] .pet-pupil { fill: #17332c; }
   .pet-body svg, .pet-body.arrive svg, .pet-body.jump svg, .pet-eyes { animation: none; }
   .pet-bubble { transition: none; }
 }
+
