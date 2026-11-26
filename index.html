@@ -13,7 +13,7 @@
   })();
 </script>
 <title>陈宇萱 · PLAYER FILE</title>
-<link rel="stylesheet" href="style.css?v=work-map" />
+<link rel="stylesheet" href="style.css?v=20261126" />
 </head>
 <body>
 
@@ -160,7 +160,7 @@
   (() => {
     const refresh = new URLSearchParams(location.search).get("v");
     const siteScript = document.createElement("script");
-    const hostedScript = `script.js?v=work-map${refresh ? `&refresh=${encodeURIComponent(refresh)}` : ""}`;
+    const hostedScript = `script.js?v=20261126${refresh ? `&refresh=${encodeURIComponent(refresh)}` : ""}`;
     siteScript.src = location.protocol === "file:" ? "script.js" : hostedScript;
     document.body.append(siteScript);
   })();
