@@ -2804,3 +2804,10 @@ html[data-theme="light"] .case-figure b { color: #0f6a59; }
   .case-figures { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
   .case-brief > div { grid-template-columns: 1fr; gap: 6px; }
 }
+
+/* 文档类长图：限宽居中，避免一整张图撑满屏 */
+.case-shot.is-doc .shot-box { max-width: 620px; margin: 0 auto; }
+.case-shot.is-doc .shot-frame { max-height: 520px; }
+@media (max-width: 760px) {
+  .case-shot.is-doc .shot-box { max-width: 100%; }
+}
