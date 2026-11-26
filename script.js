@@ -542,7 +542,7 @@ const DATA = {
             <a class="project-card tone-blue" href="#caseContent" data-goto="caseContent">
               <div class="project-card-heading has-preview">
                 <div>
-                  <span class="work-kicker"><span class="work-quadrant" aria-hidden="true">II</span>资料片与赛事</span>
+                  <span class="work-kicker"><span class="work-quadrant" aria-hidden="true">I</span>资料片与赛事</span>
                   <h4>万国霸业 · 资料片与赛事</h4>
                 </div>
                 <img class="project-preview" src="assets/previews/thumb.webp" data-original-src="assets/case/thumb.jpg" alt="" width="740" height="570" loading="eager" fetchpriority="high" decoding="async" />
@@ -554,7 +554,7 @@ const DATA = {
             <a class="project-card tone-ember" href="#caseDouble11" data-goto="caseDouble11">
               <div class="project-card-heading has-preview">
                 <div>
-                  <span class="work-kicker"><span class="work-quadrant" aria-hidden="true">I</span>直播宣推</span>
+                  <span class="work-kicker"><span class="work-quadrant" aria-hidden="true">II</span>直播宣推</span>
                   <h4>双十一官方直播</h4>
                 </div>
                 <img class="project-preview" src="assets/previews/double11-kv.webp" data-original-src="assets/case/double11-kv.jpg" alt="" width="1000" height="563" loading="lazy" decoding="async" />
