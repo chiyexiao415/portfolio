@@ -2593,3 +2593,124 @@ html[data-theme="light"] .case-note { color: #6b5f52; }
   .case-meta > div:nth-child(5):last-child { grid-column: 1 / -1; }
 }
 html[data-theme="light"] .case-table th { color: #57504a; }
+
+/* ---------- 顶栏返回：作品树内的上一级 ---------- */
+.view-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+#viewUp {
+  white-space: nowrap;
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  border: 1px solid var(--line-strong);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: .2s;
+  font-family: inherit;
+}
+#viewUp:hover {
+  background: color-mix(in srgb, var(--accent) 24%, transparent);
+  border-color: var(--accent);
+}
+#viewClose { font-weight: 400; }
+html[data-theme="light"] #viewUp {
+  background: color-mix(in srgb, #127f6a 12%, transparent);
+  border-color: rgba(18, 127, 106, .45);
+  color: #0f6a59;
+}
+html[data-theme="light"] #viewUp:hover { background: color-mix(in srgb, #127f6a 20%, transparent); }
+
+/* 页内的「返回作品」做成按钮，别再当小字链接 */
+.case-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--line));
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+  text-decoration: none;
+  transition: .2s;
+}
+.case-back:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+}
+html[data-theme="light"] .case-back {
+  border-color: rgba(18, 127, 106, .4);
+  background: rgba(18, 127, 106, .08);
+  color: #0f6a59;
+}
+
+/* ---------- 案例内的小卡网格（替代规则长表） ---------- */
+.case-grid { display: grid; gap: 14px; margin-top: 18px; }
+.case-grid.is-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.case-grid.is-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.case-grid.is-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.case-cell {
+  padding: 18px 18px 19px;
+  border: 1px solid var(--line);
+  background: rgba(13, 19, 26, .5);
+}
+.case-cell .case-tag { display: block; margin-bottom: 8px; font-size: 11px; }
+.case-cell h5 {
+  margin: 0 0 7px;
+  font-size: 15.5px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: #e8f0f3;
+}
+.case-cell p { font-size: 13px; line-height: 1.82; color: #b7c6d2; }
+.case-cell p strong { color: var(--accent); font-weight: 600; }
+html[data-theme="light"] .case-cell { background: rgba(255, 253, 249, .72); }
+html[data-theme="light"] .case-cell h5 { color: #241f1a; }
+html[data-theme="light"] .case-cell p { color: #4a4136; }
+html[data-theme="light"] .case-cell p strong { color: #0f6a59; }
+
+.focus-panel .case-cell { background: var(--focus-card); border-color: var(--focus-line); }
+.focus-panel .case-cell h5 { color: var(--focus-heading); }
+.focus-panel .case-cell p { color: var(--focus-copy); }
+.focus-panel .case-cell p strong { color: var(--focus-accent); }
+.focus-panel .case-cell .case-tag { color: var(--focus-accent); }
+.focus-panel .case-stats { border-top-color: var(--focus-line); }
+.focus-panel .case-stats span { border-color: var(--focus-line); color: var(--focus-copy); }
+.focus-panel .case-stats b { color: var(--focus-accent); }
+
+@media (max-width: 880px) {
+  .case-grid.is-3, .case-grid.is-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .case-grid.is-3, .case-grid.is-4, .case-grid.is-2 { grid-template-columns: 1fr; }
+}
+
+/* 长图：给一个更高的可视窗口 */
+.case-shot.is-scroll.is-tall .shot-frame { max-height: 700px; }
+@media (max-width: 880px) { .case-shot.is-scroll.is-tall .shot-frame { max-height: 460px; } }
+
+/* ---------- 竖版长图：整张展示，不做内层滚动 ---------- */
+.case-longfig {
+  max-width: 440px;
+  margin: 22px auto 0;
+  border: 1px solid var(--line);
+  background: rgba(13, 19, 26, .5);
+}
+.case-longfig a { display: block; }
+.case-longfig img { display: block; width: 100%; height: auto; }
+.case-longfig figcaption {
+  padding: 13px 16px 15px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--dim);
+}
+.case-longfig figcaption b { color: #e8f0f3; font-weight: 600; margin-right: 6px; }
+.case-node.focus-panel .case-longfig { background: var(--focus-card); border-color: var(--focus-line); }
+html[data-theme="light"] .case-longfig { background: rgba(255, 253, 249, .78); }
+html[data-theme="light"] .case-longfig figcaption { color: #57504a; }
+html[data-theme="light"] .case-longfig figcaption b { color: #241f1a; }
+@media (max-width: 560px) { .case-longfig { max-width: 100%; } }

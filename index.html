@@ -13,7 +13,7 @@
   })();
 </script>
 <title>陈宇萱 · PLAYER FILE</title>
-<link rel="stylesheet" href="style.css?v=20261126b" />
+<link rel="stylesheet" href="style.css?v=20261126f" />
 </head>
 <body>
 
@@ -114,7 +114,10 @@
 <!-- 内容页面 -->
 <div id="view" class="view" role="dialog" aria-modal="true">
   <div class="view-topbar">
-    <button id="viewClose" aria-label="返回主界面">← 返回主界面</button>
+    <div class="view-back">
+      <button id="viewUp" type="button" aria-label="返回上一级" hidden>← 返回作品</button>
+      <button id="viewClose" type="button" aria-label="返回主界面">← 返回主界面</button>
+    </div>
     <span class="view-crumb">PLAYER FILE <span>/</span> <b id="viewEn"></b></span>
   </div>
 
@@ -160,11 +163,12 @@
   (() => {
     const refresh = new URLSearchParams(location.search).get("v");
     const siteScript = document.createElement("script");
-    const hostedScript = `script.js?v=20261126b${refresh ? `&refresh=${encodeURIComponent(refresh)}` : ""}`;
+    const hostedScript = `script.js?v=20261126f${refresh ? `&refresh=${encodeURIComponent(refresh)}` : ""}`;
     siteScript.src = location.protocol === "file:" ? "script.js" : hostedScript;
     document.body.append(siteScript);
   })();
 </script>
 </body>
 </html>
+
 
