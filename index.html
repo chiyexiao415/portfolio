@@ -13,7 +13,7 @@
   })();
 </script>
 <title>陈宇萱 · PLAYER FILE</title>
-<link rel="stylesheet" href="style.css?v=section-highlights" />
+<link rel="stylesheet" href="style.css?v=compact-media" />
 </head>
 <body>
 
@@ -153,13 +153,15 @@
 <div id="lightbox" class="lightbox" aria-hidden="true">
   <button class="lightbox-close" aria-label="关闭">✕</button>
   <img id="lightboxImg" alt="" />
+  <p id="lightboxStatus" class="lightbox-status" role="status" hidden></p>
 </div>
 
 <script>
   (() => {
-    const version = new URLSearchParams(location.search).get("v") || "section-highlights";
+    const refresh = new URLSearchParams(location.search).get("v");
     const siteScript = document.createElement("script");
-    siteScript.src = location.protocol === "file:" ? "script.js" : `script.js?v=${encodeURIComponent(version)}`;
+    const hostedScript = `script.js?v=compact-media${refresh ? `&refresh=${encodeURIComponent(refresh)}` : ""}`;
+    siteScript.src = location.protocol === "file:" ? "script.js" : hostedScript;
     document.body.append(siteScript);
   })();
 </script>

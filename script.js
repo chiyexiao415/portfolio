@@ -62,7 +62,7 @@ const DATA = {
           <section class="resume-sec">
             <header class="resume-sec-head"><h3>简历</h3><em>RESUME</em></header>
             <a class="resume-figure" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="assets/resume.png" alt="陈宇萱简历" loading="lazy" />
+              <img src="assets/previews/resume.webp" data-original-src="assets/resume.png" alt="陈宇萱简历" width="1200" height="1698" loading="lazy" decoding="async" />
             </a>
             <p class="resume-caption">点击图片可查看原始 PDF，也可以 <a href="assets/resume.pdf" download="陈宇萱-简历.pdf">下载简历</a></p>
           </section>
@@ -107,15 +107,15 @@ const DATA = {
 
         <div class="games-gallery games-gallery-3" aria-label="游戏截图">
           <figure class="game-shot game-shot-wide">
-            <a href="assets/game-wukong.jpg" data-shot><img src="assets/game-wukong.jpg" alt="黑神话悟空与赛博朋克2077游戏时长" loading="lazy" /></a>
+            <a href="assets/game-wukong.jpg" data-shot><img src="assets/previews/game-wukong.webp" data-original-src="assets/game-wukong.jpg" alt="黑神话悟空与赛博朋克2077游戏时长" width="1200" height="506" loading="eager" decoding="async" /></a>
             <figcaption>黑神话：悟空 94.4h ｜ 赛博朋克 2077 91.7h</figcaption>
           </figure>
           <figure class="game-shot">
-            <a href="assets/game-naraka.jpg" data-shot><img src="assets/game-naraka.jpg" alt="永劫无间账号数据" loading="lazy" /></a>
+            <a href="assets/game-naraka.jpg" data-shot><img src="assets/previews/game-naraka.webp" data-original-src="assets/game-naraka.jpg" alt="永劫无间账号数据" width="1000" height="1227" loading="lazy" decoding="async" /></a>
             <figcaption>永劫无间 · Lv.238 · 591 小时</figcaption>
           </figure>
           <figure class="game-shot">
-            <a href="assets/game-genshin.png" data-shot><img src="assets/game-genshin.png" alt="原神角色展柜" loading="lazy" /></a>
+            <a href="assets/game-genshin.png" data-shot><img src="assets/previews/game-genshin.webp" data-original-src="assets/game-genshin.png" alt="原神角色展柜" width="1000" height="620" loading="lazy" decoding="async" /></a>
             <figcaption>原神 · 冒险等阶 58 · 多名 90 级角色</figcaption>
           </figure>
         </div>
@@ -153,11 +153,11 @@ const DATA = {
 
         <div class="games-gallery" aria-label="竞技游戏截图">
           <figure class="game-shot">
-            <a href="assets/game-wangzhe.jpg" data-shot><img src="assets/game-wangzhe.jpg" alt="王者荣耀账号数据" loading="lazy" /></a>
+            <a href="assets/game-wangzhe.jpg" data-shot><img src="assets/previews/game-wangzhe.webp" data-original-src="assets/game-wangzhe.jpg" alt="王者荣耀账号数据" width="840" height="386" loading="lazy" decoding="async" /></a>
             <figcaption>王者荣耀 · 账号数据</figcaption>
           </figure>
           <figure class="game-shot">
-            <a href="assets/game-jinchanchan.jpg" data-shot><img src="assets/game-jinchanchan.jpg" alt="金铲铲之战对局结算画面" loading="lazy" /></a>
+            <a href="assets/game-jinchanchan.jpg" data-shot><img src="assets/previews/game-jinchanchan.webp" data-original-src="assets/game-jinchanchan.jpg" alt="金铲铲之战对局结算画面" width="1000" height="459" loading="lazy" decoding="async" /></a>
             <figcaption>金铲铲之战 · 标准排位第 1 名</figcaption>
           </figure>
         </div>
@@ -209,11 +209,11 @@ const DATA = {
 
         <div class="games-gallery" aria-label="游戏截图">
           <figure class="game-shot">
-            <a href="assets/game-nishuihan.jpg" data-shot><img src="assets/game-nishuihan.jpg" alt="逆水寒角色界面" loading="lazy" /></a>
+            <a href="assets/game-nishuihan.jpg" data-shot><img src="assets/previews/game-nishuihan.webp" data-original-src="assets/game-nishuihan.jpg" alt="逆水寒角色界面" width="840" height="322" loading="lazy" decoding="async" /></a>
             <figcaption>逆水寒 · 姑苏绮罗 碎梦 65 级</figcaption>
           </figure>
           <figure class="game-shot">
-            <a href="assets/game-yanyun.jpg" data-shot><img src="assets/game-yanyun.jpg" alt="燕云十六声角色数据" loading="lazy" /></a>
+            <a href="assets/game-yanyun.jpg" data-shot><img src="assets/previews/game-yanyun.webp" data-original-src="assets/game-yanyun.jpg" alt="燕云十六声角色数据" width="750" height="532" loading="lazy" decoding="async" /></a>
             <figcaption>燕云十六声 · 天泉 金风细雨楼 星华 · 797.1h</figcaption>
           </figure>
         </div>
@@ -250,11 +250,11 @@ const DATA = {
 
         <div class="games-gallery" aria-label="射击游戏截图">
           <figure class="game-shot">
-            <a href="assets/game-valorant.jpg" data-shot><img src="assets/game-valorant.jpg" alt="无畏契约账号数据" loading="lazy" /></a>
+            <a href="assets/game-valorant.jpg" data-shot><img src="assets/previews/game-valorant.webp" data-original-src="assets/game-valorant.jpg" alt="无畏契约账号数据" width="1000" height="1489" loading="lazy" decoding="async" /></a>
             <figcaption>无畏契约 · 账号数据</figcaption>
           </figure>
           <figure class="game-shot">
-            <a href="assets/game-cs2.jpg" data-shot><img src="assets/game-cs2.jpg" alt="CS2 游戏时长 136.2 小时" loading="lazy" /></a>
+            <a href="assets/game-cs2.jpg" data-shot><img src="assets/previews/game-cs2.webp" data-original-src="assets/game-cs2.jpg" alt="CS2 游戏时长 136.2 小时" width="840" height="162" loading="lazy" decoding="async" /></a>
             <figcaption>CS2 · 136.2h</figcaption>
           </figure>
         </div>
@@ -292,7 +292,7 @@ const DATA = {
 
         <div class="games-gallery" aria-label="女性向游戏截图">
           <figure class="game-shot">
-            <a href="assets/game-shijie.jpg" data-shot><img src="assets/game-shijie.jpg" alt="世界之外个人界面" loading="lazy" /></a>
+            <a href="assets/game-shijie.jpg" data-shot><img src="assets/previews/game-shijie.webp" data-original-src="assets/game-shijie.jpg" alt="世界之外个人界面" width="1000" height="462" loading="lazy" decoding="async" /></a>
             <figcaption>世界之外 · 个人界面</figcaption>
           </figure>
         </div>
@@ -339,7 +339,7 @@ const DATA = {
 
         <div class="games-gallery is-tall" aria-label="剧情向游戏截图">
           <figure class="game-shot">
-            <a href="assets/game-narrative.jpg" data-shot><img src="assets/game-narrative.jpg" alt="剧情向游戏时长记录" loading="lazy" /></a>
+            <a href="assets/game-narrative.jpg" data-shot><img src="assets/previews/game-narrative.webp" data-original-src="assets/game-narrative.jpg" alt="剧情向游戏时长记录" width="880" height="1339" loading="lazy" decoding="async" /></a>
             <figcaption>百日战纪、底特律、山河旅探、奇异人生、命运石之门、P5R 等</figcaption>
           </figure>
         </div>
@@ -390,7 +390,7 @@ const DATA = {
 
         <div class="games-gallery is-tall" aria-label="其他游戏截图">
           <figure class="game-shot">
-            <a href="assets/game-other.jpg" data-shot><img src="assets/game-other.jpg" alt="幻兽帕鲁、双人成行、双影奇境、星露谷、空洞骑士时长记录" loading="lazy" /></a>
+            <a href="assets/game-other.jpg" data-shot><img src="assets/previews/game-other.webp" data-original-src="assets/game-other.jpg" alt="幻兽帕鲁、双人成行、双影奇境、星露谷、空洞骑士时长记录" width="880" height="1029" loading="lazy" decoding="async" /></a>
             <figcaption>幻兽帕鲁、双人成行、双影奇境、星露谷物语、空洞骑士</figcaption>
           </figure>
         </div>
@@ -476,7 +476,7 @@ const DATA = {
         <p class="work-block-desc">一个版本从首曝到线下总决赛：先写内容框架，再出长图、新闻稿、赛程视频和现场视觉，按节点发出去。</p>
         <div class="case-grid" style="grid-template-columns: minmax(0, 1fr); grid-auto-rows: 1fr;">
           <article class="case-card work-spotlight" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
-            <a class="case-cover" href="#caseContent" data-goto="caseContent" style="flex: 1 1 165px; min-width: 0; margin: 0; aspect-ratio: 16 / 9;"><img src="assets/case/thumb.jpg" alt="大唐无双万国霸业资料片主视觉" loading="lazy" /></a>
+            <a class="case-cover" href="#caseContent" data-goto="caseContent" style="flex: 1 1 165px; min-width: 0; margin: 0; aspect-ratio: 16 / 9;"><img src="assets/previews/thumb.webp" data-original-src="assets/case/thumb.jpg" alt="大唐无双万国霸业资料片主视觉" width="740" height="570" loading="eager" fetchpriority="high" decoding="async" /></a>
             <div style="flex: 2 1 250px; min-width: 0;">
               <span class="case-tag">CASE 01 · 大唐无双</span>
               <h3>《万国霸业》版本内容与潜龙争霸赛</h3>
@@ -496,7 +496,7 @@ const DATA = {
           </article>
 
           <article class="case-card work-spotlight" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
-            <a class="case-cover" href="#caseDouble11" data-goto="caseDouble11" style="flex: 1 1 165px; min-width: 0; margin: 0; aspect-ratio: 16 / 9;"><img src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" loading="lazy" /></a>
+            <a class="case-cover" href="#caseDouble11" data-goto="caseDouble11" style="flex: 1 1 165px; min-width: 0; margin: 0; aspect-ratio: 16 / 9;"><img src="assets/previews/double11-kv.webp" data-original-src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" width="1000" height="563" loading="lazy" decoding="async" /></a>
             <div style="flex: 2 1 250px; min-width: 0;">
               <span class="case-tag">CASE 02 · 大唐无双</span>
               <h3>双十一官方直播</h3>
@@ -595,42 +595,36 @@ const DATA = {
       </ul>
 
       <figure class="case-hero">
-        <img src="assets/case/hero.jpg" alt="大唐无双「万国霸业」资料片主视觉" loading="lazy" />
+        <img src="assets/previews/hero.webp" data-original-src="assets/case/hero.jpg" alt="大唐无双「万国霸业」资料片主视觉" width="1000" height="542" loading="eager" fetchpriority="high" decoding="async" />
       </figure>
 
       <h4 class="case-subhead">项目时间线</h4>
 
-      <section class="case-node">
-        <header class="case-node-head">
-          <time class="case-node-date" datetime="2026-10-20">10.20</time>
-          <div>
+      <div class="case-milestones">
+        <section class="case-milestone">
+          <header class="case-milestone-head">
+            <time class="case-node-date" datetime="2026-10-20">10.20</time>
             <h4>潜龙争霸赛开赛</h4>
-            <p>5V5 赛程文案先讲怎么组队报名，再给出预热赛、淘汰赛、双败赛和总决赛的日期。</p>
-            <div class="case-docs">
-              <a class="case-doc" href="assets/case/video-5v5.png" data-shot>
-                <img src="assets/case/video-5v5.png" alt="潜龙争霸赛 5V5 赛程视频文案" loading="lazy" style="width: 108px; height: 82px; object-fit: contain; flex: none;" />
-                <span><b>5V5 赛程视频 · 文案</b><em>报名方式与关键赛程</em></span>
-              </a>
-            </div>
-          </div>
-        </header>
-      </section>
+          </header>
+          <p class="case-detail-text">5V5 赛程文案先讲怎么组队报名，再给出预热赛、淘汰赛、双败赛和总决赛的日期。</p>
+          <a class="case-doc" href="assets/case/video-5v5.png" data-shot>
+            <img src="assets/previews/video-5v5.webp" data-original-src="assets/case/video-5v5.png" alt="潜龙争霸赛 5V5 赛程视频文案" width="250" height="187" loading="lazy" decoding="async" />
+            <span><b>5V5 赛程视频 · 文案</b><em>报名方式与关键赛程</em></span>
+          </a>
+        </section>
 
-      <section class="case-node">
-        <header class="case-node-head">
-          <time class="case-node-date" datetime="2026-10-31">10.31</time>
-          <div>
+        <section class="case-milestone">
+          <header class="case-milestone-head">
+            <time class="case-node-date" datetime="2026-10-31">10.31</time>
             <h4>淘汰赛</h4>
-            <p>从 64 强到 8 强逐轮标出哪些种子队不会提前相遇，单独提醒「种子不等于保送」：每一轮都要打赢才能晋级。</p>
-            <div class="case-docs">
-              <a class="case-doc" href="assets/case/event-seed-protection.jpg" data-shot>
-                <img src="assets/case/event-seed-protection.jpg" alt="潜龙争霸赛淘汰赛种子保护图解：从 64 强到 8 强的对阵规则" loading="lazy" style="width: 64px; height: 114px; object-fit: contain; flex: none;" />
-                <span><b>种子保护图解</b><em>种子队怎么定、每轮怎么排对阵</em></span>
-              </a>
-            </div>
-          </div>
-        </header>
-      </section>
+          </header>
+          <p class="case-detail-text">从 64 强到 8 强逐轮标出哪些种子队不会提前相遇，单独提醒「种子不等于保送」：每一轮都要打赢才能晋级。</p>
+          <a class="case-doc" href="assets/case/event-seed-protection.jpg" data-shot>
+            <img src="assets/previews/event-seed-protection.webp" data-original-src="assets/case/event-seed-protection.jpg" alt="潜龙争霸赛淘汰赛种子保护图解：从 64 强到 8 强的对阵规则" width="186" height="330" loading="lazy" decoding="async" />
+            <span><b>种子保护图解</b><em>种子队怎么定、每轮怎么排对阵</em></span>
+          </a>
+        </section>
+      </div>
 
       <section class="case-node focus-panel is-version" aria-labelledby="version-focus-title">
         <header class="case-node-head">
@@ -643,10 +637,10 @@ const DATA = {
         <div class="case-media is-pair">
           <figure class="case-shot is-scroll">
             <div class="shot-box">
-              <div class="shot-frame">
-                <img src="assets/case/framework.jpg" alt="大唐无双万国霸业图文框架文档" loading="lazy" />
+              <div class="shot-frame" tabindex="0" role="region" aria-label="图文框架，可上下滚动">
+                <img src="assets/previews/framework.webp" data-original-src="assets/case/framework.jpg" alt="大唐无双万国霸业图文框架文档" width="780" height="5460" loading="lazy" decoding="async" />
               </div>
-              <span class="shot-hint">悬停滚动查看</span>
+              <span class="shot-hint">图内可上下滚动</span>
             </div>
             <figcaption>
               <span class="focus-step" aria-hidden="true">01</span>
@@ -657,10 +651,10 @@ const DATA = {
           </figure>
           <figure class="case-shot is-scroll">
             <div class="shot-box">
-              <div class="shot-frame">
-                <img src="assets/case/keyvisual.jpg" alt="大唐无双万国霸业资料片更新内容长图" loading="lazy" />
+              <div class="shot-frame" tabindex="0" role="region" aria-label="版本内容长图，可上下滚动">
+                <img src="assets/previews/keyvisual.webp" data-original-src="assets/case/keyvisual.jpg" alt="大唐无双万国霸业资料片更新内容长图" width="780" height="4534" loading="lazy" decoding="async" />
               </div>
-              <span class="shot-hint">悬停滚动查看</span>
+              <span class="shot-hint">图内可上下滚动</span>
             </div>
             <figcaption>
               <span class="focus-step" aria-hidden="true">02</span>
@@ -672,43 +666,37 @@ const DATA = {
         </div>
         <div class="case-docs">
           <a class="case-doc" href="assets/case/news-1102.png" data-shot>
-            <img src="assets/case/news-1102.png" alt="万国霸业更新首曝新闻稿" loading="lazy" style="width: 64px; height: 82px; flex: none;" />
+            <img src="assets/previews/news-1102.webp" data-original-src="assets/case/news-1102.png" alt="万国霸业更新首曝新闻稿" width="250" height="271" loading="lazy" decoding="async" style="width: 64px; height: 82px; flex: none;" />
             <span><b>官网首曝新闻稿</b><em>国战与赛季玩法改动</em></span>
           </a>
         </div>
       </section>
 
-      <section class="case-node">
-        <header class="case-node-head">
-          <time class="case-node-date" datetime="2026-11-07">11.07</time>
-          <div>
+      <div class="case-milestones">
+        <section class="case-milestone">
+          <header class="case-milestone-head">
+            <time class="case-node-date" datetime="2026-11-07">11.07</time>
             <h4>双败赛</h4>
-            <p>这轮文案讲清四强怎么打：五局三胜、两败出局，最后两支队伍进入线下总决赛。</p>
-            <div class="case-docs">
-              <a class="case-doc" href="assets/case/video-dual.png" data-shot>
-                <img src="assets/case/video-dual.png" alt="双败赛开战视频文案" loading="lazy" style="width: 108px; height: 82px; object-fit: contain; flex: none;" />
-                <span><b>双败赛开战视频 · 文案</b><em>四强对抗与晋级规则</em></span>
-              </a>
-            </div>
-          </div>
-        </header>
-      </section>
+          </header>
+          <p class="case-detail-text">这轮文案讲清四强怎么打：五局三胜、两败出局，最后两支队伍进入线下总决赛。</p>
+          <a class="case-doc" href="assets/case/video-dual.png" data-shot>
+            <img src="assets/previews/video-dual.webp" data-original-src="assets/case/video-dual.png" alt="双败赛开战视频文案" width="250" height="172" loading="lazy" decoding="async" />
+            <span><b>双败赛开战视频 · 文案</b><em>四强对抗与晋级规则</em></span>
+          </a>
+        </section>
 
-      <section class="case-node">
-        <header class="case-node-head">
-          <time class="case-node-date" datetime="2026-11-12">11.12</time>
-          <div>
+        <section class="case-milestone">
+          <header class="case-milestone-head">
+            <time class="case-node-date" datetime="2026-11-12">11.12</time>
             <h4>官网开战预告</h4>
-            <p>上线前一天发出官网稿，告知玩家资料片和黄金战服新区「森罗万象」将在 11.13 开启，并整理新玩法和开服福利。</p>
-            <div class="case-docs">
-              <a class="case-doc" href="assets/case/news-1112.png" data-shot>
-                <img src="assets/case/news-1112.png" alt="万国霸业开战预告新闻稿" loading="lazy" style="width: 64px; height: 82px; flex: none;" />
-                <span><b>官网开战稿</b><em>上线时间、新区与福利</em></span>
-              </a>
-            </div>
-          </div>
-        </header>
-      </section>
+          </header>
+          <p class="case-detail-text">上线前一天发出官网稿，告知玩家资料片和黄金战服新区「森罗万象」将在 11.13 开启，并整理新玩法和开服福利。</p>
+          <a class="case-doc" href="assets/case/news-1112.png" data-shot>
+            <img src="assets/previews/news-1112.webp" data-original-src="assets/case/news-1112.png" alt="万国霸业开战预告新闻稿" width="250" height="264" loading="lazy" decoding="async" />
+            <span><b>官网开战稿</b><em>上线时间、新区与福利</em></span>
+          </a>
+        </section>
+      </div>
 
       <section class="case-node">
         <header class="case-node-head">
@@ -722,28 +710,28 @@ const DATA = {
         <div class="case-media is-narrow" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));">
           <div class="case-media is-pair" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
             <figure class="case-shot">
-              <a class="shot-frame" href="assets/case/play-season.jpg" data-shot>
-                <img src="assets/case/play-season.jpg" alt="新赛季三大重点：任务链、战阶、赛事" width="1200" height="2133" loading="lazy" />
+              <a class="shot-frame play-preview" href="assets/case/play-season.jpg" data-shot>
+                <img src="assets/previews/play-season.webp" data-original-src="assets/case/play-season.jpg" alt="新赛季三大重点：任务链、战阶、赛事" width="560" height="995" loading="lazy" decoding="async" />
               </a>
               <figcaption><b>新赛季总览</b><span>任务链、战阶奖励、1V1 / 5V5 每周轮换</span></figcaption>
             </figure>
             <figure class="case-shot">
-              <a class="shot-frame" href="assets/case/play-nation-war.jpg" data-shot>
-                <img src="assets/case/play-nation-war.jpg" alt="万国霸业国战玩法与报名安排" width="1200" height="2133" loading="lazy" />
+              <a class="shot-frame play-preview" href="assets/case/play-nation-war.jpg" data-shot>
+                <img src="assets/previews/play-nation-war.webp" data-original-src="assets/case/play-nation-war.jpg" alt="万国霸业国战玩法与报名安排" width="560" height="995" loading="lazy" decoding="async" />
               </a>
               <figcaption><b>万国霸业 · 国战</b><span>一国三帮，每周报名、周五开战</span></figcaption>
             </figure>
           </div>
           <div class="case-media is-pair" style="grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 0;">
             <figure class="case-shot">
-              <a class="shot-frame" href="assets/case/play-icefield.jpg" data-shot>
-                <img src="assets/case/play-icefield.jpg" alt="冰原战场四塔争夺、中央夺旗和获胜条件" width="1200" height="2133" loading="lazy" />
+              <a class="shot-frame play-preview" href="assets/case/play-icefield.jpg" data-shot>
+                <img src="assets/previews/play-icefield.webp" data-original-src="assets/case/play-icefield.jpg" alt="冰原战场四塔争夺、中央夺旗和获胜条件" width="560" height="995" loading="lazy" decoding="async" />
               </a>
               <figcaption><b>冰原战场</b><span>15V15：占塔持续得分，夺旗回塔加分</span></figcaption>
             </figure>
             <figure class="case-shot">
-              <a class="shot-frame" href="assets/case/play-wujing.jpg" data-shot>
-                <img src="assets/case/play-wujing.jpg" alt="武经赛季套装：一经统御，六略成套" width="1200" height="2133" loading="lazy" />
+              <a class="shot-frame play-preview" href="assets/case/play-wujing.jpg" data-shot>
+                <img src="assets/previews/play-wujing.webp" data-original-src="assets/case/play-wujing.jpg" alt="武经赛季套装：一经统御，六略成套" width="560" height="995" loading="lazy" decoding="async" />
               </a>
               <figcaption><b>武经套装</b><span>1 经统御、6 略成套</span></figcaption>
             </figure>
@@ -767,19 +755,19 @@ const DATA = {
           <div role="region" aria-labelledby="finale-photos-title" tabindex="0" style="display: flex; gap: 12px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; padding-bottom: 8px; scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent;">
             <figure class="case-shot" style="flex: 0 0 82%; max-width: 460px; scroll-snap-align: start;">
               <a class="shot-frame" href="assets/case/finale-stage.jpg" data-shot>
-                <img src="assets/case/finale-stage.jpg" alt="潜龙争霸赛总决赛舞台全景与大屏主视觉" width="1440" height="810" loading="lazy" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
+                <img src="assets/previews/finale-stage.webp" data-original-src="assets/case/finale-stage.jpg" alt="潜龙争霸赛总决赛舞台全景与大屏主视觉" width="1000" height="563" loading="lazy" decoding="async" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
               </a>
               <figcaption><b>01 / 03</b><span>舞台全景</span></figcaption>
             </figure>
             <figure class="case-shot" style="flex: 0 0 82%; max-width: 460px; scroll-snap-align: start;">
               <a class="shot-frame" href="assets/case/finale-trophy.jpg" data-shot>
-                <img src="assets/case/finale-trophy.jpg" alt="潜龙争霸赛现场奖杯特写" width="1080" height="1440" loading="lazy" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
+                <img src="assets/previews/finale-trophy.webp" data-original-src="assets/case/finale-trophy.jpg" alt="潜龙争霸赛现场奖杯特写" width="1000" height="1333" loading="lazy" decoding="async" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
               </a>
               <figcaption><b>02 / 03</b><span>奖杯特写</span></figcaption>
             </figure>
             <figure class="case-shot" style="flex: 0 0 82%; max-width: 460px; scroll-snap-align: start;">
               <a class="shot-frame" href="assets/case/finale-champion.jpg" data-shot>
-                <img src="assets/case/finale-champion.jpg" alt="总决赛冠军揭晓时的大屏和舞台烟雾效果" width="1440" height="1080" loading="lazy" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
+                <img src="assets/previews/finale-champion.webp" data-original-src="assets/case/finale-champion.jpg" alt="总决赛冠军揭晓时的大屏和舞台烟雾效果" width="1000" height="750" loading="lazy" decoding="async" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
               </a>
               <figcaption><b>03 / 03</b><span>冠军揭晓</span></figcaption>
             </figure>
@@ -788,10 +776,10 @@ const DATA = {
         <div class="case-media is-narrow" style="max-width: min(680px, 90%);">
           <figure class="case-shot is-scroll">
             <div class="shot-box">
-              <div class="shot-frame" style="max-height: clamp(380px, 46vw, 480px);">
-                <img src="assets/case/offline.jpg" alt="潜龙争霸赛线下总决赛场馆与主视觉" loading="lazy" />
+              <div class="shot-frame" tabindex="0" role="region" aria-label="线下场馆与主视觉，可上下滚动" style="max-height: clamp(380px, 46vw, 480px);">
+                <img src="assets/previews/offline.webp" data-original-src="assets/case/offline.jpg" alt="潜龙争霸赛线下总决赛场馆与主视觉" width="1000" height="1687" loading="lazy" decoding="async" />
               </div>
-              <span class="shot-hint">悬停滚动查看</span>
+              <span class="shot-hint">图内可上下滚动</span>
             </div>
             <figcaption>
               <b>线下总决赛物料</b>
@@ -805,7 +793,7 @@ const DATA = {
       <h4 class="case-subhead">新服配套物料</h4>
       <div class="case-docs">
         <a class="case-doc" href="assets/case/cover-commander.png" data-shot>
-          <img src="assets/case/cover-commander.png" alt="最强指挥招募封面与文案" loading="lazy" style="width: 64px; height: 82px; flex: none;" />
+          <img src="assets/previews/cover-commander.webp" data-original-src="assets/case/cover-commander.png" alt="最强指挥招募封面与文案" width="250" height="248" loading="lazy" decoding="async" style="width: 64px; height: 82px; flex: none;" />
           <span><b>「最强指挥」招募</b><em>黄金战服 11 月新服 · 标题、文案与封面</em></span>
         </a>
       </div>
@@ -849,10 +837,10 @@ const DATA = {
         <div class="case-media is-pair" style="align-items: start;">
           <figure class="case-shot is-scroll">
             <div class="shot-box">
-              <div class="shot-frame">
-                <img src="assets/case/double11-article.jpg" alt="独立撰写的手游双十一新闻稿，从开播预告、商品介绍到游戏内福利" width="835" height="6790" loading="lazy" />
+              <div class="shot-frame" tabindex="0" role="region" aria-label="手游预热新闻稿，可上下滚动">
+                <img src="assets/previews/double11-article.webp" data-original-src="assets/case/double11-article.jpg" alt="独立撰写的手游双十一新闻稿，从开播预告、商品介绍到游戏内福利" width="720" height="5855" loading="eager" fetchpriority="high" decoding="async" />
               </div>
-              <span class="shot-hint">悬停滚动查看</span>
+              <span class="shot-hint">图内可上下滚动</span>
             </div>
             <figcaption>
               <span class="focus-step" aria-hidden="true">01</span>
@@ -863,13 +851,13 @@ const DATA = {
           <div class="case-media">
             <figure class="case-shot">
               <a class="shot-frame" href="assets/case/double11-kv.jpg" data-shot>
-                <img src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" width="1440" height="810" loading="lazy" />
+                <img src="assets/previews/double11-kv.webp" data-original-src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" width="1000" height="563" loading="lazy" decoding="async" />
               </a>
               <figcaption><span class="focus-step" aria-hidden="true">02</span><b>手游直播主视觉</b><span>对接平面出图</span></figcaption>
             </figure>
             <figure class="case-shot">
               <a class="shot-frame" href="assets/case/double11-teasers.jpg" data-shot>
-                <img src="assets/case/double11-teasers.jpg" alt="左为端游、右为手游的预告文案和视频画面" width="840" height="536" loading="lazy" />
+                <img src="assets/previews/double11-teasers.webp" data-original-src="assets/case/double11-teasers.jpg" alt="左为端游、右为手游的预告文案和视频画面" width="840" height="536" loading="lazy" decoding="async" />
               </a>
               <figcaption><span class="focus-step" aria-hidden="true">03</span><b>端手游预告</b><span>左：端游 / 右：手游。发布文案与视频画面节选。</span></figcaption>
             </figure>
@@ -889,10 +877,10 @@ const DATA = {
         <div class="case-media is-pair">
           <figure class="case-shot is-scroll">
             <div class="shot-box">
-              <div class="shot-frame">
-                <img src="assets/case/double11-inventory.jpg" alt="端游礼包与手游配图商品清单节选，包含商品名、图标、分区和道具说明" width="930" height="1559" loading="lazy" />
+              <div class="shot-frame" tabindex="0" role="region" aria-label="端手游商品清单，可上下滚动">
+                <img src="assets/previews/double11-inventory.webp" data-original-src="assets/case/double11-inventory.jpg" alt="端游礼包与手游配图商品清单节选，包含商品名、图标、分区和道具说明" width="930" height="1559" loading="lazy" decoding="async" />
               </div>
-              <span class="shot-hint">悬停滚动查看</span>
+              <span class="shot-hint">图内可上下滚动</span>
             </div>
             <figcaption>
               <b>端手游商品清单</b><span>节选，省略内部编号和价格列</span>
@@ -901,10 +889,10 @@ const DATA = {
           </figure>
           <figure class="case-shot is-scroll">
             <div class="shot-box">
-              <div class="shot-frame">
-                <img src="assets/case/double11-qa-sop.jpg?v=author" alt="手游直播测试 SOP，署名陈宇萱，其他人员的姓名已打码" width="850" height="2245" loading="lazy" />
+              <div class="shot-frame" tabindex="0" role="region" aria-label="直播测试 SOP，可上下滚动">
+                <img src="assets/previews/double11-qa-sop.webp" data-original-src="assets/case/double11-qa-sop.jpg?v=author" alt="手游直播测试 SOP，署名陈宇萱，其他人员的姓名已打码" width="850" height="2245" loading="lazy" decoding="async" />
               </div>
-              <span class="shot-hint">悬停滚动查看</span>
+              <span class="shot-hint">图内可上下滚动</span>
             </div>
             <figcaption>
               <b>直播测试 SOP</b><span>署名陈宇萱，其他姓名已打码</span>
@@ -939,13 +927,13 @@ const DATA = {
           <div role="region" aria-labelledby="double11-photos-title" tabindex="0" style="display: flex; gap: 12px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; padding-bottom: 8px; scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent;">
             <figure class="case-shot" style="flex: 0 0 78%; max-width: 300px; scroll-snap-align: start;">
               <a class="shot-frame" href="assets/case/double11-live-control.jpg" data-shot>
-                <img src="assets/case/double11-live-control.jpg" alt="双十一直播的导播工作区与布景，屏幕和纸面细节已遮挡" width="1080" height="1437" loading="lazy" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
+                <img src="assets/previews/double11-live-control.webp" data-original-src="assets/case/double11-live-control.jpg" alt="双十一直播的导播工作区与布景，屏幕和纸面细节已遮挡" width="1000" height="1331" loading="lazy" decoding="async" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
               </a>
               <figcaption><b>01 / 02</b><span>导播工作区</span></figcaption>
             </figure>
             <figure class="case-shot" style="flex: 0 0 78%; max-width: 300px; scroll-snap-align: start;">
               <a class="shot-frame" href="assets/case/double11-live-stage.jpg" data-shot>
-                <img src="assets/case/double11-live-stage.jpg" alt="从侧上方拍摄的双十一直播舞台和布景" width="1080" height="1437" loading="lazy" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
+                <img src="assets/previews/double11-live-stage.webp" data-original-src="assets/case/double11-live-stage.jpg" alt="从侧上方拍摄的双十一直播舞台和布景" width="1000" height="1331" loading="lazy" decoding="async" style="height: var(--photo-height); object-fit: contain; background: #0b1117;" />
               </a>
               <figcaption><b>02 / 02</b><span>直播舞台</span></figcaption>
             </figure>
@@ -1080,6 +1068,7 @@ const viewBody = document.getElementById("viewBody");
 const viewIdx = document.getElementById("viewIdx");
 const viewScroll = document.querySelector(".view-scroll");
 let active = 0;
+let renderedView;
 
 function setActive(i) {
   items.forEach((el, k) => el.classList.toggle("active", k === i));
@@ -1105,11 +1094,14 @@ function openView(key, index) {
   viewIdx.textContent = index >= 0
     ? String(index + 1).padStart(2, "0") + " / " + String(items.length).padStart(2, "0")
     : "CASE";
-  viewBody.innerHTML = d.html;
-  view.classList.add("open");
   const isCase = key.indexOf("case") === 0;
   view.classList.toggle("wide", key === "profile" || isCase);
   view.classList.toggle("case-view", isCase);
+  view.classList.add("open");
+  if (renderedView !== key || viewBody.querySelector("img[data-load-failed]")) {
+    viewBody.innerHTML = d.html;
+    renderedView = key;
+  }
   viewScroll.scrollTop = 0;
   document.title = d.title + " · 陈宇萱";
   if (location.hash.slice(1) !== key) history.replaceState(null, "", "#" + key);
@@ -1123,24 +1115,74 @@ function closeView() {
   setPetContext("home");
 }
 document.getElementById("viewClose").addEventListener("click", closeView);
+viewBody.addEventListener("error", (event) => {
+  const image = event.target;
+  if (!(image instanceof HTMLImageElement)) return;
+  const originalSrc = image.dataset.originalSrc;
+  if (!originalSrc) {
+    image.dataset.loadFailed = "true";
+    return;
+  }
+  delete image.dataset.originalSrc;
+  image.src = originalSrc;
+}, true);
 
 /* 图片点击放大 */
 const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightboxImg");
+const lightboxStatus = document.getElementById("lightboxStatus");
+let lightboxImg = document.getElementById("lightboxImg");
+let lightboxRequest;
 
-function openLightbox(src, alt) {
-  lightboxImg.src = src;
-  lightboxImg.alt = alt || "";
+function setLightboxStatus(text) {
+  lightboxStatus.textContent = text;
+  lightboxStatus.hidden = !text;
+}
+
+function openLightbox(src, thumbnail) {
+  const image = new Image();
+  image.id = "lightboxImg";
+  image.alt = thumbnail?.alt || "";
+  image.decoding = "async";
+  lightboxRequest = image;
+
+  const preview = thumbnail?.complete && thumbnail.naturalWidth > 0
+    && thumbnail.currentSrc !== src ? thumbnail.currentSrc : "";
+  if (preview) {
+    lightboxImg.alt = image.alt;
+    lightboxImg.src = preview;
+  } else {
+    lightboxImg.replaceWith(image);
+    lightboxImg = image;
+  }
+
+  setLightboxStatus("正在加载原图…");
   lightbox.classList.add("open");
   lightbox.setAttribute("aria-hidden", "false");
+  image.addEventListener("load", () => {
+    if (lightboxRequest !== image) return;
+    if (lightboxImg !== image) {
+      lightboxImg.replaceWith(image);
+      lightboxImg = image;
+    }
+    setLightboxStatus("");
+  }, { once: true });
+  image.addEventListener("error", () => {
+    if (lightboxRequest !== image) return;
+    setLightboxStatus(preview ? "原图暂未加载，当前显示预览。" : "图片加载失败，可以关闭后再试。");
+  }, { once: true });
+  image.src = src;
 }
 function closeLightbox() {
   lightbox.classList.remove("open");
   lightbox.setAttribute("aria-hidden", "true");
+  setLightboxStatus("");
+  if (lightboxRequest && lightboxRequest !== lightboxImg) lightboxRequest.removeAttribute("src");
+  lightboxRequest = null;
   lightboxImg.removeAttribute("src");
 }
-lightbox.addEventListener("click", closeLightbox);
-lightboxImg.addEventListener("click", (e) => e.stopPropagation());
+lightbox.addEventListener("click", (event) => {
+  if (event.target !== lightboxImg) closeLightbox();
+});
 viewBody.addEventListener("click", (e) => {
   const go = e.target.closest("[data-goto]");
   if (go) {
@@ -1151,8 +1193,7 @@ viewBody.addEventListener("click", (e) => {
   const link = e.target.closest("a[data-shot]");
   if (!link) return;
   e.preventDefault();
-  const img = link.querySelector("img");
-  openLightbox(link.getAttribute("href"), img ? img.alt : "");
+  openLightbox(link.href, link.querySelector("img"));
 });
 
 /* 键盘 */

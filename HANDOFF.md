@@ -73,7 +73,8 @@ portfolio/
 - `?noboot` 跳过启动画面（截图调试用）
 - 图片放大：`<a href="原图" data-shot><img></a>`，点击走 `#lightbox`
 - 页内跳转：任意元素加 `data-goto="caseContent"`，`viewBody` 里统一拦截
-- 长图：`.case-shot.is-scroll` + `.shot-frame`，固定高度、**悬停才出现滚动**；图注右边「原图 ↗」在新窗口按原尺寸打开
+- 长图：`.case-shot.is-scroll` + `.shot-frame`，固定高度，鼠标、键盘和触摸都可在框内滚动；图注「原图 ↗」保留原尺寸链接
+- 大图：`assets/previews/` 是页面使用的 WebP 预览；`data-original-src` 是预览失败时的备用地址，`href` 保留原图。更新截图时，预览和原图要一起更新
 - 左右配对：`.case-media.is-pair`，同一行两张卡底边对齐；`.case-media.is-narrow` 限宽 800
 - 案例页会加 `#view.case-view` 和 `wide` 类，版头比普通页小
 - 桌宠台词在 `PET_LINES`，key 跟视图 key 一致，**新增视图记得加一条**
