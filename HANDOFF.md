@@ -39,7 +39,7 @@ portfolio/
 ## 4. 页面与路由
 
 主菜单 6 项：`#profile` `#games` `#quest` `#works` `#skill` `#contact`。
-作品分类是 `#officialContent`（CASE 01）、`#creatorWork`（CASE 02）和 `#dataWork`（CASE 03）。CASE 01 下有 `#officialDaily`（日常官号）、`#caseContent`（万国霸业）和 `#caseDouble11`（双十一直播）。这些子页不另占作品分类编号。
+作品分类是 `#officialContent`（CASE 01）、`#creatorWork`（CASE 02）和 `#dataWork`（CASE 03）。CASE 01 下有 `#officialDaily`（日常官号）、`#caseContent`（万国霸业）和 `#caseDouble11`（双十一直播）。CASE 02 下有 `#caseStarPlan`（星推计划），CASE 03 下有 `#caseCodeData`（礼包码清洗）。这些子页不另占作品分类编号。
 
 页面现状：
 
@@ -106,7 +106,16 @@ gh api repos/chiyexiao415/portfolio/pages/builds/latest --jq .status  # building
 5. 大唐无双线下的**总决赛新闻稿**还没给，出来后补进案例「赛事与线下」
 6. 游戏截图里无畏契约的头像照片要不要处理，一直没定
 
-## 11. 最近改动（2026-11-25）
+## 11. 最近改动（2026-11-26）
+
+- 作品索引三卡改成关键词说明 + 数字 + 入口；官号项目坐标的四象限编号按阅读顺序排 I–IV
+- 新增 `#caseStarPlan`：星推计划激励结构、brief 与文案、长图、投放与发码、抽审巡场（金额与内部结算口径不公开）
+- 新增 `#caseCodeData`：5 个批次 12,687 行礼包码清洗，A/C/G 三条异常规则、8 个 sheet、结论与复核三步
+- 新增 `.case-table / .case-table-wrap / .case-note` 三个组件，手机可横向滑动
+- 图片素材：`koc-cover`（长图封面，裁掉了二维码段）、`koc-copy`（招募文案）、`koc-raw`（原始明细，账号列已打码）
+- 缓存版本号改为 `?v=20261126b`
+
+## 12. 较早改动（2026-11-25）
 
 - 作品页改成按能力分组，卡片封面 + 能力说明
 - 万国霸业并成一个完整案例（版本内容 + 赛事与线下），拆掉单独的赛事页
