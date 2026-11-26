@@ -1066,18 +1066,21 @@ const DATA = {
 
       <p class="case-detail-kicker">网易互娱《大唐无双》 · 星推计划第十六期 / 2026.12</p>
       <h3 class="case-detail-title">一期达人激励，从定档到结算</h3>
-      <p class="case-detail-lead">星推计划是《大唐无双》做给主播和创作者的月度激励，一期 30 天。这一期我跟完一轮：定这个月主推什么、把激励拆成档、写 brief 交给供应商出长图、按名单发礼包码、上线后抽审稿件，结束后核一遍激活数据做结算。下面按顺序放这一期的物料。</p>
+      <p class="case-detail-lead">星推计划是《大唐无双》做给主播和创作者的月度激励，一期 30 天。这一期我跟完一轮：定这个月主推什么、把激励拆成档、写 brief 交给供应商出长图、按名单发礼包码、上线后抽审，结束后核一遍激活数据做结算。</p>
 
-      <section class="case-meta" aria-label="关键时间">
-        <div><span><time datetime="2026-12-01">12.01</time></span><b>本期开档</b></div>
-        <div><span><time datetime="2026-12-03">12.03</time></span><b>招募长图上线</b></div>
-        <div><span><time datetime="2026-12-15">12.15</time></span><b>抽审与巡场</b></div>
-        <div><span><time datetime="2026-12-31">12.31</time></span><b>本期结束 · 结算</b></div>
+      <section class="case-brief" aria-label="这个项目一句话概括">
+        <div><span>目标</span><p>把本月产品重点翻成一期达人激励，内容和礼包码同步铺开。</p></div>
+        <div><span>动作</span><p>定侧重 → 拆档位 → 写 brief 与文案 → 发码投放 → 抽审与结算。</p></div>
+        <div><span>结果</span><p>招募长图 1 张、抖音话题曝光 2000w+、272 个礼包码、抽审 151 条。</p></div>
+        <div><span>复盘</span><p>规则写清楚才能结算，但门槛不能高到达人不愿意播。</p></div>
       </section>
 
-      <figure class="case-hero">
-        <img src="assets/previews/koc-kv.webp" data-original-src="assets/case/koc-kv.jpg" alt="星推计划第十六期招募长图主视觉" width="750" height="960" loading="eager" fetchpriority="high" decoding="async" />
-      </figure>
+      <div class="case-figures">
+        <div class="case-figure"><b>2000w+</b><span>抖音话题曝光</span></div>
+        <div class="case-figure"><b>3</b><span>条赛道</span></div>
+        <div class="case-figure"><b>272</b><span>个礼包码</span></div>
+        <div class="case-figure"><b>151</b><span>条抽审稿件</span></div>
+      </div>
 
       <h4 class="case-subhead">我的分工</h4>
       <ul class="resume-list">
@@ -1131,26 +1134,36 @@ const DATA = {
         <header class="case-node-head">
           <span class="focus-kicker">INCENTIVE / 激励结构</span>
           <div>
-            <h4>档位切多细，取决于能不能结算</h4>
-            <p>直播看开播天数、日均时长和总场观，三项一起达标才定档；排名另算，按平均在线人数（ACU）取前 40，新人第一次参与有单独的一档。短视频单条播放和账号期总播放量取高不叠加，分发到快手、视频号再补一项，都设了单人上限——一条爆款不该把整月预算吃掉。</p>
+            <h4>三条赛道，各自怎么算</h4>
+            <p>直播靠时长和场观，短视频靠播放量，新区靠打卡投稿量。切点选在「后台能直接读到的数」上，结算时才不用一条条争。</p>
           </div>
         </header>
-        <div class="case-grid is-3">
-          <article class="case-cell">
-            <span class="case-tag">01 / 直播</span>
-            <h5>三条线同时达标</h5>
-            <p>开播天数、日均时长、总场观一起看，分五档一次性发放；排名按 ACU 取前 40，新人满 7 天另有新人档。</p>
-          </article>
-          <article class="case-cell">
-            <span class="case-tag">02 / 短视频</span>
-            <h5>单条与总量取高</h5>
-            <p>单条播放分两档，每天限 2 条；账号期总播放量按区间定档，与单条取高不叠加，避免重复计奖。</p>
-          </article>
-          <article class="case-cell">
-            <span class="case-tag">03 / 新区打卡</span>
-            <h5>给这个月的新区导内容</h5>
-            <p>开服期内发打卡内容、带统一话题标签，按有效投稿结算。加这条是为了让内容往新区聚，而不是散成一堆话题。</p>
-          </article>
+        <div class="case-tabs">
+          <input type="radio" id="trackLive" name="track" checked />
+          <input type="radio" id="trackVideo" name="track" />
+          <input type="radio" id="trackNew" name="track" />
+          <div class="tabs-nav">
+            <label for="trackLive">01 直播</label>
+            <label for="trackVideo">02 短视频</label>
+            <label for="trackNew">03 新区打卡</label>
+          </div>
+          <div class="panes">
+            <div class="pane pane-live">
+              <h5>开播天数、时长、场观，三项一起达标才定档</h5>
+              <p>排名单独算一档，按平均在线人数（ACU）取前 40；第一次参与且有效开播满 7 天，另有新人档。三项一起看是为了挡掉「只播一场特别长」的凑数玩法。</p>
+              <div class="pane-facts"><span>5 档</span><span>ACU 前 40</span><span>新人 ≥7 天</span></div>
+            </div>
+            <div class="pane pane-video">
+              <h5>单条与账号总量取高，不叠加</h5>
+              <p>单条播放分两档，每天最多算 2 条；账号期内总播放量按区间定档。分发到快手、视频号再补一项，7 天破 1.5 万还有爆款加奖，都设了单人上限。</p>
+              <div class="pane-facts"><span>每日 ≤2 条</span><span>取高不叠加</span><span>单人上限</span></div>
+            </div>
+            <div class="pane pane-new">
+              <h5>这个月新开的赛道，只做新区内容</h5>
+              <p>开服期内发打卡内容、带统一话题标签，按有效投稿结算。加这条是为了让内容往新区聚——不然几十个话题各讲各的，既统计不了，也看不出这一期跑没跑起来。</p>
+              <div class="pane-facts"><span>统一话题</span><span>按有效投稿</span><span>只做新区</span></div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1184,7 +1197,7 @@ const DATA = {
 
       <h4 class="case-subhead">这一期的产出</h4>
       <ul class="resume-list">
-        <li><b>招募长图 1 张：</b>抖音话题曝光 2000w+，三条赛道共收有效投稿。</li>
+        <li><b>招募长图 1 张：</b>三条赛道统一话题收口，抖音话题曝光 2000w+。</li>
         <li><b>礼包码 272 个：</b>按达人名单分批发放，每个码对一批激活，结算才有唯一键。</li>
         <li><b>抽审 151 条：</b>按 5% 比例，2 条不合规打回，其余进入结算。</li>
       </ul>
@@ -1208,11 +1221,19 @@ const DATA = {
       <h3 class="case-detail-title">五个批次的激活数据，核完要能直接对账</h3>
       <p class="case-detail-lead">每期达人激励结束都要结算，我负责把礼包码的激活数据核一遍。原始明细是一个账号一行的流水，五个批次各有各的问题：同一条码一分钟内挤进好几条激活、同一天批量注册的空号、尾号连号的脚本账号。核完的数要能直接对账，也要让下期换批次的人照着就能跑。</p>
 
-      <section class="case-stats" aria-label="这套数据的三个数字">
-        <span><b>12,687</b> 行有效激活</span>
-        <span><b>1,732</b> 行异常</span>
-        <span><b>8</b> 个 sheet</span>
+      <section class="case-brief" aria-label="这个项目一句话概括">
+        <div><span>目标</span><p>五个批次的礼包码数据核成同一套口径，能直接拿去结算。</p></div>
+        <div><span>动作</span><p>分层 → 标异常 → 出汇总与明细 → 写处理说明。</p></div>
+        <div><span>结果</span><p>12,687 行有效激活、1,732 行异常、8 个 sheet、一份可复用的说明。</p></div>
+        <div><span>复盘</span><p>数据不只是交表，得让拿到的人敢直接用。</p></div>
       </section>
+
+      <div class="case-figures">
+        <div class="case-figure"><b>12,687</b><span>行有效激活</span></div>
+        <div class="case-figure"><b>1,732</b><span>行异常账号</span></div>
+        <div class="case-figure"><b>13.7%</b><span>异常占比</span></div>
+        <div class="case-figure"><b>272</b><span>个礼包码</span></div>
+      </div>
 
       <h4 class="case-subhead">我做的三件事</h4>
       <ul class="resume-list">
@@ -1252,24 +1273,22 @@ const DATA = {
             <p>6–7 月和 9–10 月是两波高峰，6–7 月那批新用户占比 55.6%，是资料片带量最实的一次；8 月只有 11 行有效激活，回头查是码没真正发出去，不是数据脏。</p>
           </div>
         </header>
-        <div class="case-media is-pair">
-          <figure class="case-shot">
-            <div class="shot-box">
-              <div class="shot-frame">
-                <img src="assets/previews/chart-batch.webp" data-original-src="assets/case/chart-batch.png" alt="五个批次的有效激活与新用户占比" width="1353" height="824" loading="lazy" decoding="async" />
-              </div>
+        <figure class="case-shot">
+          <div class="shot-box">
+            <div class="shot-frame">
+              <img src="assets/previews/chart-batch.webp" data-original-src="assets/case/chart-batch.png" alt="五个批次的有效激活与新用户占比" width="1353" height="824" loading="lazy" decoding="async" />
             </div>
-            <figcaption><b>激活与新用户占比</b> <span>柱是有效激活行，折线是新用户占比</span></figcaption>
-          </figure>
-          <figure class="case-shot">
-            <div class="shot-box">
-              <div class="shot-frame">
-                <img src="assets/previews/chart-tier.webp" data-original-src="assets/case/chart-tier.png" alt="有效激活的分层构成" width="1304" height="643" loading="lazy" decoding="async" />
-              </div>
+          </div>
+          <figcaption><b>激活与新用户占比</b> <span>柱是有效激活行，折线是新用户占比；8 月几乎贴地</span></figcaption>
+        </figure>
+        <figure class="case-shot is-tall">
+          <div class="shot-box">
+            <div class="shot-frame">
+              <img src="assets/previews/chart-tier.webp" data-original-src="assets/case/chart-tier.png" alt="有效激活的分层构成" width="1304" height="643" loading="lazy" decoding="async" />
             </div>
-            <figcaption><b>分层构成</b> <span>新用户与活跃老用户几乎对半，回流占三成</span></figcaption>
-          </figure>
-        </div>
+          </div>
+          <figcaption><b>分层构成</b> <span>新用户与活跃老用户几乎对半，回流占三成</span></figcaption>
+        </figure>
       </section>
 
       <section class="case-node focus-panel is-version">
@@ -1277,7 +1296,7 @@ const DATA = {
           <span class="focus-kicker">SOP / 处理说明</span>
           <div>
             <h4>交出去的不只是表，还有怎么用</h4>
-            <p>这份《抖音达人礼包码数据处理说明》一页写清了批次、总行数、异常量，后面是 8 个 sheet 的分工：给人看的 4 个、给系统看的 3 个、加一张待确认事项。每个 sheet 都标了「谁看、什么时候看」，交接和下一期复用都对着这页走。</p>
+            <p>这份《抖音达人礼包码数据处理说明》一页写清了批次、总行数、异常量，后面是 8 个 sheet 的分工：给人看的 4 个、给系统看的 3 个、加一张待确认事项。每个 sheet 都标了「谁看、什么时候看」。</p>
           </div>
         </header>
         <figure class="case-shot is-scroll">

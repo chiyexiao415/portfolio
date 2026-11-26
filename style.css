@@ -2714,3 +2714,93 @@ html[data-theme="light"] .case-longfig { background: rgba(255, 253, 249, .78); }
 html[data-theme="light"] .case-longfig figcaption { color: #57504a; }
 html[data-theme="light"] .case-longfig figcaption b { color: #241f1a; }
 @media (max-width: 560px) { .case-longfig { max-width: 100%; } }
+
+/* ---------- 项目一句话：目标 / 动作 / 结果 / 复盘 ---------- */
+.case-brief { margin: 24px 0 2px; border-top: 1px solid var(--line); }
+.case-brief > div {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 18px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+.case-brief span {
+  padding-top: 3px;
+  font: 600 10.5px ui-monospace, Consolas, monospace;
+  letter-spacing: .18em;
+  color: var(--accent);
+}
+.case-brief p { margin: 0; font-size: 14.5px; line-height: 1.8; color: #b7c6d2; }
+html[data-theme="light"] .case-brief { border-color: var(--line); }
+html[data-theme="light"] .case-brief span { color: #0f6a59; }
+html[data-theme="light"] .case-brief p { color: #4a4136; }
+
+/* ---------- 四个大数字 ---------- */
+.case-figures {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin: 24px 0 10px;
+}
+.case-figure b {
+  display: block;
+  font: 600 clamp(24px, 3.2vw, 36px)/1.05 ui-monospace, Consolas, monospace;
+  letter-spacing: -.01em;
+  color: var(--accent);
+}
+.case-figure span {
+  display: block;
+  margin-top: 7px;
+  font-size: 12px;
+  letter-spacing: .06em;
+  color: var(--dim);
+}
+html[data-theme="light"] .case-figure b { color: #0f6a59; }
+
+/* ---------- 赛道切换（纯 CSS tabs） ---------- */
+.case-tabs { margin-top: 18px; }
+.case-tabs > input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.case-tabs .tabs-nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.case-tabs .tabs-nav label {
+  padding: 9px 15px;
+  border: 1px solid var(--focus-line);
+  font-size: 12.5px;
+  letter-spacing: .06em;
+  color: var(--focus-copy);
+  background: transparent;
+  cursor: pointer;
+  transition: .18s;
+}
+.case-tabs .tabs-nav label:hover { border-color: var(--focus-accent); color: var(--focus-accent); }
+.case-tabs .pane { display: none; }
+.case-tabs .pane h5 {
+  margin: 0 0 9px;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: var(--focus-heading);
+}
+.case-tabs .pane p { margin: 0; font-size: 14px; line-height: 1.85; color: var(--focus-copy); }
+.pane-facts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+.pane-facts span {
+  padding: 6px 12px;
+  border: 1px dashed var(--focus-line);
+  font-size: 12px;
+  color: var(--focus-accent);
+}
+#trackLive:checked ~ .tabs-nav label[for="trackLive"],
+#trackVideo:checked ~ .tabs-nav label[for="trackVideo"],
+#trackNew:checked ~ .tabs-nav label[for="trackNew"] {
+  background: var(--focus-accent);
+  border-color: var(--focus-accent);
+  color: var(--focus-base);
+  font-weight: 600;
+}
+#trackLive:checked ~ .panes .pane-live { display: block; }
+#trackVideo:checked ~ .panes .pane-video { display: block; }
+#trackNew:checked ~ .panes .pane-new { display: block; }
+
+@media (max-width: 760px) {
+  .case-figures { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .case-brief > div { grid-template-columns: 1fr; gap: 6px; }
+}
