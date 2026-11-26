@@ -2811,3 +2811,5 @@ html[data-theme="light"] .case-figure b { color: #0f6a59; }
 @media (max-width: 760px) {
   .case-shot.is-doc .shot-box { max-width: 100%; }
 }
+
+.case-media.is-pair.is-compact { align-items: start; }

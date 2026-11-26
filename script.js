@@ -1325,22 +1325,24 @@ const DATA = {
             <p>五个批次放在一起，问题自己浮出来：<b>6–7 月新用户占 55.6%</b>，是资料片带量最实的一次；<b>8 月只有 11 行有效激活</b>——不是数据脏，是码没真正发出去。</p>
           </div>
         </header>
-        <figure class="case-shot">
-          <div class="shot-box">
-            <div class="shot-frame">
-              <img src="assets/previews/chart-batch.webp" data-original-src="assets/case/chart-batch.png" alt="五个批次的有效激活与新用户占比" width="1353" height="824" loading="lazy" decoding="async" />
+        <div class="case-media is-pair is-compact">
+          <figure class="case-shot">
+            <div class="shot-box">
+              <div class="shot-frame">
+                <img src="assets/previews/chart-batch.webp" data-original-src="assets/case/chart-batch.png" alt="五个批次的激活量与新用户占比" width="865" height="688" loading="lazy" decoding="async" />
+              </div>
             </div>
-          </div>
-          <figcaption><b>激活与新用户占比</b> <span>柱是有效激活行，折线是新用户占比；8 月几乎贴地</span></figcaption>
-        </figure>
-        <figure class="case-shot is-tall">
-          <div class="shot-box">
-            <div class="shot-frame">
-              <img src="assets/previews/chart-tier.webp" data-original-src="assets/case/chart-tier.png" alt="有效激活的分层构成" width="1304" height="643" loading="lazy" decoding="async" />
+            <figcaption><b>激活量与新用户占比</b> <span>柱是有效激活，线是新用户占比</span></figcaption>
+          </figure>
+          <figure class="case-shot">
+            <div class="shot-box">
+              <div class="shot-frame">
+                <img src="assets/previews/chart-tier.webp" data-original-src="assets/case/chart-tier.png" alt="有效激活的分层构成" width="968" height="512" loading="lazy" decoding="async" />
+              </div>
             </div>
-          </div>
-          <figcaption><b>分层构成</b> <span>新用户与活跃老用户几乎对半，回流占三成</span></figcaption>
-        </figure>
+            <figcaption><b>分层构成</b> <span>新用户与活跃老用户对半，回流占三成</span></figcaption>
+          </figure>
+        </div>
         <ul class="resume-list">
           <li><b>55.6%：</b>6–7 月新用户占比最高，那两个月拉新最有效。</li>
           <li><b>78 / 80：</b>8 月 80 个码里 78 个零激活——先查投放，别先怀疑数据。</li>
@@ -1695,6 +1697,7 @@ const PET_LINES = {
     "左边是个人信息，右边是教育背景和自我介绍。",
     "广东工业大学 · 金融工程，2024 级。",
     "完整简历可以发邮件索取。",
+    "这页写得比较平，重点在下面几页。",
   ],
   games: [
     "游戏经历分七个品类，从 ARPG 开始往下滑。",
@@ -1702,53 +1705,84 @@ const PET_LINES = {
     "截图都能点开放大，数据看得清。",
     "我的世界 3000h+，这个是真的。",
     "剧情向那几款时间不长，但都认真通关了。",
+    "MMO 那栏跟现在的工作最对得上。",
+    "手游和端游分开记，免得混在一起。",
   ],
   quest: [
     "两段实习：网易互娱产品营销，赢商网数据运营。",
     "网易那段做直播预热和赛事传播，结果都写在卡片里。",
+    "下面还有项目，能点进去看案例。",
+    "时间线是从近往远排的。",
   ],
   works: [
     "这页按能力分块，每块下面是做过的项目。",
     "点开三个案例，可以分别看项目和结果。",
+    "左边偏内容，中间偏达人，右边偏数据。",
+    "案例页比列表长，慢慢滑就行。",
+    "每页开头有四行字，先看那四行最快。",
   ],
   officialContent: [
     "左边偏图文，右边偏直播和互动。",
     "万国霸业和双十一都能点开看具体物料。",
+    "长图都能在图里上下滑，不用开新窗口。",
+    "想快一点就看每块的第一行字。",
   ],
   officialDaily: [
     "日常内容按官网、公众号和抖音官号来整理。",
+    "日常这块量大但轻，看三张图就够。",
+    "官网那组偏版本信息，公众号偏活动。",
   ],
   creatorWork: [
     "这里一边是达人合作，一边是我自己做的账号。",
+    "星推计划那期，brief 和成品是并排放着的。",
+    "左边是我写给供应商的，右边是他照出来的。",
+    "两页对照着看，能看出 brief 写得够不够具体。",
   ],
   dataWork: [
     "数据清洗后，把判定口径做成了 SOP 和模板。",
+    "礼包码那页，重点在最后那份说明。",
+    "异常账号没删，单独标出来留着复核。",
+    "表格和图都能点开看原图。",
   ],
   caseContent: [
     "这里有两条线：万国霸业资料片宣发、潜龙争霸赛。",
     "首曝框架和长图可以直接在图里上下滚动。",
     "往下还能看赛程文案和总决赛现场物料。",
+    "这页节点多，按 01、02 的顺序看最顺。",
+    "物料都是真发出去的，不是示意稿。",
   ],
   caseDouble11: [
     "手游预热新闻稿是独立撰写的，可以点开看长图。",
+    "这页节奏比万国短，物料更集中。",
+    "稿子改过几轮，最后那版是发出去的。",
   ],
   caseStarPlan: [
     "这页讲的是激励怎么定，不是稿子怎么写。",
     "金额不对外，表里只写结构和口径。",
     "长图能点开看原图。",
+    "三条赛道可以点着切，别只看直播那条。",
+    "brief 那五页，是我给供应商的原件。",
+    "抽审比例写的是 5%，不是 5.01%。",
   ],
   caseCodeData: [
     "1.2 万行明细，全靠口径统一才洗得动。",
     "异常账号单独拎出来，一条没删。",
     "表格可以左右滑，手机上也看得清。",
+    "这份说明是我写的，五页拼成一张。",
+    "付费额和同事名字都遮掉了。",
+    "三个结论在最后，往下滑两屏就到。",
   ],
   skill: [
     "技能树：内容营销、数据、达人、赛事，还有工具。",
     "点旁边的菜单能换页，不用一直停在这。",
+    "数据那条不是课程学的，是实习里被逼出来的。",
+    "会用的工具都写在最后一行。",
   ],
   contact: [
     "想聊就从这页拿联系方式。",
     "电话、邮箱、城市都在这了。",
+    "简历文件可以直接发你。",
+    "约时间的话，提前一天说比较稳。",
   ],
 };
 
@@ -1758,6 +1792,11 @@ const PET_CLICKS = [
   "又见面了。",
   "点得挺勤。",
   "要不要先看看游戏经历？",
+  "点我也不会多出一个项目。",
+  "这页的字我都能背了。",
+  "歇会儿，我又不会跑。",
+  "你要找的是哪个案例？",
+  "再点我就开始报菜名。",
 ];
 
 let petCtx = "home";
