@@ -469,129 +469,207 @@ const DATA = {
     en: "WORKS",
     title: "作品",
     html: `
-      <p class="works-intro">按能力分块，每块下面挂做过的项目。点开案例能看具体物料。</p>
+      <p class="works-intro">按能力浏览三个案例，查看我的分工、作品与结果。</p>
 
-      <section class="work-block tone-ember">
-        <div class="work-block-head"><h3><em>01</em>版本与赛事内容整合</h3><span>VERSION &amp; EVENT</span></div>
-        <p class="work-block-desc">一个版本从首曝到线下总决赛：先写内容框架，再出长图、新闻稿、赛程视频和现场视觉，按节点发出去。</p>
-        <div class="case-grid" style="grid-template-columns: minmax(0, 1fr); grid-auto-rows: 1fr;">
-          <article class="case-card work-spotlight" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
-            <a class="case-cover" href="#caseContent" data-goto="caseContent" style="flex: 1 1 165px; min-width: 0; margin: 0; aspect-ratio: 16 / 9;"><img src="assets/previews/thumb.webp" data-original-src="assets/case/thumb.jpg" alt="大唐无双万国霸业资料片主视觉" width="740" height="570" loading="eager" fetchpriority="high" decoding="async" /></a>
-            <div style="flex: 2 1 250px; min-width: 0;">
-              <span class="case-tag">CASE 01 · 大唐无双</span>
-              <h3>《万国霸业》版本内容与潜龙争霸赛</h3>
-              <p>资料片 11.13 上线，赛事 10.20 开赛、11.22 线下总决赛。内容框架、版本长图、新闻稿、赛程视频、线下物料全套产出。</p>
-              <div class="case-stats">
-                <span><b>3</b>个内容节点</span>
-                <span><b>3</b>支赛程视频</span>
-                <span><b>1</b>套线下主视觉</span>
+      <nav class="work-index tone-ember" aria-label="作品分类">
+        <a class="work-entry" href="#officialContent" data-goto="officialContent">
+          <div class="work-entry-copy">
+            <span class="work-kicker">CASE 01 / OFFICIAL CHANNELS</span>
+            <h3>官方内容与社媒运营</h3>
+            <p>资料片与赛事 · 双十一直播 · 互动 H5 · 日常内容</p>
+          </div>
+          <span class="work-action">查看项目坐标 <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="work-entry" href="#creatorWork" data-goto="creatorWork">
+          <div class="work-entry-copy">
+            <span class="work-kicker">CASE 02 / KOL &amp; SOCIAL</span>
+            <h3>达人合作与账号运营</h3>
+            <p>达人对接 · KOC 活动 · 个人 cos 账号</p>
+          </div>
+          <span class="work-action">查看案例 <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="work-entry" href="#dataWork" data-goto="dataWork">
+          <div class="work-entry-copy">
+            <span class="work-kicker">CASE 03 / DATA OPERATIONS</span>
+            <h3>数据整理</h3>
+            <p>商业选址数据清洗 · 判定口径 · SOP 与模板</p>
+          </div>
+          <span class="work-action">查看案例 <span aria-hidden="true">↗</span></span>
+        </a>
+      </nav>
+    `,
+  },
+  officialContent: {
+    caseNumber: "01",
+    en: "OFFICIAL CHANNELS",
+    title: "官方内容与社媒运营",
+    html: `
+      <a class="case-back" href="#works" data-goto="works">← 返回作品</a>
+      <section class="work-map" aria-labelledby="work-map-title">
+        <header class="work-map-head">
+          <div>
+            <span class="work-kicker">CONTENT MAP</span>
+            <h3 id="work-map-title">官号项目坐标</h3>
+          </div>
+          <p>按内容形式和项目类型归类，不代表排名。</p>
+        </header>
+        <div class="work-map-plot">
+          <div class="work-map-axes" aria-hidden="true">
+            <span class="work-map-axis is-x"></span>
+            <span class="work-map-axis is-y"></span>
+            <span class="work-map-origin">O</span>
+            <span class="work-map-label is-north">主线项目</span>
+            <span class="work-map-label is-south">日常与配套</span>
+            <span class="work-map-label is-west">图文与设计</span>
+            <span class="work-map-label is-east">直播与互动</span>
+          </div>
+          <div class="project-grid work-map-grid">
+            <a class="project-card tone-blue" href="#caseContent" data-goto="caseContent">
+              <div class="project-card-heading has-preview">
+                <div>
+                  <span class="work-kicker"><span class="work-quadrant" aria-hidden="true">II</span>资料片与赛事</span>
+                  <h4>万国霸业 · 资料片与赛事</h4>
+                </div>
+                <img class="project-preview" src="assets/previews/thumb.webp" data-original-src="assets/case/thumb.jpg" alt="" width="740" height="570" loading="eager" fetchpriority="high" decoding="async" />
               </div>
-              <div class="case-tags">
-                <span class="tag">内容策划</span>
-                <span class="tag">赛事内容</span>
-                <span class="tag">线下执行</span>
+              <p>为《万国霸业》写图文框架、首曝长图和官网新闻；为潜龙争霸赛写赛程文案，跟进线下视觉物料。</p>
+              <span class="work-action">查看案例 <span aria-hidden="true">↗</span></span>
+            </a>
+
+            <a class="project-card tone-ember" href="#caseDouble11" data-goto="caseDouble11">
+              <div class="project-card-heading has-preview">
+                <div>
+                  <span class="work-kicker"><span class="work-quadrant" aria-hidden="true">I</span>直播宣推</span>
+                  <h4>双十一官方直播</h4>
+                </div>
+                <img class="project-preview" src="assets/previews/double11-kv.webp" data-original-src="assets/case/double11-kv.jpg" alt="" width="1000" height="563" loading="lazy" decoding="async" />
               </div>
-              <a class="case-link" href="#caseContent" data-goto="caseContent">查看案例 →</a>
-            </div>
-          </article>
+              <p>独立撰写手游直播预热新闻稿，跟进预告、开播准备和播后数据复盘。</p>
+              <span class="work-action">查看案例 <span aria-hidden="true">↗</span></span>
+            </a>
 
-          <article class="case-card work-spotlight" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
-            <a class="case-cover" href="#caseDouble11" data-goto="caseDouble11" style="flex: 1 1 165px; min-width: 0; margin: 0; aspect-ratio: 16 / 9;"><img src="assets/previews/double11-kv.webp" data-original-src="assets/case/double11-kv.jpg" alt="大唐无双手游双十一直播福利节主视觉" width="1000" height="563" loading="lazy" decoding="async" /></a>
-            <div style="flex: 2 1 250px; min-width: 0;">
-              <span class="case-tag">CASE 02 · 大唐无双</span>
-              <h3>双十一官方直播</h3>
-              <p><strong>独立撰写手游预热新闻稿</strong>，跟进端手游商品、上架测试和预告发布，再跟到直播现场与播后寄送、数据复盘。</p>
-              <div class="case-stats">
-                <span><b>50万+</b>直播观看</span>
-                <span><b>100+</b>端手游商品</span>
+            <a class="project-card" href="#officialDaily" data-goto="officialDaily">
+              <div class="project-card-heading">
+                <span class="work-kicker"><span class="work-quadrant" aria-hidden="true">III</span>日常内容</span>
+                <h4>日常官号内容</h4>
               </div>
-              <a class="case-link" href="#caseDouble11" data-goto="caseDouble11">查看案例 →</a>
-            </div>
-          </article>
+              <p>官网新闻、公众号撰稿与平面设计、抖音官号视频，按发布渠道整理。</p>
+              <span class="work-action">查看内容分类 <span aria-hidden="true">↗</span></span>
+            </a>
 
-          <article class="case-card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
-            <div class="case-cover" style="display: grid; place-items: center; flex: 1 1 165px; min-width: 0; margin: 0; aspect-ratio: 16 / 9; background: var(--panel); border: 1px solid var(--line);" aria-hidden="true">
-              <span class="case-tag" style="font-size: 22px;">H5 · 制作中</span>
-            </div>
-            <div style="flex: 2 1 250px; min-width: 0;">
-              <span class="case-tag">CASE · 在建</span>
-              <h3>手游年末资料片 + H5</h3>
-              <p>正在做的年末资料片，配套一版 H5 互动，上线后补物料和复盘。</p>
-              <div class="case-tags">
-                <span class="tag">版本内容</span>
-                <span class="tag">H5</span>
+            <article class="project-card tone-violet">
+              <div class="project-card-heading">
+                <span class="work-kicker"><span class="work-quadrant" aria-hidden="true">IV</span>版本与互动</span>
+                <h4>手游年末资料片 + H5</h4>
               </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="work-block tone-violet">
-        <div class="work-block-head"><h3><em>02</em>达人合作与账号运营</h3><span>KOL &amp; SOCIAL</span></div>
-        <p class="work-block-desc">对外建联达人和 KOC，对内自己运营账号，两边都要看数据和内容反馈。</p>
-        <div class="case-grid">
-          <article class="case-card">
-            <span class="case-tag">CASE · 达人合作</span>
-            <h3>达人对接与 KOC 活动</h3>
-            <p>建联游戏直播博主和 coser，跟进直播排期、礼包码结算，参与活动框架和激励调整。</p>
-            <div class="case-stats">
-              <span><b>2000w+</b>抖音曝光</span>
-              <span><b>+15%</b>参与量</span>
-              <span><b>+25%</b>曝光</span>
-            </div>
-          </article>
-          <article class="case-card">
-            <span class="case-tag">个人 · 抖音</span>
-            <h3>cos 账号运营</h3>
-            <p>选题、脚本、拍摄、剪辑都自己来，做泛二次元内容，持续更新。</p>
-            <div class="case-stats">
-              <span><b>5w+</b>累计曝光</span>
-              <span><b>5k+</b>点赞收藏</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="work-block tone-blue">
-        <div class="work-block-head"><h3><em>03</em>数据整理</h3><span>DATA</span></div>
-        <p class="work-block-desc">把脏数据洗成能用的，口径写清楚，做成模板给后面的人接着用。</p>
-        <div class="case-grid">
-          <article class="case-card case-featured">
-            <span class="case-tag">CASE · 赢商网</span>
-            <h3>商业选址多源数据清洗</h3>
-            <p>地理、人口、消费三类数据的去重、缺失值分级、异常值校验，判定口径整理成 SOP 和模板。</p>
-            <div class="case-stats">
-              <span><b>6.8w</b>条数据</span>
-              <span><b>95%</b>保留率</span>
-              <span><b>7h→4.9h</b>单批时长</span>
-            </div>
-          </article>
+              <p>年末资料片的配套 H5 互动还在制作，上线后补作品和复盘。</p>
+              <span class="project-status">制作中</span>
+            </article>
+          </div>
         </div>
       </section>
     `,
   },
+  officialDaily: {
+    en: "DAILY CONTENT",
+    title: "日常官号内容",
+    html: `
+      <a class="case-back" href="#officialContent" data-goto="officialContent">← 返回官方内容与社媒运营</a>
+      <p class="works-intro">按发布渠道整理，具体稿件截图和视频链接待补。</p>
+
+      <section class="resume-sec">
+        <header class="resume-sec-head"><h3>官网新闻</h3><em>NEWS</em></header>
+        <p class="case-detail-text">官网日常新闻稿撰写与发布。</p>
+      </section>
+
+      <section class="resume-sec">
+        <header class="resume-sec-head"><h3>公众号图文</h3><em>WECHAT</em></header>
+        <p class="case-detail-text">公众号文章撰稿、配图与平面设计。</p>
+      </section>
+
+      <section class="resume-sec">
+        <header class="resume-sec-head"><h3>抖音官号视频</h3><em>DOUYIN</em></header>
+        <p class="case-detail-text">日常官号视频发布。</p>
+      </section>
+    `,
+  },
+  creatorWork: {
+    caseNumber: "02",
+    en: "KOL & SOCIAL",
+    title: "达人合作与账号运营",
+    html: `
+      <a class="case-back" href="#works" data-goto="works">← 返回作品</a>
+      <p class="works-intro">一边跟进达人合作和 KOC 活动，一边独立运营自己的 cos 账号。</p>
+      <div class="project-grid">
+        <article class="project-card tone-violet">
+          <div class="project-card-heading">
+            <span class="work-kicker">达人合作</span>
+            <h3>达人对接与 KOC 活动</h3>
+          </div>
+          <p>建联游戏直播博主和 coser，跟进直播排期、礼包码结算，参与活动框架和激励调整。</p>
+          <div class="case-stats">
+            <span><b>2000w+</b>抖音曝光</span>
+            <span><b>+15%</b>参与量</span>
+            <span><b>+25%</b>曝光</span>
+          </div>
+        </article>
+        <article class="project-card tone-ember">
+          <div class="project-card-heading">
+            <span class="work-kicker">个人 · 抖音</span>
+            <h3>cos 账号运营</h3>
+          </div>
+          <p>选题、脚本、拍摄、剪辑都自己来，做泛二次元内容，持续更新。</p>
+          <div class="case-stats">
+            <span><b>5w+</b>累计曝光</span>
+            <span><b>5k+</b>点赞收藏</span>
+          </div>
+        </article>
+      </div>
+    `,
+  },
+  dataWork: {
+    caseNumber: "03",
+    en: "DATA OPERATIONS",
+    title: "数据整理",
+    html: `
+      <a class="case-back" href="#works" data-goto="works">← 返回作品</a>
+      <p class="works-intro">清洗多来源数据，把判定口径整理成团队能沿用的 SOP 和模板。</p>
+      <article class="project-card tone-blue">
+        <div class="project-card-heading">
+          <span class="work-kicker">赢商网</span>
+          <h3>商业选址多源数据清洗</h3>
+        </div>
+        <p>地理、人口、消费三类数据的去重、缺失值分级、异常值校验，判定口径整理成 SOP 和模板。</p>
+        <div class="case-stats">
+          <span><b>6.8w</b>条数据</span>
+          <span><b>95%</b>保留率</span>
+          <span><b>7h→4.9h</b>单批时长</span>
+        </div>
+      </article>
+    `,
+  },
   caseContent: {
-    en: "CASE 01 · CONTENT & EVENT",
+    en: "VERSION & EVENT",
     title: "万国霸业 · 资料片与赛事",
     html: `
-      <a class="case-back" href="#" data-goto="works">← 返回作品</a>
+      <a class="case-back" href="#officialContent" data-goto="officialContent">← 返回官方内容与社媒运营</a>
 
-      <p class="case-detail-kicker">网易互娱《大唐无双》2026 年末版本</p>
-      <h3 class="case-detail-title">从版本首曝到线下总决赛</h3>
-      <p class="case-detail-lead">《万国霸业》资料片和「潜龙争霸赛」同期推进。版本内容要讲清玩法改动和新区信息，赛事内容要让玩家知道怎么参赛、下一轮什么时候打。</p>
+      <p class="case-detail-kicker">网易互娱《大唐无双》· 2026 年末</p>
+      <h3 class="case-detail-title">资料片宣发与赛事内容</h3>
+      <p class="case-detail-lead">《万国霸业》资料片和潜龙争霸赛同期推进。我跟进两条内容线：资料片讲玩法更新、新区和开服福利；赛事讲怎么报名、每一轮怎么打，以及总决赛现场的信息。</p>
 
-      <section class="case-meta" aria-label="项目节点">
-        <div><span><time datetime="2026-10-20">10.20</time></span><b>赛事开赛</b></div>
-        <div><span><time datetime="2026-11-02">11.02</time></span><b>版本首曝</b></div>
-        <div><span><time datetime="2026-11-13">11.13</time></span><b>资料片上线</b></div>
-        <div><span><time datetime="2026-11-22">11.22</time></span><b>线下总决赛</b></div>
+      <section class="case-meta" aria-label="资料片与赛事关键日期">
+        <div><span><time datetime="2026-10-20">10.20</time></span><b>潜龙争霸赛开赛</b></div>
+        <div><span><time datetime="2026-11-02">11.02</time></span><b>资料片首曝</b></div>
+        <div><span><time datetime="2026-11-13">11.13</time></span><b>资料片及新区上线</b></div>
+        <div><span><time datetime="2026-11-22">11.22</time></span><b>赛事线下总决赛</b></div>
       </section>
 
       <h4 class="case-subhead">我的分工</h4>
       <ul class="resume-list">
-        <li><b>对接产品与赛事：</b>确认版本节点、玩法改动、赛制、赛程和线下安排。</li>
-        <li><b>写版本文案、跟进发布：</b>拆图文框架，写长图、新闻稿和招募文案，按节点跟进发布。</li>
-        <li><b>赛程视频与视觉物料：</b>按轮次写赛程视频文案，跟进活动封面、场馆主视觉、对阵大屏和冠军 KV。</li>
+        <li><b>前期对接：</b>和产品、赛事团队确认玩法改动、上线时间、赛制和赛程。</li>
+        <li><b>资料片宣发：</b>拆图文框架，写首曝长图、官网新闻稿和新服招募文案，跟进发布。</li>
+        <li><b>潜龙争霸赛：</b>按轮次写赛程视频文案，跟进活动封面、场馆主视觉、对阵大屏和冠军 KV。</li>
       </ul>
 
       <figure class="case-hero">
@@ -606,7 +684,7 @@ const DATA = {
             <time class="case-node-date" datetime="2026-10-20">10.20</time>
             <h4>潜龙争霸赛开赛</h4>
           </header>
-          <p class="case-detail-text">5V5 赛程文案先讲怎么组队报名，再给出预热赛、淘汰赛、双败赛和总决赛的日期。</p>
+          <p class="case-detail-text">开赛文案先交代 5V5 的组队和报名方式，再列出预热赛、淘汰赛、双败赛和总决赛的日期。</p>
           <a class="case-doc" href="assets/case/video-5v5.png" data-shot>
             <img src="assets/previews/video-5v5.webp" data-original-src="assets/case/video-5v5.png" alt="潜龙争霸赛 5V5 赛程视频文案" width="250" height="187" loading="lazy" decoding="async" />
             <span><b>5V5 赛程视频 · 文案</b><em>报名方式与关键赛程</em></span>
@@ -618,7 +696,7 @@ const DATA = {
             <time class="case-node-date" datetime="2026-10-31">10.31</time>
             <h4>淘汰赛</h4>
           </header>
-          <p class="case-detail-text">从 64 强到 8 强逐轮标出哪些种子队不会提前相遇，单独提醒「种子不等于保送」：每一轮都要打赢才能晋级。</p>
+          <p class="case-detail-text">淘汰赛图解逐轮标出 64 强到 8 强的种子队避让规则，也提醒玩家：种子队仍要赢下每轮才能晋级。</p>
           <a class="case-doc" href="assets/case/event-seed-protection.jpg" data-shot>
             <img src="assets/previews/event-seed-protection.webp" data-original-src="assets/case/event-seed-protection.jpg" alt="潜龙争霸赛淘汰赛种子保护图解：从 64 强到 8 强的对阵规则" width="186" height="330" loading="lazy" decoding="async" />
             <span><b>种子保护图解</b><em>种子队怎么定、每轮怎么排对阵</em></span>
@@ -631,7 +709,7 @@ const DATA = {
           <span class="focus-kicker"><time datetime="2026-11-02">11.02</time> / 版本首曝</span>
           <div>
             <h4 id="version-focus-title">从图文框架到首曝长图</h4>
-            <p>资料片同时有经典服、黄金服的更新，还有单独的赛事安排。<strong>我先在框架里把三块拆开，再把每块的重点写进首曝长图。</strong>玩家可以先找自己所在服，看这次有哪些改动；只关心比赛的，也能直接看赛事安排。</p>
+            <p>首曝先回答玩家「这次改了什么」。<strong>我在图文框架里分开经典服、黄金服和赛事安排，再把各自的重点写进首曝长图。</strong>玩家可以按服查更新，也能直接找到赛事信息。</p>
           </div>
         </header>
         <div class="case-media is-pair">
@@ -678,7 +756,7 @@ const DATA = {
             <time class="case-node-date" datetime="2026-11-07">11.07</time>
             <h4>双败赛</h4>
           </header>
-          <p class="case-detail-text">这轮文案讲清四强怎么打：五局三胜、两败出局，最后两支队伍进入线下总决赛。</p>
+          <p class="case-detail-text">四强阶段的赛程视频文案讲清三件事：五局三胜、两败出局，最后两支队伍进入线下总决赛。</p>
           <a class="case-doc" href="assets/case/video-dual.png" data-shot>
             <img src="assets/previews/video-dual.webp" data-original-src="assets/case/video-dual.png" alt="双败赛开战视频文案" width="250" height="172" loading="lazy" decoding="async" />
             <span><b>双败赛开战视频 · 文案</b><em>四强对抗与晋级规则</em></span>
@@ -690,7 +768,7 @@ const DATA = {
             <time class="case-node-date" datetime="2026-11-12">11.12</time>
             <h4>官网开战预告</h4>
           </header>
-          <p class="case-detail-text">上线前一天发出官网稿，告知玩家资料片和黄金战服新区「森罗万象」将在 11.13 开启，并整理新玩法和开服福利。</p>
+          <p class="case-detail-text">官网稿先交代资料片和黄金战服新区「森罗万象」在 11.13 开启，再说明新玩法和开服福利。</p>
           <a class="case-doc" href="assets/case/news-1112.png" data-shot>
             <img src="assets/previews/news-1112.webp" data-original-src="assets/case/news-1112.png" alt="万国霸业开战预告新闻稿" width="250" height="264" loading="lazy" decoding="async" />
             <span><b>官网开战稿</b><em>上线时间、新区与福利</em></span>
@@ -703,7 +781,7 @@ const DATA = {
           <time class="case-node-date" datetime="2026-11-13">11.13</time>
           <div>
             <h4>资料片上线 · 新玩法图解</h4>
-            <p>资料片与新区「森罗万象」上线。首曝长图先讲「这次改了什么」，配套社媒图再讲「具体怎么玩」：新赛季用一张图做总览，国战报名、冰原战场计分、武经套装各用一张。</p>
+            <p>资料片与新区「森罗万象」上线时，社媒图解接着讲「具体怎么玩」：新赛季用一张图做总览，国战报名、冰原战场计分和武经套装各用一张。</p>
             <p><b>拿冰原战场来说：</b>上半张用「15V15」和「四塔争夺、中央夺旗」交代这局打什么，底下再讲怎么得分、怎么赢：占塔持续得分，夺旗回塔加分；20 分钟决胜，先达 3000 分获胜。点图可放大。</p>
           </div>
         </header>
@@ -744,7 +822,7 @@ const DATA = {
           <time class="case-node-date" datetime="2026-11-22">11.22</time>
           <div>
             <h4>线下总决赛</h4>
-            <p>5V5 总决赛落地广州网易园区。场馆沿用赛事主视觉，对阵大屏让观众认清交手队伍，胜利和冠军 KV 用来展示赛果。</p>
+            <p>5V5 总决赛在广州网易园区举行。我跟进场馆主视觉、对阵大屏，以及赛后展示胜利队伍和冠军的 KV。</p>
           </div>
         </header>
         <div style="max-width: 680px; margin-bottom: 20px; --photo-height: clamp(175px, 35vw, 260px);">
@@ -798,7 +876,7 @@ const DATA = {
         </a>
       </div>
 
-      <h4 class="case-subhead">项目产出与赛事结果</h4>
+      <h4 class="case-subhead">赛事产出与结果</h4>
       <div class="case-stats">
         <span><b>3</b>支赛程视频</span>
         <span><b>1</b>套线下主视觉</span>
@@ -806,16 +884,16 @@ const DATA = {
       </div>
 
       <h4 class="case-subhead">复盘</h4>
-      <p class="case-detail-text">一个大版本不能靠一条内容讲完。首曝先讲玩法改动，上线再说时间和福利；赛事先讲怎么参赛，再跟进每轮对阵。判断一份物料该放什么，先问玩家在这个节点最想知道什么。</p>
+      <p class="case-detail-text">两条内容线的顺序不一样：资料片首曝先讲改动，上线前把时间和福利说明白，上线阶段再讲具体玩法；赛事开赛先讲报名，开打后按轮次更新规则和对阵。写每份物料之前，先看玩家在这个节点最需要哪条信息。</p>
 
-      <a class="case-back" href="#" data-goto="works">← 返回作品</a>
+      <a class="case-back" href="#officialContent" data-goto="officialContent">← 返回官方内容与社媒运营</a>
     `,
   },
   caseDouble11: {
-    en: "CASE 02 · LIVE CAMPAIGN",
+    en: "LIVESTREAM PROMOTION",
     title: "双十一 · 官方直播",
     html: `
-      <a class="case-back" href="#" data-goto="works">← 返回作品</a>
+      <a class="case-back" href="#officialContent" data-goto="officialContent">← 返回官方内容与社媒运营</a>
 
       <p class="case-detail-kicker">网易互娱《大唐无双》· 2026 双十一</p>
       <h3 class="case-detail-title">从直播预热到播后复盘</h3>
@@ -941,7 +1019,7 @@ const DATA = {
         </div>
       </section>
 
-      <a class="case-back" href="#" data-goto="works">← 返回作品</a>
+      <a class="case-back" href="#officialContent" data-goto="officialContent">← 返回官方内容与社媒运营</a>
     `,
   },
   skill: {
@@ -1091,12 +1169,14 @@ function openView(key, index) {
   }
   viewEn.textContent = d.en;
   viewTitle.textContent = d.title;
+  const isCase = key.startsWith("case");
+  const isWorkCategory = Boolean(d.caseNumber);
   viewIdx.textContent = index >= 0
     ? String(index + 1).padStart(2, "0") + " / " + String(items.length).padStart(2, "0")
-    : "CASE";
-  const isCase = key.indexOf("case") === 0;
-  view.classList.toggle("wide", key === "profile" || isCase);
+    : isWorkCategory ? "CASE " + d.caseNumber : "WORKS";
+  view.classList.toggle("wide", key === "profile" || isWorkCategory || isCase);
   view.classList.toggle("case-view", isCase);
+  view.classList.toggle("work-category-view", isWorkCategory || key === "officialDaily");
   view.classList.add("open");
   if (renderedView !== key || viewBody.querySelector("img[data-load-failed]")) {
     viewBody.innerHTML = d.html;
@@ -1186,8 +1266,10 @@ lightbox.addEventListener("click", (event) => {
 viewBody.addEventListener("click", (e) => {
   const go = e.target.closest("[data-goto]");
   if (go) {
+    if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
     e.preventDefault();
     openView(go.dataset.goto);
+    viewTitle.focus({ preventScroll: true });
     return;
   }
   const link = e.target.closest("a[data-shot]");
@@ -1267,13 +1349,28 @@ const PET_LINES = {
   ],
   works: [
     "这页按能力分块，每块下面是做过的项目。",
-    "内容整合、达人、数据，点开的案例都能看物料。",
-    "大唐无双从版本内容一直做到线下总决赛。",
+    "点开三个案例，可以分别看项目和结果。",
+  ],
+  officialContent: [
+    "左边偏图文，右边偏直播和互动。",
+    "万国霸业和双十一都能点开看具体物料。",
+  ],
+  officialDaily: [
+    "日常内容按官网、公众号和抖音官号来整理。",
+  ],
+  creatorWork: [
+    "这里一边是达人合作，一边是我自己做的账号。",
+  ],
+  dataWork: [
+    "数据清洗后，把判定口径做成了 SOP 和模板。",
   ],
   caseContent: [
-    "大唐无双的完整案例，从首曝做到线下总决赛。",
-    "左边是长图，右边是框架文档，都能悬停滚动。",
-    "赛程规则和视频在下面，线下物料在最后。",
+    "这里有两条线：万国霸业资料片宣发、潜龙争霸赛。",
+    "首曝框架和长图可以直接在图里上下滚动。",
+    "往下还能看赛程文案和总决赛现场物料。",
+  ],
+  caseDouble11: [
+    "手游预热新闻稿是独立撰写的，可以点开看长图。",
   ],
   skill: [
     "技能树：内容营销、数据、达人、赛事，还有工具。",
@@ -1417,9 +1514,16 @@ else {
 }
 
 /* 支持 #profile / #quest 等直达链接 */
+function openLinkedView() {
+  const key = location.hash.slice(1);
+  if (Object.hasOwn(DATA, key)) openView(key);
+  else if (!key && view.classList.contains("open")) closeView();
+}
+
+window.addEventListener("hashchange", openLinkedView);
 if (hasInitialView) {
-  if (skipBoot) openView(initial);
-  else setTimeout(() => openView(initial), 900);
+  if (skipBoot) openLinkedView();
+  else setTimeout(openLinkedView, 900);
 }
 
 startBoot();

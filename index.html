@@ -13,7 +13,7 @@
   })();
 </script>
 <title>陈宇萱 · PLAYER FILE</title>
-<link rel="stylesheet" href="style.css?v=compact-media" />
+<link rel="stylesheet" href="style.css?v=work-map" />
 </head>
 <body>
 
@@ -121,7 +121,7 @@
   <div class="view-scroll">
     <div class="view-inner">
       <header class="view-head">
-        <h2 id="viewTitle"></h2>
+        <h2 id="viewTitle" tabindex="-1"></h2>
         <span class="view-idx" id="viewIdx"></span>
       </header>
       <div class="view-body" id="viewBody"></div>
@@ -160,7 +160,7 @@
   (() => {
     const refresh = new URLSearchParams(location.search).get("v");
     const siteScript = document.createElement("script");
-    const hostedScript = `script.js?v=compact-media${refresh ? `&refresh=${encodeURIComponent(refresh)}` : ""}`;
+    const hostedScript = `script.js?v=work-map${refresh ? `&refresh=${encodeURIComponent(refresh)}` : ""}`;
     siteScript.src = location.protocol === "file:" ? "script.js" : hostedScript;
     document.body.append(siteScript);
   })();
